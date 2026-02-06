@@ -415,3 +415,13 @@ h3{ font-size: var(--h3); color: var(--c-blue); }
     max-width: 320px;
   }
 }
+
+header .brand-logo{
+  width: 32px !important;
+  height: auto !important;
+}
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
