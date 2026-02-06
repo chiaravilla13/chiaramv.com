@@ -112,10 +112,10 @@ a:hover{ text-decoration: underline; text-underline-offset: 4px; }
   display:flex; align-items:center; gap:.75rem;
   font-family: "DM Sans", system-ui, sans-serif;
 }
-.brand-mark{
-  width: 36px; height: 36px; border-radius: 12px;
-  background: linear-gradient(90deg, var(--c-blue), var(--c-violet), var(--c-pink));
-  box-shadow: var(--shadow-soft);
+.brand-logo{
+  width: 32px;   /* dimensione ideale per header */
+  height: auto;
+  border-radius: 10px;
 }
 .brand-text{
   display:flex; flex-direction: column; line-height: 1.1;
