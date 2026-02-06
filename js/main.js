@@ -1,13 +1,14 @@
-// Year in footer
 document.addEventListener("DOMContentLoaded", () => {
-  const y = document.querySelectorAll("[data-year]");
-  y.forEach(el => el.textContent = new Date().getFullYear());
+  // Year
+  document.querySelectorAll("[data-year]").forEach(el => {
+    el.textContent = new Date().getFullYear();
+  });
 
   // Cookie banner
+  const CONSENT_KEY = "cookieConsent";
   const banner = document.getElementById("cookie-banner");
   const acceptBtn = document.getElementById("accept-cookies");
   const rejectBtn = document.getElementById("reject-cookies");
-  const CONSENT_KEY = "cookieConsent";
 
   if (banner) {
     const consent = localStorage.getItem(CONSENT_KEY);
@@ -31,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Google Analytics: load ONLY after consent
 function loadGA() {
   if (window.__gaLoaded) return;
   window.__gaLoaded = true;
@@ -46,6 +46,7 @@ function loadGA() {
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
   window.gtag = gtag;
+
   gtag("js", new Date());
   gtag("config", GA_ID, { anonymize_ip: true });
 }
