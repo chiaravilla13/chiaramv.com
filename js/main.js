@@ -1,24 +1,51 @@
-(() => {
-  // Set active nav item based on current path
-  const path = (location.pathname.split("/").pop() || "index.html").toLowerCase();
-  document.querySelectorAll(".nav a").forEach(a => {
-    const href = (a.getAttribute("href") || "").toLowerCase();
-    if (href === path) a.setAttribute("aria-current", "page");
-  });
+// Year in footer
+document.addEventListener("DOMContentLoaded", () => {
+  const y = document.querySelectorAll("[data-year]");
+  y.forEach(el => el.textContent = new Date().getFullYear());
 
-  // Footer year
-  const y = document.querySelector("[data-year]");
-  if (y) y.textContent = new Date().getFullYear();
+  // Cookie banner
+  const banner = document.getElementById("cookie-banner");
+  const acceptBtn = document.getElementById("accept-cookies");
+  const rejectBtn = document.getElementById("reject-cookies");
+  const CONSENT_KEY = "cookieConsent";
 
-  // Optional: show "back to top" button if present
-  const topBtn = document.querySelector("[data-top]");
-  if (!topBtn) return;
+  if (banner) {
+    const consent = localStorage.getItem(CONSENT_KEY);
+    if (!consent) banner.style.display = "flex";
 
-  const toggle = () => {
-    topBtn.style.display = window.scrollY > 600 ? "inline-flex" : "none";
-  };
-  window.addEventListener("scroll", toggle, { passive: true });
-  toggle();
+    acceptBtn && acceptBtn.addEventListener("click", () => {
+      localStorage.setItem(CONSENT_KEY, "accepted");
+      banner.style.display = "none";
+      loadGA();
+    });
 
-  topBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-})();
+    rejectBtn && rejectBtn.addEventListener("click", () => {
+      localStorage.setItem(CONSENT_KEY, "rejected");
+      banner.style.display = "none";
+    });
+  }
+
+  // Auto-load GA if already accepted
+  if (localStorage.getItem(CONSENT_KEY) === "accepted") {
+    loadGA();
+  }
+});
+
+// Google Analytics: load ONLY after consent
+function loadGA() {
+  if (window.__gaLoaded) return;
+  window.__gaLoaded = true;
+
+  const GA_ID = "G-JWNWNVQNZ7";
+
+  const s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+  document.head.appendChild(s);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag("js", new Date());
+  gtag("config", GA_ID, { anonymize_ip: true });
+}
