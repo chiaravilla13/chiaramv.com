@@ -9,3 +9,33 @@
   gtag('config', 'G-JWNWNVQNZ7');
 </script>
 <meta name="robots" content="noindex, nofollow" />
+<div id="cookie-banner" class="cookie-banner">
+  <p>
+    Questo sito utilizza cookie tecnici e cookie di analisi per migliorare l’esperienza utente.
+    <a href="cookie.html">Scopri di più</a>
+  </p>
+  <div class="cookie-actions">
+    <button id="accept-cookies">Accetta</button>
+    <button id="reject-cookies">Rifiuta</button>
+  </div>
+</div>
+
+<script>
+  const banner = document.getElementById("cookie-banner");
+  const acceptBtn = document.getElementById("accept-cookies");
+  const rejectBtn = document.getElementById("reject-cookies");
+
+  if (!localStorage.getItem("cookieConsent")) {
+    banner.style.display = "flex";
+  }
+
+  acceptBtn.addEventListener("click", () => {
+    localStorage.setItem("cookieConsent", "accepted");
+    banner.style.display = "none";
+  });
+
+  rejectBtn.addEventListener("click", () => {
+    localStorage.setItem("cookieConsent", "rejected");
+    banner.style.display = "none";
+  });
+</script>
