@@ -314,3 +314,52 @@ h3{ font-size: var(--h3); color: var(--c-blue); }
   html{ scroll-behavior: auto; }
   .btn:hover{ transform:none; }
 }
+.cookie-banner{
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background: var(--c-white);
+  padding: 1rem 1.25rem;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(43,43,43,0.08);
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  z-index: 3000;
+  flex-wrap: wrap;
+}
+
+.cookie-banner p{
+  margin: 0;
+  font-size: .95rem;
+}
+
+.cookie-banner a{
+  color: var(--c-blue);
+  font-weight: 600;
+}
+
+.cookie-actions{
+  display: flex;
+  gap: .5rem;
+}
+
+.cookie-actions button{
+  padding: .5rem .9rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#accept-cookies{
+  background: linear-gradient(90deg, var(--c-blue), var(--c-violet), var(--c-pink));
+  color: white;
+}
+
+#reject-cookies{
+  background: var(--c-lightgrey);
+}
