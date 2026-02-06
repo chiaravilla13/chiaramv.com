@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Year
-  document.querySelectorAll("[data-year]").forEach(el => {
+  // Footer year
+  document.querySelectorAll("[data-year]").forEach((el) => {
     el.textContent = new Date().getFullYear();
   });
 
@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Auto-load GA if already accepted
   if (localStorage.getItem(CONSENT_KEY) === "accepted") {
     loadGA();
   }
@@ -44,7 +43,7 @@ function loadGA() {
   document.head.appendChild(s);
 
   window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
+  function gtag() { dataLayer.push(arguments); }
   window.gtag = gtag;
 
   gtag("js", new Date());
