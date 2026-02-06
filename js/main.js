@@ -49,3 +49,18 @@ function loadGA() {
   gtag("js", new Date());
   gtag("config", GA_ID, { anonymize_ip: true });
 }
+// Reveal on scroll (subtle)
+(function () {
+  const items = document.querySelectorAll(".section, .card, .step, .hero-card");
+  if (!("IntersectionObserver" in window) || !items.length) return;
+
+  items.forEach(el => el.classList.add("reveal"));
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("is-visible");
+    });
+  }, { threshold: 0.12 });
+
+  items.forEach(el => io.observe(el));
+})();
