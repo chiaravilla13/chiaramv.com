@@ -1,46 +1,70 @@
 <!doctype html>
 <html lang="it">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWNWNVQNZ7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JWNWNVQNZ7');
-</script>
-  <meta name="robots" content="noindex, nofollow" />
-  
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Brand & Communication Strategist | Chiara M. Villa</title>
-  <meta name="description" content="Chiara M. Villa è Brand & Communication Strategist: brand strategy, posizionamento, identità di brand e comunicazione per brand solidi e coerenti." />
+  <title>Brand &amp; Communication Strategist | Chiara M. Villa</title>
+  <meta name="description" content="Chiara M. Villa è Brand &amp; Communication Strategist: brand strategy, posizionamento, identità di brand e comunicazione per brand solidi e coerenti." />
 
-  <link rel="canonical" href="https://chiaramvilla.com/" />
+  <link rel="canonical" href="https://chiaramv.com/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Brand & Communication Strategist | Chiara M. Villa" />
+  <meta property="og:title" content="Brand &amp; Communication Strategist | Chiara M. Villa" />
   <meta property="og:description" content="Strategia di brand, identità e comunicazione costruite sull’analisi: per brand chiari, coerenti e riconoscibili." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://chiaramvilla.com/" />
-  <meta property="og:image" content="https://chiaramvilla.com/assets/img/og-image.webp" />
+  <meta property="og:url" content="https://chiaramv.com/" />
+  <meta property="og:image" content="https://chiaramv.com/assets/img/og-image.webp" />
 
- <!-- Favicon -->
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
-<link rel="icon" href="/assets/img/favicon.ico">
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
 
-<!-- Apple Touch Icon (iOS) -->
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+  <!-- Fonts preload (opzionale) -->
+  <link rel="preload" href="/assets/fonts/dm-sans-variable.ttf" as="font" type="font/ttf">
+  <link rel="preload" href="/assets/fonts/inter-variable.ttf" as="font" type="font/ttf">
 
-  <!-- Preload fonts (optional but recommended) -->
-  <link rel="preload" href="/assets/fonts/dm-sans-variable.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/assets/fonts/inter-variable.ttf" as="font" type="font/ttf" crossorigin>
-
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/style.css" />
   <script defer src="/js/main.js"></script>
+
+  <!-- Consent + Analytics loader -->
+  <script>
+    (function () {
+      const CONSENT_KEY = "cookieConsent";
+      const GA_ID = "G-JWNWNVQNZ7";
+
+      function loadGA() {
+        if (window.__gaLoaded) return;
+        window.__gaLoaded = true;
+
+        const s1 = document.createElement("script");
+        s1.async = true;
+        s1.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+        document.head.appendChild(s1);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag("js", new Date());
+        gtag("config", GA_ID, { anonymize_ip: true });
+      }
+
+      const consent = localStorage.getItem(CONSENT_KEY);
+      if (consent === "accepted") loadGA();
+
+      window.__cookie = {
+        accept: function () {
+          localStorage.setItem(CONSENT_KEY, "accepted");
+          loadGA();
+        },
+        reject: function () {
+          localStorage.setItem(CONSENT_KEY, "rejected");
+        }
+      };
+    })();
+  </script>
 </head>
 
 <body>
@@ -48,7 +72,7 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/index.html" aria-label="Home - Chiara M. Villa">
+      <a class="brand" href="/index.html" aria-label="Home - Chiara M. Villa" aria-current="page">
         <span class="brand-mark" aria-hidden="true"></span>
         <span class="brand-text">
           <strong>Chiara M. Villa</strong>
@@ -169,41 +193,281 @@
         <a href="/contatti.html">Contatti</a>
       </nav>
     </div>
-      <div class="container">
- <p class="credits muted" style="margin-top:.75rem; font-size:.85rem;">
-  Icone di Freepik e Fathema Khanom da Flaticon
-</p>
-            </div>
+
+    <div class="container">
+      <p class="credits muted" style="margin-top:.75rem; font-size:.85rem;">
+        Icone di Freepik e Fathema Khanom da Flaticon
+      </p>
+    </div>
   </footer>
+
+  <!-- Cookie banner -->
   <div id="cookie-banner" class="cookie-banner">
-  <p>
-    Questo sito utilizza cookie tecnici e cookie di analisi per migliorare l’esperienza utente.
-    <a href="cookie.html">Scopri di più</a>
-  </p>
-  <div class="cookie-actions">
-    <button id="accept-cookies">Accetta</button>
-    <button id="reject-cookies">Rifiuta</button>
+    <p>
+      Questo sito utilizza cookie tecnici e cookie di analisi per migliorare l’esperienza utente.
+      <a href="/cookie.html">Scopri di più</a>
+    </p>
+    <div class="cookie-actions">
+      <button id="accept-cookies" type="button">Accetta</button>
+      <button id="reject-cookies" type="button">Rifiuta</button>
+    </div>
   </div>
-</div>
 
-<script>
-  const banner = document.getElementById("cookie-banner");
-  const acceptBtn = document.getElementById("accept-cookies");
-  const rejectBtn = document.getElementById("reject-cookies");
+  <script>
+    (function () {
+      const banner = document.getElementById("cookie-banner");
+      const acceptBtn = document.getElementById("accept-cookies");
+      const rejectBtn = document.getElementById("reject-cookies");
+      const consent = localStorage.getItem("cookieConsent");
 
-  if (!localStorage.getItem("cookieConsent")) {
-    banner.style.display = "flex";
-  }
+      if (!consent) banner.style.display = "flex";
 
-  acceptBtn.addEventListener("click", () => {
-    localStorage.setItem("cookieConsent", "accepted");
-    banner.style.display = "none";
-  });
+      acceptBtn.addEventListener("click", () => {
+        window.__cookie && window.__cookie.accept();
+        banner.style.display = "none";
+      });
 
-  rejectBtn.addEventListener("click", () => {
-    localStorage.setItem("cookieConsent", "rejected");
-    banner.style.display = "none";
-  });
-</script>
+      rejectBtn.addEventListener("click", () => {
+        window.__cookie && window.__cookie.reject();
+        banner.style.display = "none";
+      });
+    })();
+  </script>
+</body>
+</html><!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Brand &amp; Communication Strategist | Chiara M. Villa</title>
+  <meta name="description" content="Chiara M. Villa è Brand &amp; Communication Strategist: brand strategy, posizionamento, identità di brand e comunicazione per brand solidi e coerenti." />
+
+  <link rel="canonical" href="https://chiaramv.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Brand &amp; Communication Strategist | Chiara M. Villa" />
+  <meta property="og:description" content="Strategia di brand, identità e comunicazione costruite sull’analisi: per brand chiari, coerenti e riconoscibili." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chiaramv.com/" />
+  <meta property="og:image" content="https://chiaramv.com/assets/img/og-image.webp" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+
+  <!-- Fonts preload (opzionale) -->
+  <link rel="preload" href="/assets/fonts/dm-sans-variable.ttf" as="font" type="font/ttf">
+  <link rel="preload" href="/assets/fonts/inter-variable.ttf" as="font" type="font/ttf">
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <script defer src="/js/main.js"></script>
+
+  <!-- Consent + Analytics loader -->
+  <script>
+    (function () {
+      const CONSENT_KEY = "cookieConsent";
+      const GA_ID = "G-JWNWNVQNZ7";
+
+      function loadGA() {
+        if (window.__gaLoaded) return;
+        window.__gaLoaded = true;
+
+        const s1 = document.createElement("script");
+        s1.async = true;
+        s1.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+        document.head.appendChild(s1);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag("js", new Date());
+        gtag("config", GA_ID, { anonymize_ip: true });
+      }
+
+      const consent = localStorage.getItem(CONSENT_KEY);
+      if (consent === "accepted") loadGA();
+
+      window.__cookie = {
+        accept: function () {
+          localStorage.setItem(CONSENT_KEY, "accepted");
+          loadGA();
+        },
+        reject: function () {
+          localStorage.setItem(CONSENT_KEY, "rejected");
+        }
+      };
+    })();
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html" aria-label="Home - Chiara M. Villa" aria-current="page">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>Chiara M. Villa</strong>
+          <span>B&amp;C Strategist</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navigazione principale">
+        <a href="/chi-sono.html">Chi sono</a>
+        <a href="/servizi.html">Servizi</a>
+        <a href="/metodo.html">Metodo</a>
+        <a class="btn btn-primary" href="/contatti.html">Contattami</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenuto">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker">Brand Strategy • Identity • Communication</p>
+          <h1>Brand &amp; Communication Strategist</h1>
+          <p class="lead">
+            Costruisco brand solidi partendo dalla strategia: analisi del mercato, posizionamento,
+            identità di brand e comunicazione coerente per distinguerti con chiarezza.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/contatti.html">Lavora con me</a>
+            <a class="btn" href="/metodo.html">Scopri il mio metodo</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="In breve">
+          <h2 style="margin-bottom:.25rem;">Approccio</h2>
+          <p class="muted" style="margin-top:0;">
+            Strategia prima della creatività: prima capiamo il contesto, poi costruiamo identità e comunicazione.
+          </p>
+          <div class="hero-badges" aria-label="Aree principali">
+            <span class="badge">Analisi mercato</span>
+            <span class="badge">Posizionamento</span>
+            <span class="badge">Brandbook</span>
+            <span class="badge">Tone of voice</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2>Chi sono</h2>
+        <p class="lead" style="max-width:70ch;">
+          Sono Chiara M. Villa, Brand &amp; Communication Strategist. Aiuto brand e professionisti a definire
+          una direzione chiara e a trasformarla in identità e comunicazione coerente, riconoscibile e sostenibile nel tempo.
+        </p>
+        <a class="btn" href="/chi-sono.html">Leggi di più</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Servizi</h2>
+        <div class="grid-3" role="list">
+          <article class="card" role="listitem">
+            <h3>Brand Strategy</h3>
+            <p>Analisi di mercato, competitor e target per definire posizionamento e opportunità.</p>
+            <p><a href="/servizi.html#brand-strategy">Scopri il servizio →</a></p>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Brand Identity &amp; Brandbook</h3>
+            <p>Valori, personalità e visual identity tradotti in linee guida chiare e complete.</p>
+            <p><a href="/servizi.html#brandbook">Scopri il servizio →</a></p>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Strategia di comunicazione</h3>
+            <p>Messaggi, tono di voce e canali: un sistema coerente per comunicare con efficacia.</p>
+            <p><a href="/servizi.html#comunicazione">Scopri il servizio →</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2>Il mio metodo</h2>
+        <p class="lead" style="max-width:75ch;">
+          Un percorso in 5 fasi: analisi → posizionamento → identità → brandbook → comunicazione.
+          Così ogni scelta è coerente, motivata e utile al business.
+        </p>
+        <a class="btn" href="/metodo.html">Vedi le 5 fasi</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Risultati</h2>
+        <ul class="list-check">
+          <li>Chiarezza su identità e direzione</li>
+          <li>Posizionamento distintivo rispetto ai competitor</li>
+          <li>Comunicazione coerente e riconoscibile</li>
+          <li>Linee guida pronte per crescere nel tempo</li>
+        </ul>
+        <div class="hero-actions" style="margin-top:1rem;">
+          <a class="btn btn-primary" href="/contatti.html">Parliamone</a>
+          <a class="btn" href="/servizi.html">Vedi i servizi</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span data-year></span> Chiara M. Villa — Brand &amp; Communication Strategist</p>
+      <nav class="footer-links" aria-label="Link utili">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/cookie.html">Cookie</a>
+        <a href="/contatti.html">Contatti</a>
+      </nav>
+    </div>
+
+    <div class="container">
+      <p class="credits muted" style="margin-top:.75rem; font-size:.85rem;">
+        Icone di Freepik e Fathema Khanom da Flaticon
+      </p>
+    </div>
+  </footer>
+
+  <!-- Cookie banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <p>
+      Questo sito utilizza cookie tecnici e cookie di analisi per migliorare l’esperienza utente.
+      <a href="/cookie.html">Scopri di più</a>
+    </p>
+    <div class="cookie-actions">
+      <button id="accept-cookies" type="button">Accetta</button>
+      <button id="reject-cookies" type="button">Rifiuta</button>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const banner = document.getElementById("cookie-banner");
+      const acceptBtn = document.getElementById("accept-cookies");
+      const rejectBtn = document.getElementById("reject-cookies");
+      const consent = localStorage.getItem("cookieConsent");
+
+      if (!consent) banner.style.display = "flex";
+
+      acceptBtn.addEventListener("click", () => {
+        window.__cookie && window.__cookie.accept();
+        banner.style.display = "none";
+      });
+
+      rejectBtn.addEventListener("click", () => {
+        window.__cookie && window.__cookie.reject();
+        banner.style.display = "none";
+      });
+    })();
+  </script>
 </body>
 </html>
