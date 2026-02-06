@@ -1,50 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWNWNVQNZ7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+   <meta name="robots" content="noindex, nofollow" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  gtag('config', 'G-JWNWNVQNZ7');
-</script>
-<meta name="robots" content="noindex, nofollow" />
-<meta charset="UTF-8">
-  <title>Privacy Policy - Chiara Maria Villa</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Privacy Policy | Chiara Maria Villa</title>
+  <meta name="description" content="Privacy Policy del sito di Chiara Maria Villa: informazioni sul trattamento dei dati personali, contatti, analytics e diritti dell’utente." />
+
+  <link rel="canonical" href="https://chiaramv.com/privacy.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy | Chiara Maria Villa" />
+  <meta property="og:description" content="Informazioni sul trattamento dei dati personali, contatti, analytics e diritti dell’utente." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chiaramv.com/privacy.html" />
+  <meta property="og:image" content="https://chiaramv.com/assets/img/og-image.webp" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <script defer src="/js/main.js"></script>
+
+  <!-- Consent + Analytics loader (GA carica solo dopo Accetta) -->
+  <script>
+    (function () {
+      const CONSENT_KEY = "cookieConsent";
+      const GA_ID = "G-JWNWNVQNZ7";
+
+      function loadGA() {
+        if (window.__gaLoaded) return;
+        window.__gaLoaded = true;
+
+        const s1 = document.createElement("script");
+        s1.async = true;
+        s1.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+        document.head.appendChild(s1);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag("js", new Date());
+        gtag("config", GA_ID, { anonymize_ip: true });
+      }
+
+      const consent = localStorage.getItem(CONSENT_KEY);
+      if (consent === "accepted") loadGA();
+
+      window.__cookie = {
+        accept: function () {
+          localStorage.setItem(CONSENT_KEY, "accepted");
+          loadGA();
+        },
+        reject: function () {
+          localStorage.setItem(CONSENT_KEY, "rejected");
+        }
+      };
+    })();
+  </script>
 </head>
+
 <body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
 
-<main class="container section">
-  <h1>Privacy Policy</h1>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html" aria-label="Home - Chiara M. Villa">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>Chiara M. Villa</strong>
+          <span>B&amp;C Strategist</span>
+        </span>
+      </a>
 
-  <p>Ai sensi del Regolamento UE 2016/679 (GDPR), questa pagina descrive le modalità di gestione dei dati personali degli utenti che visitano il sito chiaramv.com.</p>
+      <nav class="nav" aria-label="Navigazione principale">
+        <a href="/chi-sono.html">Chi sono</a>
+        <a href="/servizi.html">Servizi</a>
+        <a href="/metodo.html">Metodo</a>
+        <a class="btn btn-primary" href="/contatti.html">Contattami</a>
+      </nav>
+    </div>
+  </header>
 
-  <h2>Titolare del trattamento</h2>
-  <p>Chiara Maria Villa<br>
-     Email: <a href="mailto:chiara@chiaramv.com">chiara@chiaramv.com</a></p>
+  <main id="contenuto" class="container section">
+    <h1>Privacy Policy</h1>
 
-  <h2>Tipologia di dati raccolti</h2>
-  <p>Il sito può raccogliere dati personali forniti volontariamente dall’utente, come nome, indirizzo email e contenuto dei messaggi inviati tramite email o form di contatto.</p>
+    <p>
+      Ai sensi del Regolamento UE 2016/679 (GDPR), questa pagina descrive le modalità di trattamento dei dati personali
+      degli utenti che visitano il sito <strong>chiaramv.com</strong>.
+    </p>
 
-  <h2>Finalità del trattamento</h2>
-  <p>I dati sono utilizzati esclusivamente per rispondere alle richieste degli utenti e fornire informazioni sui servizi offerti.</p>
+    <h2>Titolare del trattamento</h2>
+    <p>
+      <strong>Chiara Maria Villa</strong><br>
+      Email: <a href="mailto:chiara@chiaramv.com">chiara@chiaramv.com</a>
+    </p>
 
-  <h2>Google Analytics</h2>
-  <p>Il sito utilizza Google Analytics, un servizio di analisi web fornito da Google, per raccogliere informazioni anonime sull’utilizzo del sito al fine di migliorarne i contenuti e l’esperienza utente.</p>
+    <h2>Dati trattati</h2>
+    <ul class="list-check">
+      <li><strong>Dati di contatto</strong>: dati forniti volontariamente dall’utente tramite email (es. nome, email e contenuto del messaggio).</li>
+      <li><strong>Dati di utilizzo</strong>: informazioni statistiche sul traffico e sull’uso del sito, raccolte tramite cookie di analisi (previo consenso).</li>
+    </ul>
 
-  <h2>Google Fonts</h2>
-  <p>Il sito utilizza font forniti da Google Fonts, che possono comportare il trasferimento di dati tecnici verso i server di Google.</p>
+    <h2>Finalità e base giuridica</h2>
+    <ul class="list-check">
+      <li>
+        <strong>Gestione richieste e contatti</strong>:
+        rispondere ai messaggi e alle richieste degli utenti.
+        <br><span class="muted">Base giuridica: esecuzione di misure precontrattuali e/o legittimo interesse a rispondere alle richieste (art. 6 GDPR).</span>
+      </li>
+      <li>
+        <strong>Analisi statistica (Google Analytics)</strong>:
+        comprendere in forma aggregata l’uso del sito per migliorarne contenuti e navigazione.
+        <br><span class="muted">Base giuridica: consenso dell’utente (art. 6 GDPR).</span>
+      </li>
+    </ul>
 
-  <h2>Conservazione dei dati</h2>
-  <p>I dati personali vengono conservati per il tempo necessario a gestire le richieste e non vengono ceduti a terzi.</p>
+    <h2>Google Analytics (GA4)</h2>
+    <p>
+      Previo consenso, il sito utilizza Google Analytics (GA4), un servizio di analisi web fornito da Google, per raccogliere
+      informazioni statistiche sull’utilizzo del sito. Se l’utente rifiuta i cookie di analisi, Google Analytics non viene attivato.
+    </p>
+    <p class="muted">
+      Per maggiori informazioni sui cookie utilizzati, consulta la <a href="/cookie.html">Cookie Policy</a>.
+    </p>
 
-  <h2>Diritti dell’utente</h2>
-  <p>L’utente può in qualsiasi momento richiedere l’accesso, la rettifica o la cancellazione dei propri dati personali scrivendo all’indirizzo email indicato.</p>
+    <h2>Google Fonts</h2>
+    <p>
+      Il sito può utilizzare font forniti da Google Fonts. L’uso di risorse esterne può comportare richieste verso server di terze parti
+      e la trasmissione di dati tecnici (es. indirizzo IP, user agent). Se vuoi massimizzare la privacy, la soluzione migliore è ospitare i font in locale.
+    </p>
 
-</main>
+    <h2>Conservazione dei dati</h2>
+    <p>
+      I dati inviati via email vengono conservati per il tempo necessario a gestire la richiesta e per eventuali esigenze organizzative
+      e di tutela (in ogni caso per un periodo ragionevole). I dati statistici raccolti tramite analytics seguono le impostazioni del servizio
+      e vengono trattati in forma aggregata.
+    </p>
 
-</body>
-</html>
+    <h2>Comunicazione a terzi</h2>
+    <p>
+      I dati non vengono venduti né ceduti a terzi. Potrebbero essere trattati da fornitori tecnici (es. servizi di analisi) in qualità di
+      responsabili del trattamento o autonomi titolari, secondo le rispettive policy.
+    </p>
+
+    <h2>Diritti dell’utente</h2>
+    <p>
+      L’utente può esercitare i diritti previsti dagli artt. 15–22 del GDPR (accesso, rettifica, cancellazione, limitazione, opposizione,
