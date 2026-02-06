@@ -16,6 +16,7 @@
   <meta property="og:url" content="https://chiaramv.com/contatti.html" />
   <meta property="og:image" content="https://chiaravilla13.github.io/chiaramv.com/assets/img/og-image.webp" />
 
+  <!-- Favicon -->
   <link rel="icon" href="assets/icons/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
@@ -26,55 +27,108 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+<a class="skip-link" href="#contenuto">Vai al contenuto</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Home - Chiara M. Villa">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">
-          <strong>Chiara M. Villa</strong>
-          <span>B&amp;C Strategist</span>
-        </span>
-      </a>
-      <nav class="nav" aria-label="Navigazione principale">
-        <a href="chi-sono.html">Chi sono</a>
-        <a href="servizi.html">Servizi</a>
-        <a href="metodo.html">Metodo</a>
-        <a href="risultati.html">Risultati</a>
-        <a class="btn btn-primary" href="contatti.html" aria-current="page">Contattami</a>
-      </nav>
-    </div>
-  </header>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark"></span>
+      <span class="brand-text">
+        <strong>Chiara M. Villa</strong>
+        <span>B&amp;C Strategist</span>
+      </span>
+    </a>
 
-  <main id="contenuto">
-    <!-- CONTENUTO CONTATTI: incolla qui le tue section -->
-  </main>
+    <nav class="nav">
+      <a href="chi-sono.html">Chi sono</a>
+      <a href="servizi.html">Servizi</a>
+      <a href="metodo.html">Metodo</a>
+      <a href="risultati.html">Risultati</a>
+      <a href="contatti.html" aria-current="page" class="btn btn-primary">Contattami</a>
+    </nav>
+  </div>
+</header>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p class="muted">© <span data-year></span> Chiara M. Villa</p>
-      <nav class="footer-links" aria-label="Link utili">
-        <a href="privacy.html">Privacy</a>
-        <a href="cookie.html">Cookie</a>
-        <a href="contatti.html" aria-current="page">Contatti</a>
-      </nav>
-    </div>
-    <div class="container">
-      <p class="credits muted" style="margin-top:.75rem; font-size:.85rem;">
-        Icone di Freepik e Fathema Khanom da Flaticon
+<main id="contenuto">
+
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div>
+      <p class="kicker">Contatti</p>
+      <h1>Parliamo del tuo brand</h1>
+      <p class="lead">
+        Se vuoi costruire un brand strategico, coerente e riconoscibile, scrivimi.
+        Raccontami in breve il progetto e l’obiettivo: ti rispondo con i prossimi step.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:chiara@chiaramv.com">Scrivimi via email</a>
+        <a class="btn" href="servizi.html">Vedi i servizi</a>
+      </div>
+
+      <p class="muted" style="margin-top:1rem;">
+        Email: <a href="mailto:chiara@chiaramv.com">chiara@chiaramv.com</a>
       </p>
     </div>
-  </footer>
 
-  <div id="cookie-banner" class="cookie-banner">
-    <p>Questo sito utilizza cookie tecnici e cookie di analisi per migliorare l’esperienza utente.
-      <a href="cookie.html">Scopri di più</a>
-    </p>
-    <div class="cookie-actions">
-      <button id="accept-cookies" type="button">Accetta</button>
-      <button id="reject-cookies" type="button">Rifiuta</button>
-    </div>
+    <aside class="hero-card">
+      <h2 style="margin-bottom:.25rem;">Social</h2>
+      <p class="muted" style="margin-top:0;">Puoi trovarmi anche qui:</p>
+
+      <div class="social" style="margin-top:.75rem; flex-wrap:wrap;">
+
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+          <img src="assets/icons/logo-linkedin.svg" alt="LinkedIn" />
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+          <img src="assets/icons/logo-instagram.svg" alt="Instagram" />
+          <span>Instagram</span>
+        </a>
+
+      </div>
+
+      <p class="muted" style="margin-top:1rem;">
+        Privacy e cookie:
+        <a href="privacy.html">Privacy</a> ·
+        <a href="cookie.html">Cookie</a>
+      </p>
+    </aside>
+
   </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="muted">© <span data-year></span> Chiara M. Villa</p>
+    <nav class="footer-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="cookie.html">Cookie</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+  </div>
+
+  <div class="container">
+    <p class="credits muted" style="margin-top:.75rem;font-size:.85rem;">
+      Icone di Freepik e Fathema Khanom da Flaticon
+    </p>
+  </div>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner">
+  <p>
+    Questo sito utilizza cookie tecnici e cookie di analisi.
+    <a href="cookie.html">Scopri di più</a>
+  </p>
+  <div class="cookie-actions">
+    <button id="accept-cookies">Accetta</button>
+    <button id="reject-cookies">Rifiuta</button>
+  </div>
+</div>
+
 </body>
 </html>
