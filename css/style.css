@@ -363,3 +363,36 @@ h3{ font-size: var(--h3); color: var(--c-blue); }
 #reject-cookies{
   background: var(--c-lightgrey);
 }
+/* Subtle motion: cards + buttons */
+.card, .step, .hero-card {
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card:hover, .step:hover, .hero-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Button micro-interaction */
+.btn {
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+.btn:hover {
+  filter: brightness(1.02);
+}
+
+/* On-scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card, .step, .hero-card, .btn, .reveal {
+    transition: none !important;
+    transform: none !important;
+  }
+}
