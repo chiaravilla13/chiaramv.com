@@ -1,38 +1,67 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWNWNVQNZ7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JWNWNVQNZ7');
-</script>
+   <meta name="robots" content="noindex, nofollow" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Servizi | Brand Strategy, Brandbook e Comunicazione — Chiara M. Villa</title>
   <meta name="description" content="Servizi di brand strategy, identità di brand e strategia di comunicazione: analisi, posizionamento, brandbook e linee guida per brand coerenti e riconoscibili." />
 
-  <link rel="canonical" href="https://chiaramvilla.com/servizi.html" />
+  <link rel="canonical" href="https://chiaramv.com/servizi.html" />
 
+  <!-- Open Graph -->
   <meta property="og:title" content="Servizi | Chiara M. Villa" />
-  <meta property="og:description" content="Brand strategy, brand identity & brandbook, strategia di comunicazione: un percorso completo e coerente." />
+  <meta property="og:description" content="Brand strategy, brand identity &amp; brandbook, strategia di comunicazione: un percorso completo e coerente." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://chiaramvilla.com/servizi.html" />
-  <meta property="og:image" content="https://chiaramvilla.com/assets/img/og-image.jpg" />
+  <meta property="og:url" content="https://chiaramv.com/servizi.html" />
+  <meta property="og:image" content="https://chiaramv.com/assets/img/og-image.webp" />
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
-<link rel="icon" href="/assets/img/favicon.ico">
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
 
-<!-- Apple Touch Icon (iOS) -->
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/style.css" />
   <script defer src="/js/main.js"></script>
+
+  <!-- Consent + Analytics loader (GA carica solo dopo Accetta) -->
+  <script>
+    (function () {
+      const CONSENT_KEY = "cookieConsent";
+      const GA_ID = "G-JWNWNVQNZ7";
+
+      function loadGA() {
+        if (window.__gaLoaded) return;
+        window.__gaLoaded = true;
+
+        const s1 = document.createElement("script");
+        s1.async = true;
+        s1.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+        document.head.appendChild(s1);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag("js", new Date());
+        gtag("config", GA_ID, { anonymize_ip: true });
+      }
+
+      const consent = localStorage.getItem(CONSENT_KEY);
+      if (consent === "accepted") loadGA();
+
+      window.__cookie = {
+        accept: function () {
+          localStorage.setItem(CONSENT_KEY, "accepted");
+          loadGA();
+        },
+        reject: function () {
+          localStorage.setItem(CONSENT_KEY, "rejected");
+        }
+      };
+    })();
+  </script>
 </head>
 
 <body>
@@ -47,9 +76,10 @@
           <span>B&amp;C Strategist</span>
         </span>
       </a>
+
       <nav class="nav" aria-label="Navigazione principale">
         <a href="/chi-sono.html">Chi sono</a>
-        <a href="/servizi.html">Servizi</a>
+        <a href="/servizi.html" aria-current="page">Servizi</a>
         <a href="/metodo.html">Metodo</a>
         <a class="btn btn-primary" href="/contatti.html">Contattami</a>
       </nav>
@@ -75,6 +105,7 @@
           Definiamo lo spazio del brand nel mercato: contesto, competitor, target e posizionamento.
           L’obiettivo è trasformare insight reali in una direzione chiara.
         </p>
+
         <div class="grid-3">
           <div class="card">
             <h3>Cosa include</h3>
@@ -85,10 +116,12 @@
               <li>Value proposition e posizionamento</li>
             </ul>
           </div>
+
           <div class="card">
             <h3>Output</h3>
             <p>Documento strategico completo, chiaro e utilizzabile come base per identità e comunicazione.</p>
           </div>
+
           <div class="card">
             <h3>Ideale per</h3>
             <p>Brand che vogliono distinguersi, riposizionarsi o strutturarsi prima di investire in comunicazione.</p>
@@ -104,6 +137,7 @@
           Dalla strategia alla forma: costruiamo l’identità del brand (valori, personalità, tono) e la traduciamo in un sistema visivo
           con linee guida pronte da usare.
         </p>
+
         <div class="grid-3">
           <div class="card">
             <h3>Cosa include</h3>
@@ -114,10 +148,12 @@
               <li>Regole di utilizzo e coerenza</li>
             </ul>
           </div>
+
           <div class="card">
             <h3>Output</h3>
             <p>Brandbook completo (strategico + visual) per mantenere coerenza anche lavorando con team o fornitori.</p>
           </div>
+
           <div class="card">
             <h3>Ideale per</h3>
             <p>Brand che vogliono un’identità riconoscibile e replicabile, senza dipendere da “interpretazioni”.</p>
@@ -133,6 +169,7 @@
           Definiamo cosa dire, a chi, come e dove: messaggi chiave, tono di voce, canali e contenuti,
           con linee guida operative per comunicare in modo coerente.
         </p>
+
         <div class="grid-3">
           <div class="card">
             <h3>Cosa include</h3>
@@ -143,10 +180,12 @@
               <li>Content strategy e linee guida</li>
             </ul>
           </div>
+
           <div class="card">
             <h3>Output</h3>
             <p>Documento strategico e linee guida per contenuti e comunicazione, adattabili nel tempo.</p>
           </div>
+
           <div class="card">
             <h3>Ideale per</h3>
             <p>Brand che vogliono comunicare meglio e con più coerenza, senza improvvisare post o messaggi.</p>
@@ -168,45 +207,47 @@
         <a href="/privacy.html">Privacy</a>
         <a href="/cookie.html">Cookie</a>
         <a href="/contatti.html">Contatti</a>
-        <a href="privacy.html">Privacy Policy</a>
-<a href="cookie.html">Cookie Policy</a>
       </nav>
     </div>
+
     <div class="container">
       <p class="credits muted" style="margin-top:.75rem; font-size:.85rem;">
-  Icone di Freepik e Fathema Khanom da Flaticon
-</p>
+        Icone di Freepik e Fathema Khanom da Flaticon
+      </p>
     </div>
   </footer>
+
+  <!-- Cookie banner -->
   <div id="cookie-banner" class="cookie-banner">
-  <p>
-    Questo sito utilizza cookie tecnici e cookie di analisi per migliorare l’esperienza utente.
-    <a href="cookie.html">Scopri di più</a>
-  </p>
-  <div class="cookie-actions">
-    <button id="accept-cookies">Accetta</button>
-    <button id="reject-cookies">Rifiuta</button>
+    <p>
+      Questo sito utilizza cookie tecnici e cookie di analisi per migliorare l’esperienza utente.
+      <a href="/cookie.html">Scopri di più</a>
+    </p>
+    <div class="cookie-actions">
+      <button id="accept-cookies" type="button">Accetta</button>
+      <button id="reject-cookies" type="button">Rifiuta</button>
+    </div>
   </div>
-</div>
 
-<script>
-  const banner = document.getElementById("cookie-banner");
-  const acceptBtn = document.getElementById("accept-cookies");
-  const rejectBtn = document.getElementById("reject-cookies");
+  <script>
+    (function () {
+      const banner = document.getElementById("cookie-banner");
+      const acceptBtn = document.getElementById("accept-cookies");
+      const rejectBtn = document.getElementById("reject-cookies");
+      const consent = localStorage.getItem("cookieConsent");
 
-  if (!localStorage.getItem("cookieConsent")) {
-    banner.style.display = "flex";
-  }
+      if (!consent) banner.style.display = "flex";
 
-  acceptBtn.addEventListener("click", () => {
-    localStorage.setItem("cookieConsent", "accepted");
-    banner.style.display = "none";
-  });
+      acceptBtn.addEventListener("click", () => {
+        window.__cookie && window.__cookie.accept();
+        banner.style.display = "none";
+      });
 
-  rejectBtn.addEventListener("click", () => {
-    localStorage.setItem("cookieConsent", "rejected");
-    banner.style.display = "none";
-  });
-</script>
+      rejectBtn.addEventListener("click", () => {
+        window.__cookie && window.__cookie.reject();
+        banner.style.display = "none";
+      });
+    })();
+  </script>
 </body>
 </html>
