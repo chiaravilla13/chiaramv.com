@@ -396,3 +396,22 @@ h3{ font-size: var(--h3); color: var(--c-blue); }
     transform: none !important;
   }
 }
+
+/* Chi sono – foto profilo elegante */
+
+.profile-photo{
+  width: 100%;
+  max-width: 420px;   /* limita la larghezza (niente gigante) */
+  height: auto;
+  display: block;
+  margin: 0 auto;     /* centra se serve */
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Su mobile leggermente più piccola */
+@media (max-width: 880px){
+  .profile-photo{
+    max-width: 320px;
+  }
+}
