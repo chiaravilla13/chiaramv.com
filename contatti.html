@@ -1,40 +1,67 @@
 <!doctype html>
 <html lang="it">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWNWNVQNZ7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JWNWNVQNZ7');
-</script>
-  <meta name="robots" content="noindex, nofollow" />
-  
+   <meta name="robots" content="noindex, nofollow" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Contatti | Chiara M. Villa — Brand & Communication Strategist</title>
-  <meta name="description" content="Contatta Chiara M. Villa per progetti di brand strategy, identità di brand e strategia di comunicazione. Email e link LinkedIn e Instagram." />
+  <title>Contatti | Chiara M. Villa — Brand &amp; Communication Strategist</title>
+  <meta name="description" content="Contatta Chiara M. Villa per progetti di brand strategy, identità di brand e strategia di comunicazione. Email e link a LinkedIn e Instagram." />
 
-  <link rel="canonical" href="https://chiaramvilla.com/contatti.html" />
+  <link rel="canonical" href="https://chiaramv.com/contatti.html" />
 
+  <!-- Open Graph -->
   <meta property="og:title" content="Contatti | Chiara M. Villa" />
   <meta property="og:description" content="Scrivimi per progetti di brand strategy, brandbook e comunicazione strategica." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://chiaramvilla.com/contatti.html" />
-  <meta property="og:image" content="https://chiaramvilla.com/assets/img/og-image.jpg" />
+  <meta property="og:url" content="https://chiaramv.com/contatti.html" />
+  <meta property="og:image" content="https://chiaramv.com/assets/img/og-image.webp" />
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
-<link rel="icon" href="/assets/img/favicon.ico">
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
 
-<!-- Apple Touch Icon (iOS) -->
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/style.css" />
   <script defer src="/js/main.js"></script>
+
+  <!-- Consent + Analytics loader (GA carica solo dopo Accetta) -->
+  <script>
+    (function () {
+      const CONSENT_KEY = "cookieConsent";
+      const GA_ID = "G-JWNWNVQNZ7";
+
+      function loadGA() {
+        if (window.__gaLoaded) return;
+        window.__gaLoaded = true;
+
+        const s1 = document.createElement("script");
+        s1.async = true;
+        s1.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+        document.head.appendChild(s1);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag("js", new Date());
+        gtag("config", GA_ID, { anonymize_ip: true });
+      }
+
+      const consent = localStorage.getItem(CONSENT_KEY);
+      if (consent === "accepted") loadGA();
+
+      window.__cookie = {
+        accept: function () {
+          localStorage.setItem(CONSENT_KEY, "accepted");
+          loadGA();
+        },
+        reject: function () {
+          localStorage.setItem(CONSENT_KEY, "rejected");
+        }
+      };
+    })();
+  </script>
 </head>
 
 <body>
@@ -49,11 +76,12 @@
           <span>B&amp;C Strategist</span>
         </span>
       </a>
+
       <nav class="nav" aria-label="Navigazione principale">
         <a href="/chi-sono.html">Chi sono</a>
         <a href="/servizi.html">Servizi</a>
         <a href="/metodo.html">Metodo</a>
-        <a class="btn btn-primary" href="/contatti.html">Contattami</a>
+        <a class="btn btn-primary" href="/contatti.html" aria-current="page">Contattami</a>
       </nav>
     </div>
   </header>
@@ -70,12 +98,12 @@
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:ciao@chiaramvilla.com">Scrivimi via email</a>
+            <a class="btn btn-primary" href="mailto:chiara@chiaramv.com">Scrivimi via email</a>
             <a class="btn" href="/servizi.html">Vedi i servizi</a>
           </div>
 
           <p class="muted" style="margin-top:1rem;">
-            Email: <a href="mailto:ciao@chiaramvilla.com">ciao@chiaramvilla.com</a>
+            Email: <a href="mailto:chiara@chiaramv.com">chiara@chiaramv.com</a>
           </p>
         </div>
 
@@ -84,12 +112,15 @@
           <p class="muted" style="margin-top:0;">Puoi trovarmi anche qui:</p>
 
           <div class="social" style="margin-top:.75rem; flex-wrap:wrap;">
-            <a href="https://www.linkedin.com/in/TUO-PROFILO" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/img/logo-linkedin.svg" alt="Logo LinkedIn" />
+            <!-- Sostituisci l'href con il tuo link reale LinkedIn -->
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/icons/linkedin.png" alt="" aria-hidden="true" />
               <span>LinkedIn</span>
             </a>
-            <a href="https://www.instagram.com/TUO-PROFILO" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/img/logo-instagram.svg" alt="Logo Instagram" />
+
+            <!-- Sostituisci l'href con il tuo link reale Instagram -->
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/icons/instagram.png" alt="" aria-hidden="true" />
               <span>Instagram</span>
             </a>
           </div>
@@ -111,40 +142,45 @@
         <a href="/contatti.html">Contatti</a>
       </nav>
     </div>
-       <div class="container">
-        <p class="credits muted" style="margin-top:.75rem; font-size:.85rem;">
-  Icone di Freepik e Fathema Khanom da Flaticon
-</p>
+
+    <div class="container">
+      <p class="credits muted" style="margin-top:.75rem; font-size:.85rem;">
+        Icone di Freepik e Fathema Khanom da Flaticon
+      </p>
+    </div>
   </footer>
+
+  <!-- Cookie banner -->
   <div id="cookie-banner" class="cookie-banner">
-  <p>
-    Questo sito utilizza cookie tecnici e cookie di analisi per migliorare l’esperienza utente.
-    <a href="cookie.html">Scopri di più</a>
-  </p>
-  <div class="cookie-actions">
-    <button id="accept-cookies">Accetta</button>
-    <button id="reject-cookies">Rifiuta</button>
+    <p>
+      Questo sito utilizza cookie tecnici e cookie di analisi per migliorare l’esperienza utente.
+      <a href="/cookie.html">Scopri di più</a>
+    </p>
+    <div class="cookie-actions">
+      <button id="accept-cookies" type="button">Accetta</button>
+      <button id="reject-cookies" type="button">Rifiuta</button>
+    </div>
   </div>
-</div>
 
-<script>
-  const banner = document.getElementById("cookie-banner");
-  const acceptBtn = document.getElementById("accept-cookies");
-  const rejectBtn = document.getElementById("reject-cookies");
+  <script>
+    (function () {
+      const banner = document.getElementById("cookie-banner");
+      const acceptBtn = document.getElementById("accept-cookies");
+      const rejectBtn = document.getElementById("reject-cookies");
+      const consent = localStorage.getItem("cookieConsent");
 
-  if (!localStorage.getItem("cookieConsent")) {
-    banner.style.display = "flex";
-  }
+      if (!consent) banner.style.display = "flex";
 
-  acceptBtn.addEventListener("click", () => {
-    localStorage.setItem("cookieConsent", "accepted");
-    banner.style.display = "none";
-  });
+      acceptBtn.addEventListener("click", () => {
+        window.__cookie && window.__cookie.accept();
+        banner.style.display = "none";
+      });
 
-  rejectBtn.addEventListener("click", () => {
-    localStorage.setItem("cookieConsent", "rejected");
-    banner.style.display = "none";
-  });
-</script>
+      rejectBtn.addEventListener("click", () => {
+        window.__cookie && window.__cookie.reject();
+        banner.style.display = "none";
+      });
+    })();
+  </script>
 </body>
 </html>
