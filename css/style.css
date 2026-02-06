@@ -12,32 +12,33 @@
 ========================= */
 
 /* Fonts (self-host) */
+/* Fonts (self-host) */
 @font-face {
   font-family: "DM Sans";
-  src: url("../assets/fonts/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+  src: url("../assets/fonts/dm-sans-variable.ttf") format("truetype");
   font-display: swap;
-  font-weight: 100 1000;
+  font-weight: 100 900;
   font-style: normal;
 }
 @font-face {
   font-family: "DM Sans";
-  src: url("../assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  src: url("../assets/fonts/dm-sans-italic-variable.ttf") format("truetype");
   font-display: swap;
-  font-weight: 100 1000;
+  font-weight: 100 900;
   font-style: italic;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  src: url("../assets/fonts/inter-variable.ttf") format("truetype");
   font-display: swap;
-  font-weight: 100 1000;
+  font-weight: 100 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../assets/fonts/Inter-Italic-VariableFont_slnt,wght.ttf") format("truetype");
+  src: url("../assets/fonts/inter-italic-variable.ttf") format("truetype");
   font-display: swap;
-  font-weight: 100 1000;
+  font-weight: 100 900;
   font-style: italic;
 }
 
