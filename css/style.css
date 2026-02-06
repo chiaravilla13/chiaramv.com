@@ -415,13 +415,9 @@ h3{ font-size: var(--h3); color: var(--c-blue); }
   }
 }
 
-header .brand-logo{
-  width: 56px;
-}
-  height: auto;
-}
-.brand{
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.site-header .brand-logo{
+  width: 48px !important;
+  max-width: 48px !important;
+  height: auto !important;
+  object-fit: contain;
 }
