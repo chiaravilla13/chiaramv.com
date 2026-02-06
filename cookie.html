@@ -1,68 +1,28 @@
 <!doctype html>
 <html lang="it">
 <head>
-   <meta name="robots" content="noindex, nofollow" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
 
-  <title>Cookie Policy | Chiara Maria Villa</title>
-  <meta name="description" content="Cookie Policy del sito di Chiara Maria Villa: informazioni sui cookie tecnici e sui cookie di analisi (Google Analytics) e gestione del consenso." />
+  <title>Cookie Policy | Chiara M. Villa</title>
+  <meta name="description" content="Cookie Policy del sito di Chiara M. Villa: cookie tecnici e cookie di analisi (Google Analytics) e gestione del consenso." />
 
   <link rel="canonical" href="https://chiaramv.com/cookie.html" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Cookie Policy | Chiara Maria Villa" />
+  <meta property="og:title" content="Cookie Policy | Chiara M. Villa" />
   <meta property="og:description" content="Informazioni sui cookie tecnici e sui cookie di analisi e su come gestire il consenso." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://chiaramv.com/cookie.html" />
-  <meta property="og:image" content="https://chiaramv.com/assets/img/og-image.webp" />
+  <meta property="og:image" content="https://chiaravilla13.github.io/chiaramv.com/assets/img/og-image.webp" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="/assets/icons/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" href="assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
 
-<link rel="stylesheet" href="css/style.css">
-<script src="js/main.js"></script>
-<img src="assets/img/chiara.jpg">
-
-  <!-- Consent + Analytics loader (GA carica solo dopo Accetta) -->
-  <script>
-    (function () {
-      const CONSENT_KEY = "cookieConsent";
-      const GA_ID = "G-JWNWNVQNZ7";
-
-      function loadGA() {
-        if (window.__gaLoaded) return;
-        window.__gaLoaded = true;
-
-        const s1 = document.createElement("script");
-        s1.async = true;
-        s1.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
-        document.head.appendChild(s1);
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        window.gtag = gtag;
-        gtag("js", new Date());
-        gtag("config", GA_ID, { anonymize_ip: true });
-      }
-
-      const consent = localStorage.getItem(CONSENT_KEY);
-      if (consent === "accepted") loadGA();
-
-      window.__cookie = {
-        accept: function () {
-          localStorage.setItem(CONSENT_KEY, "accepted");
-          loadGA();
-        },
-        reject: function () {
-          localStorage.setItem(CONSENT_KEY, "rejected");
-        }
-      };
-    })();
-  </script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
 </head>
 
 <body>
@@ -70,66 +30,36 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/index.html" aria-label="Home - Chiara M. Villa">
+      <a class="brand" href="index.html" aria-label="Home - Chiara M. Villa">
         <span class="brand-mark" aria-hidden="true"></span>
         <span class="brand-text">
           <strong>Chiara M. Villa</strong>
           <span>B&amp;C Strategist</span>
         </span>
       </a>
-
       <nav class="nav" aria-label="Navigazione principale">
-        <a href="/chi-sono.html">Chi sono</a>
-        <a href="/servizi.html">Servizi</a>
-        <a href="/metodo.html">Metodo</a>
-        <a class="btn btn-primary" href="/contatti.html">Contattami</a>
+        <a href="chi-sono.html">Chi sono</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="metodo.html">Metodo</a>
+        <a href="risultati.html">Risultati</a>
+        <a class="btn btn-primary" href="contatti.html">Contattami</a>
       </nav>
     </div>
   </header>
 
   <main id="contenuto" class="container section">
-    <h1>Cookie Policy</h1>
-
-    <p>
-      Questa Cookie Policy descrive l’utilizzo dei cookie sul sito <strong>chiaramv.com</strong>.
-      Per maggiori informazioni sul trattamento dei dati personali puoi consultare la
-      <a href="/privacy.html">Privacy Policy</a>.
-    </p>
-
-    <h2>Cosa sono i cookie</h2>
-    <p>
-      I cookie sono piccoli file di testo che i siti web possono salvare sul dispositivo dell’utente per migliorare
-      l’esperienza di navigazione e fornire funzionalità o statistiche di utilizzo.
-    </p>
-
-    <h2>Cookie tecnici</h2>
-    <p>
-      Il sito utilizza cookie tecnici necessari al corretto funzionamento. Questi cookie non richiedono il consenso dell’utente.
-    </p>
-
-    <h2>Cookie di analisi (terze parti)</h2>
-    <p>
-      Previo consenso, il sito utilizza <strong>Google Analytics (GA4)</strong>, un servizio fornito da Google,
-      per raccogliere informazioni statistiche sull’utilizzo del sito.
-    </p>
-
-    <h2>Gestione del consenso</h2>
-    <p>
-      Alla prima visita viene mostrato un banner che consente di <strong>accettare o rifiutare</strong> i cookie di analisi.
-      In assenza di consenso, i cookie di analisi non vengono attivati.
-    </p>
+    <!-- CONTENUTO COOKIE: incolla qui il testo che hai già -->
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <p class="muted">© <span data-year></span> Chiara M. Villa</p>
       <nav class="footer-links" aria-label="Link utili">
-        <a href="/privacy.html">Privacy</a>
-        <a href="/cookie.html" aria-current="page">Cookie</a>
-        <a href="/contatti.html">Contatti</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="cookie.html" aria-current="page">Cookie</a>
+        <a href="contatti.html">Contatti</a>
       </nav>
     </div>
-
     <div class="container">
       <p class="credits muted" style="margin-top:.75rem; font-size:.85rem;">
         Icone di Freepik e Fathema Khanom da Flaticon
@@ -137,37 +67,14 @@
     </div>
   </footer>
 
-  <!-- Cookie banner -->
   <div id="cookie-banner" class="cookie-banner">
-    <p>
-      Questo sito utilizza cookie tecnici e cookie di analisi per migliorare l’esperienza utente.
-      <a href="/cookie.html">Scopri di più</a>
+    <p>Questo sito utilizza cookie tecnici e cookie di analisi per migliorare l’esperienza utente.
+      <a href="cookie.html">Scopri di più</a>
     </p>
     <div class="cookie-actions">
       <button id="accept-cookies" type="button">Accetta</button>
       <button id="reject-cookies" type="button">Rifiuta</button>
     </div>
   </div>
-
-  <script>
-    (function () {
-      const banner = document.getElementById("cookie-banner");
-      const acceptBtn = document.getElementById("accept-cookies");
-      const rejectBtn = document.getElementById("reject-cookies");
-      const consent = localStorage.getItem("cookieConsent");
-
-      if (!consent) banner.style.display = "flex";
-
-      acceptBtn.addEventListener("click", () => {
-        window.__cookie && window.__cookie.accept();
-        banner.style.display = "none";
-      });
-
-      rejectBtn.addEventListener("click", () => {
-        window.__cookie && window.__cookie.reject();
-        banner.style.display = "none";
-      });
-    })();
-  </script>
 </body>
 </html>
