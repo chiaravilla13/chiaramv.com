@@ -424,3 +424,28 @@ h3{ font-size: var(--h3); color: var(--c-blue); }
   max-height: none !important;
   max-width: none !important;
 }
+
+/* 1) Evita che il blocco brand venga "compresso" */
+.header-inner{
+  flex-wrap: nowrap;            /* tieni tutto su una riga (desktop) */
+}
+
+.brand{
+  flex: 0 0 auto;               /* non si restringe */
+  min-width: 0;
+}
+
+/* 2) Logo davvero più grande (sovrascrive il width:56px) */
+.site-header .brand-logo{
+  height: 90px;
+  width: auto;
+  max-height: none;
+}
+
+/* 3) La nav può andare a capo invece di rubare spazio al logo */
+.nav{
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  min-width: 0;
+  flex-wrap: wrap;              /* se non c’è spazio, va a capo */
+}
