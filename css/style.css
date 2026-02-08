@@ -118,10 +118,7 @@ a:hover{ text-decoration: underline; text-underline-offset: 4px; }
   width: auto;
   display: block;
 }
-header .brand-logo{
-  width: 56px;
-  height: auto;
-}
+
 .brand-text{
   display:flex; flex-direction: column; line-height: 1.1;
 }
