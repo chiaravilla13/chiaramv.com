@@ -109,8 +109,14 @@ a:hover{ text-decoration: underline; text-underline-offset: 4px; }
   gap: 1rem;
 }
 .brand{
-  display:flex; align-items:center; gap:.75rem;
-  font-family: "DM Sans", system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo{
+  height: clamp(44px, 4vw, 72px); /* cresce in modo responsivo */
+  width: auto;
+  display: block;
 }
 header .brand-logo{
   width: 56px;
@@ -415,9 +421,3 @@ h3{ font-size: var(--h3); color: var(--c-blue); }
   }
 }
 
-.site-header .brand-logo{
-  width: 48px !important;
-  max-width: 48px !important;
-  height: auto !important;
-  object-fit: contain;
-}
