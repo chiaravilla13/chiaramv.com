@@ -417,4 +417,10 @@ h3{ font-size: var(--h3); color: var(--c-blue); }
     max-width: 320px;
   }
 }
-
+/* FORCE logo size in header */
+.site-header .brand-logo{
+  height: 90px !important;
+  width: auto !important;
+  max-height: none !important;
+  max-width: none !important;
+}
