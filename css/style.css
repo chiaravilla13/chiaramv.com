@@ -494,3 +494,10 @@ h3{ font-size: var(--h3); color: var(--c-blue); }
   background: linear-gradient(90deg, var(--c-blue), var(--c-violet), var(--c-pink));
   opacity: .45;
 }
+@media (max-width: 880px){
+  .hero-signature{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
