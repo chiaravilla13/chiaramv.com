@@ -592,3 +592,79 @@ h3{ font-size: var(--h3); color: var(--c-blue); }
     margin-right: auto;
   }
 }
+
+/* =========================
+   Section images (Metodo / Servizi)
+   - consistent radius + shadow
+   - subtle brand overlay
+========================= */
+
+.section-media{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.section-media.reverse{
+  grid-template-columns: 1fr 1fr;
+}
+.section-media.reverse .media{
+  order: 2;
+}
+.section-media.reverse .content{
+  order: 1;
+}
+
+.media{
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(43,43,43,0.06);
+  background: var(--c-white);
+}
+
+.media img{
+  width: 100%;
+  height: auto;
+  display: block;
+  transform: scale(1.01);
+}
+
+/* Subtle brand overlay (super leggero) */
+.media::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--c-blue), var(--c-violet), var(--c-pink));
+  opacity: 0.08;            /* regola 0.05–0.12 se vuoi più/meno brand */
+  pointer-events: none;
+}
+
+/* Optional: captions */
+.media-caption{
+  font-size: var(--small);
+  color: rgba(43,43,43,0.65);
+  margin-top: .6rem;
+}
+
+/* Smaller “card-like” image for services grid */
+.media-card{
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(43,43,43,0.06);
+  background: var(--c-white);
+}
+
+/* Responsive */
+@media (max-width: 880px){
+  .section-media{
+    grid-template-columns: 1fr;
+  }
+  .section-media.reverse .media,
+  .section-media.reverse .content{
+    order: initial;
+  }
+}
