@@ -484,15 +484,69 @@ h3{ font-size: var(--h3); color: var(--c-blue); }
   color: transparent;
   font-style: italic;
 }
+/* Hero signature line — LEFT aligned + underline like your reference */
+.hero-signature{
+  margin: 0 0 1.25rem;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: clamp(1.15rem, 1.6vw, 1.35rem);
+  font-weight: 750;
+  letter-spacing: -0.2px;
+  line-height: 1.25;
+  color: rgba(43,43,43,0.85);
+  max-width: 60ch;
+
+  /* <-- richiesto: a sinistra */
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+
+  position: relative;
+}
+
+/* parola in gradiente (come già avevi) */
+.hero-signature span{
+  background: linear-gradient(90deg, var(--c-blue), var(--c-violet), var(--c-pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-style: italic;
+}
+
+/* linea sottile */
 .hero-signature::after{
   content: "";
   display: block;
-  width: 64px;
+  width: 180px;              /* regola a gusto */
   height: 2px;
-  margin: .65rem auto 0;
+  margin-top: .65rem;
   border-radius: 999px;
+
+  /* stesso identico gradiente di span */
   background: linear-gradient(90deg, var(--c-blue), var(--c-violet), var(--c-pink));
-  opacity: .45;
+  opacity: 1;
+}
+
+/* “finale più pieno” come nella tua immagine */
+.hero-signature::before{
+  content: "";
+  position: absolute;
+  left: calc(180px - 42px);  /* (width linea) - (width finale) */
+  bottom: -10px;             /* allinea al ::after: aggiusta di 1-2px se serve */
+  width: 42px;
+  height: 4px;
+  border-radius: 999px;
+
+  background: linear-gradient(90deg, var(--c-blue), var(--c-violet), var(--c-pink));
+}
+
+/* mobile: resta a sinistra (se invece la vuoi centrata solo su mobile dimmelo) */
+@media (max-width: 880px){
+  .hero-signature{
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
 }
 @media (max-width: 880px){
   .hero-signature{
