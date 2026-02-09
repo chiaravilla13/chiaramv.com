@@ -668,3 +668,12 @@ h3{ font-size: var(--h3); color: var(--c-blue); }
     order: initial;
   }
 }
+
+/* Fallback: se JS non attiva reveal, mostra comunque i contenuti */
+.reveal{
+  opacity: 1;
+  transform: none;
+}
+@supports (animation-timeline: view()){
+  /* niente: lasciamo il fallback */
+}
