@@ -449,3 +449,23 @@ h3{ font-size: var(--h3); color: var(--c-blue); }
   min-width: 0;
   flex-wrap: wrap;              /* se non c’è spazio, va a capo */
 }
+
+/* Hero signature line */
+.hero-signature{
+  margin: 0 0 1.1rem; /* distanza dal kicker */
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: clamp(1.02rem, 1.2vw, 1.12rem);
+  font-weight: 650;
+  letter-spacing: -0.15px;
+  line-height: 1.35;
+  color: rgba(43,43,43,0.78);
+  max-width: 60ch;
+}
+
+.hero-signature span{
+  color: var(--c-blue);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(31,63,139,0.22);
+}
