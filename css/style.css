@@ -462,10 +462,35 @@ h3{ font-size: var(--h3); color: var(--c-blue); }
   max-width: 60ch;
 }
 
+.hero-signature{
+  margin: 0 0 1.25rem;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: clamp(1.15rem, 1.6vw, 1.35rem);
+  font-weight: 750;
+  letter-spacing: -0.2px;
+  line-height: 1.25;
+  color: rgba(43,43,43,0.85);
+  max-width: 60ch;
+
+  text-align: center;     /* centra testo */
+  margin-left: auto;      /* centra il blocco */
+  margin-right: auto;
+}
+
 .hero-signature span{
-  color: var(--c-blue);
-  text-decoration: underline;
-  text-underline-offset: 6px;
-  text-decoration-thickness: 2px;
-  text-decoration-color: rgba(31,63,139,0.22);
+  background: linear-gradient(90deg, var(--c-blue), var(--c-violet), var(--c-pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-style: italic;
+}
+.hero-signature::after{
+  content: "";
+  display: block;
+  width: 64px;
+  height: 2px;
+  margin: .65rem auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--c-blue), var(--c-violet), var(--c-pink));
+  opacity: .45;
 }
