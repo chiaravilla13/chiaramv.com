@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://chiaramv.com/</loc>
-  </url>
-  <url>
-    <loc>https://chiaramv.com/chi-sono.html</loc>
-  </url>
-  <url>
-    <loc>https://chiaramv.com/servizi.html</loc>
-  </url>
-  <url>
-    <loc>https://chiaramv.com/metodo.html</loc>
-  </url>
-  <url>
-    <loc>https://chiaramv.com/risultati.html</loc>
-  </url>
-  <url>
-    <loc>https://chiaramv.com/contatti.html</loc>
-  </url>
-  <url>
-    <loc>https://chiaramv.com/privacy.html</loc>
-  </url>
-  <url>
-    <loc>https://chiaramv.com/cookie.html</loc>
-  </url>
+  <url><loc>https://chiaramv.com/</loc><lastmod>2026-02-12</lastmod></url>
+  <url><loc>https://chiaramv.com/chi-sono.html</loc><lastmod>2026-02-12</lastmod></url>
+  <url><loc>https://chiaramv.com/servizi.html</loc><lastmod>2026-02-12</lastmod></url>
+  <url><loc>https://chiaramv.com/metodo.html</loc><lastmod>2026-02-12</lastmod></url>
+  <url><loc>https://chiaramv.com/risultati.html</loc><lastmod>2026-02-12</lastmod></url>
+  <url><loc>https://chiaramv.com/contatti.html</loc><lastmod>2026-02-12</lastmod></url>
+  <url><loc>https://chiaramv.com/privacy.html</loc><lastmod>2026-02-12</lastmod></url>
+  <url><loc>https://chiaramv.com/cookie.html</loc><lastmod>2026-02-12</lastmod></url>
 </urlset>
