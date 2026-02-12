@@ -16,114 +16,193 @@
   <meta property="og:url" content="https://chiaramv.com/contatti.html" />
   <meta property="og:image" content="https://chiaravilla13.github.io/chiaramv.com/assets/img/og-image.webp" />
 
-<!-- Favicon -->
-<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="assets/icons/favicon-96x96.png" type="image/png">
-<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <!-- Favicon -->
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon-96x96.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="js/main.js"></script>
 </head>
 
 <body>
-<a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
 
-<header class="site-header">
-  <div class="container header-inner">
- <a class="brand" href="index.html">
-  <img 
-    src="assets/img/logo.webp" 
-    alt="Logo Chiara M. Villa" 
-    class="brand-logo"
-  >
-    
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Torna alla Home">
+        <img
+          src="assets/img/logo.webp"
+          alt="Logo Chiara M. Villa"
+          class="brand-logo"
+        >
+      </a>
 
-    <nav class="nav">
-      <a href="chi-sono.html">Chi sono</a>
-      <a href="servizi.html">Servizi</a>
-      <a href="metodo.html">Metodo</a>
-      <a href="risultati.html">Risultati</a>
-      <a href="contatti.html" aria-current="page" class="btn btn-primary">Contattami</a>
-    </nav>
-  </div>
-</header>
+      <nav class="nav" aria-label="Navigazione principale">
+        <a href="chi-sono.html">Chi sono</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="metodo.html">Metodo</a>
+        <a href="risultati.html">Risultati</a>
+        <a href="contatti.html" aria-current="page" class="btn btn-primary">Contattami</a>
+      </nav>
+    </div>
+  </header>
 
-<main id="contenuto">
+  <main id="contenuto">
 
-<section class="hero">
-  <div class="container hero-grid">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
 
-    <div>
-      <p class="kicker">Contatti</p>
-      <h1>Parliamo del tuo brand</h1>
-      <p class="lead">
-        Se vuoi costruire un brand strategico, coerente e riconoscibile, scrivimi.
-        Raccontami in breve il progetto e l’obiettivo: ti rispondo con i prossimi step.
-      </p>
+        <div>
+          <p class="kicker">Contatti</p>
+          <h1>Parliamo del tuo brand.</h1>
+          <p class="lead" style="max-width:90ch;">
+            Se vuoi costruire (o riposizionare) un brand strategico, coerente e riconoscibile,
+            scrivimi: raccontami contesto e obiettivi e ti rispondo con i prossimi step.
+          </p>
 
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="mailto:chiara@chiaramv.com">Scrivimi via email</a>
-        <a class="btn" href="servizi.html">Vedi i servizi</a>
+          <div class="hero-actions" style="margin-top:1rem;">
+            <a class="btn btn-primary" href="mailto:chiara@chiaramv.com?subject=Richiesta%20prima%20analisi%20-%20chiaramv.com">
+              Richiedi una prima analisi
+            </a>
+            <a class="btn" href="servizi.html">Vedi i servizi</a>
+          </div>
+
+          <p class="muted" style="margin-top:1rem;">
+            Email: <a href="mailto:chiara@chiaramv.com">chiara@chiaramv.com</a>
+          </p>
+
+          <!-- Suggerimento pratico: aiuta tantissimo la qualità dei contatti -->
+          <div class="card" style="margin-top:1.25rem;">
+            <h2 style="margin-top:0;">Cosa scrivermi (in 5 righe)</h2>
+            <ul class="list-check" style="margin-bottom:0;">
+              <li>Chi sei / che progetto è</li>
+              <li>Obiettivo principale (es. riposizionamento, lancio, coerenza…)</li>
+              <li>Situazione attuale (cosa non funziona oggi)</li>
+              <li>Tempistiche indicative (se ci sono)</li>
+              <li>Link utili (sito/social) se già esistono</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="hero-card" aria-label="Info contatto e social">
+          <h2 style="margin-bottom:.25rem;">Come funziona</h2>
+          <p class="muted" style="margin-top:0;">
+            Un primo scambio serve per capire contesto, obiettivi e da dove conviene partire.
+          </p>
+
+          <div class="steps" style="margin-top:1rem;">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div>
+                <h3>Messaggio</h3>
+                <p>Mi racconti progetto e obiettivo.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div>
+                <h3>Prima analisi</h3>
+                <p>Ti dico se e come posso aiutarti (e quale servizio è più adatto).</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div>
+                <h3>Prossimi step</h3>
+                <p>Definiamo percorso, deliverable e priorità.</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 style="margin-top:1.25rem; margin-bottom:.25rem;">Social</h2>
+          <p class="muted" style="margin-top:0;">Puoi trovarmi anche qui:</p>
+
+          <div class="social" style="margin-top:.75rem; flex-wrap:wrap;">
+            <!-- Inserisci qui il tuo URL LinkedIn reale -->
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+              <img src="assets/icons/linkedin.png" alt="" aria-hidden="true" />
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <p class="muted" style="margin-top:1rem;">
+            <a href="privacy.html">Privacy</a> ·
+            <a href="cookie.html">Cookie</a>
+          </p>
+        </aside>
+
       </div>
+    </section>
 
-      <p class="muted" style="margin-top:1rem;">
-        Email: <a href="mailto:chiara@chiaramv.com">chiara@chiaramv.com</a>
-      </p>
+    <!-- FILTRO (aumenta conversione e qualità lead) -->
+    <section class="section alt">
+      <div class="container">
+        <h2>È il progetto giusto?</h2>
+        <div class="grid-3" role="list" aria-label="Filtro progetto contatti">
+          <article class="card" role="listitem">
+            <h3>Perfetto se…</h3>
+            <ul style="margin:0; padding-left:1.1rem;">
+              <li>ti serve una direzione chiara prima di comunicare di più</li>
+              <li>vuoi posizionamento e messaggi più leggibili</li>
+              <li>cerchi coerenza tra identità, sito e social</li>
+            </ul>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Meno adatto se…</h3>
+            <ul style="margin:0; padding-left:1.1rem;">
+              <li>vuoi solo un output rapido senza lavoro strategico</li>
+              <li>cerchi soluzioni copia-incolla</li>
+              <li>non vuoi definire priorità e scelte</li>
+            </ul>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Primo passo</h3>
+            <p style="margin-top:0;">
+              Scrivimi due righe con obiettivo e contesto:
+              ti rispondo con la direzione consigliata e i prossimi step.
+            </p>
+            <p style="margin-bottom:0;">
+              <a href="mailto:chiara@chiaramv.com?subject=Richiesta%20prima%20analisi%20-%20chiaramv.com">Scrivi ora →</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span data-year></span> Chiara M. Villa</p>
+      <nav class="footer-links" aria-label="Link utili">
+        <a href="privacy.html">Privacy</a>
+        <a href="cookie.html">Cookie</a>
+        <a href="contatti.html">Contatti</a>
+      </nav>
     </div>
 
-    <aside class="hero-card">
-      <h2 style="margin-bottom:.25rem;">Social</h2>
-      <p class="muted" style="margin-top:0;">Puoi trovarmi anche qui:</p>
-
-      <div class="social" style="margin-top:.75rem; flex-wrap:wrap;">
-
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
-          <img src="assets/icons/linkedin.png" alt="LinkedIn" />
-          <span>LinkedIn</span>
-        </a>
-
-       
-
-      </div>
-
-      <p class="muted" style="margin-top:1rem;">
-        <a href="privacy.html">Privacy</a> ·
-        <a href="cookie.html">Cookie</a>
+    <div class="container">
+      <p class="credits muted" style="margin-top:.75rem;font-size:.85rem;">
+        Icone di Freepik e Fathema Khanom da Flaticon
       </p>
-    </aside>
+    </div>
+  </footer>
 
-  </div>
-</section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p class="muted">© <span data-year></span> Chiara M. Villa</p>
-    <nav class="footer-links">
-      <a href="privacy.html">Privacy</a>
-      <a href="cookie.html">Cookie</a>
-      <a href="contatti.html">Contatti</a>
-    </nav>
-  </div>
-
-  <div class="container">
-    <p class="credits muted" style="margin-top:.75rem;font-size:.85rem;">
-      Icone di Freepik e Fathema Khanom da Flaticon
+  <div id="cookie-banner" class="cookie-banner">
+    <p>
+      Questo sito utilizza cookie tecnici e cookie di analisi.
+      <a href="cookie.html">Scopri di più</a>
     </p>
+    <div class="cookie-actions">
+      <button id="accept-cookies" type="button">Accetta</button>
+      <button id="reject-cookies" type="button">Rifiuta</button>
+    </div>
   </div>
-</footer>
-
-<div id="cookie-banner" class="cookie-banner">
-  <p>
-    Questo sito utilizza cookie tecnici e cookie di analisi.
-    <a href="cookie.html">Scopri di più</a>
-  </p>
-  <div class="cookie-actions">
-    <button id="accept-cookies">Accetta</button>
-    <button id="reject-cookies">Rifiuta</button>
-  </div>
-</div>
 
 </body>
 </html>
