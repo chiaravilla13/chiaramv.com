@@ -16,11 +16,11 @@
   <meta property="og:url" content="https://chiaramv.com/" />
   <meta property="og:image" content="https://chiaravilla13.github.io/chiaramv.com/assets/img/og-image.webp" />
 
-<!-- Favicon -->
-<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="assets/icons/favicon-96x96.png" type="image/png">
-<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon-96x96.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="js/main.js"></script>
 </head>
@@ -30,13 +30,13 @@
 
   <header class="site-header">
     <div class="container header-inner">
-<a class="brand" href="index.html" aria-label="Chiara M. Villa">
-  <img 
-    src="assets/img/logo.webp" 
-    alt="Chiara M. Villa" 
-    class="brand-logo"
-  >
-</a>
+      <a class="brand" href="index.html" aria-label="Chiara M. Villa">
+        <img
+          src="assets/img/logo.webp"
+          alt="Chiara M. Villa"
+          class="brand-logo"
+        >
+      </a>
 
       <nav class="nav" aria-label="Navigazione principale">
         <a href="chi-sono.html">Chi sono</a>
@@ -49,29 +49,37 @@
   </header>
 
   <main id="contenuto">
+    <!-- HERO (più chiara e “magnetica”) -->
     <section class="hero">
       <div class="container hero-grid">
         <div>
-
           <p class="hero-signature">Strategia che orienta. <span>Creatività che distingue.</span></p>
-          
+
           <p class="kicker">Brand Strategy • Identity • Communication</p>
-          <h1>Brand &amp; Communication Strategist</h1>
+
+          <!-- Cambiato H1: promessa più forte, meno “titolo di ruolo” -->
+          <h1>Costruisco brand solidi, prima nella testa. Poi nel mercato.</h1>
+
+          <!-- Lead più concreta: per chi / cosa fai / risultato -->
           <p class="lead">
-            Costruisco brand che sanno chi sono, a chi parlano e perché dovrebbero essere scelti: analisi del mercato, posizionamento,
-            identità di brand e comunicazione coerente per distinguerti con chiarezza.
+            Aiuto professionisti e piccole aziende a trasformare competenze e visione in un sistema di brand:
+            posizionamento chiaro, identità coerente e comunicazione riconoscibile.
           </p>
+
+          <!-- CTA più guidate -->
           <div class="hero-actions">
-            <a class="btn btn-primary" href="contatti.html">Lavora con me</a>
-            <a class="btn" href="metodo.html">Scopri il mio metodo</a>
+            <a class="btn btn-primary" href="contatti.html">Richiedi una prima analisi</a>
+            <a class="btn" href="metodo.html">Scopri il metodo</a>
           </div>
         </div>
 
+        <!-- Card laterale: più “proof of method” -->
         <aside class="hero-card" aria-label="In breve">
           <h2 style="margin-bottom:.25rem;">Approccio</h2>
           <p class="muted" style="margin-top:0;">
-            Strategia prima della creatività: capiamo il contesto, poi costruiamo identità e comunicazione.
+            Strategia prima dell’estetica: analizziamo contesto e obiettivi, poi costruiamo identità e messaggi.
           </p>
+
           <div class="hero-badges" aria-label="Aree principali">
             <span class="badge">Analisi mercato</span>
             <span class="badge">Posizionamento</span>
@@ -82,30 +90,50 @@
       </div>
     </section>
 
+    <!-- SEZIONE PROBLEMA / TENSIONE (nuova) -->
     <section class="section alt">
       <div class="container">
+        <h2>Il problema non è il talento. È la direzione.</h2>
+        <p class="lead" style="max-width:75ch;">
+          Molti brand hanno contenuti, idee e prodotti validi, ma non riescono a essere scelti perché
+          non sono leggibili: identità confusa, messaggi incoerenti, scelte estetiche scollegate dalla strategia.
+        </p>
+
+        <ul class="list-check" style="margin-top:1rem;">
+          <li>Comunicazione che cambia tono e stile ogni mese</li>
+          <li>Offerta poco differenziata rispetto ai competitor</li>
+          <li>Identità visiva “carina” ma non distintiva</li>
+          <li>Difficoltà a prendere decisioni (e a mantenerle nel tempo)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CHI SONO (più essenziale + ponte al valore) -->
+    <section class="section">
+      <div class="container">
         <h2>Chi sono</h2>
-        <p class="lead" style="max-width:70ch;">
-          Sono una Brand &amp; Communication Strategist. Aiuto brand e professionisti a definire
-          una direzione chiara e a trasformarla in identità e comunicazione coerente, riconoscibile e sostenibile nel tempo.
+        <p class="lead" style="max-width:75ch;">
+          Sono una Brand &amp; Communication Strategist. Porto struttura, chiarezza e metodo:
+          definisco il posizionamento e lo traduco in identità e comunicazione coerenti, sostenibili nel tempo.
         </p>
         <a class="btn" href="chi-sono.html">Leggi di più</a>
       </div>
     </section>
 
-    <section class="section">
+    <!-- SERVIZI (ok, piccoli ritocchi di copy per orientare) -->
+    <section class="section alt">
       <div class="container">
         <h2>Servizi</h2>
         <div class="grid-3" role="list">
           <article class="card" role="listitem">
             <h3>Brand Strategy</h3>
-            <p>Analisi di mercato, competitor e target per definire posizionamento e opportunità.</p>
+            <p>Analisi di mercato, competitor e target per definire direzione e opportunità di posizionamento.</p>
             <p><a href="servizi.html#brand-strategy">Scopri il servizio →</a></p>
           </article>
 
           <article class="card" role="listitem">
             <h3>Brand Identity &amp; Brandbook</h3>
-            <p>Valori, personalità e visual identity tradotti in linee guida chiare e complete.</p>
+            <p>Valori, personalità e visual identity tradotti in linee guida chiare, complete e utilizzabili.</p>
             <p><a href="servizi.html#brandbook">Scopri il servizio →</a></p>
           </article>
 
@@ -118,29 +146,90 @@
       </div>
     </section>
 
-    <section class="section alt">
+    <!-- METODO (più “visuale” anche senza grafica: step brevi) -->
+    <section class="section">
       <div class="container">
         <h2>Il mio metodo</h2>
         <p class="lead" style="max-width:75ch;">
-          Un percorso in 5 fasi: analisi → posizionamento → identità → brandbook → comunicazione.
-          Così ogni scelta è coerente, motivata e utile al business.
+          Un percorso in 5 fasi: ogni scelta è coerente, motivata e utile al business.
         </p>
-        <a class="btn" href="metodo.html">Vedi le 5 fasi</a>
+
+        <!-- Usando la tua classe list-check: è subito leggibile anche senza CSS nuovo -->
+        <ul class="list-check" style="margin-top:1rem;">
+          <li><strong>Analisi</strong> — contesto, competitor, target, obiettivi</li>
+          <li><strong>Posizionamento</strong> — proposta di valore, differenziazione, messaggi chiave</li>
+          <li><strong>Identità</strong> — personalità, principi visivi, coerenza</li>
+          <li><strong>Brandbook</strong> — regole e strumenti per usare il brand correttamente</li>
+          <li><strong>Comunicazione</strong> — tono di voce, contenuti, canali, piano d’azione</li>
+        </ul>
+
+        <a class="btn" href="metodo.html" style="margin-top:1rem;">Vedi le 5 fasi nel dettaglio</a>
       </div>
     </section>
 
+    <!-- RISULTATO (più concreto: deliverable/trasformazione) -->
+    <section class="section alt">
+      <div class="container">
+        <h2>Cosa ottieni</h2>
+        <ul class="list-check">
+          <li>Posizionamento chiaro e difendibile</li>
+          <li>Messaggi chiave e direzione comunicativa</li>
+          <li>Identità coerente e riconoscibile</li>
+          <li>Linee guida (brandbook) per crescere senza perdere coerenza</li>
+        </ul>
+
+        <div class="hero-actions" style="margin-top:1rem;">
+          <a class="btn btn-primary" href="contatti.html">Parliamo del tuo progetto</a>
+          <a class="btn" href="servizi.html">Vedi i servizi</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTRO (nuovo: alza percezione premium e riduce lead non in target) -->
     <section class="section">
       <div class="container">
-        <h2>Risultati</h2>
-        <ul class="list-check">
-          <li>Chiarezza su identità e direzione</li>
-          <li>Posizionamento distintivo rispetto ai competitor</li>
-          <li>Comunicazione coerente e riconoscibile</li>
-          <li>Linee guida pronte per crescere nel tempo</li>
-        </ul>
+        <h2>È il percorso giusto per te?</h2>
+        <div class="grid-3" role="list" aria-label="Filtro progetto">
+          <article class="card" role="listitem">
+            <h3>È per te se…</h3>
+            <ul style="margin:0; padding-left:1.1rem;">
+              <li>hai competenze solide ma il brand non le rappresenta</li>
+              <li>vuoi una direzione chiara prima di investire in comunicazione</li>
+              <li>cerchi coerenza e metodo, non “idee random”</li>
+            </ul>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Non è per te se…</h3>
+            <ul style="margin:0; padding-left:1.1rem;">
+              <li>vuoi solo un restyling veloce “perché sì”</li>
+              <li>cerchi soluzioni copia-incolla</li>
+              <li>non vuoi mettere mano a scelte strategiche</li>
+            </ul>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Primo passo</h3>
+            <p>
+              Se mi racconti contesto, obiettivi e criticità, posso dirti con chiarezza
+              se e come posso aiutarti.
+            </p>
+            <p><a href="contatti.html">Richiedi una prima analisi →</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHIUSURA / CTA (breve, forte) -->
+    <section class="section alt">
+      <div class="container">
+        <h2>Costruiamo la tua direzione</h2>
+        <p class="lead" style="max-width:75ch;">
+          Se vuoi un brand leggibile, coerente e riconoscibile, partiamo dalle fondamenta.
+        </p>
         <div class="hero-actions" style="margin-top:1rem;">
-          <a class="btn btn-primary" href="contatti.html">Parliamone</a>
-          <a class="btn" href="servizi.html">Vedi i servizi</a>
+          <a class="btn btn-primary" href="contatti.html">Richiedi una prima analisi</a>
+          <a class="btn" href="metodo.html">Scopri come lavoro</a>
         </div>
       </div>
     </section>
