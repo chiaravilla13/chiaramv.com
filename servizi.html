@@ -16,10 +16,10 @@
   <meta property="og:url" content="https://chiaramv.com/servizi.html" />
   <meta property="og:image" content="https://chiaravilla13.github.io/chiaramv.com/assets/img/og-image.webp" />
 
- <!-- Favicon -->
-<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="assets/icons/favicon-96x96.png" type="image/png">
-<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <!-- Favicon -->
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon-96x96.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="js/main.js"></script>
@@ -30,14 +30,13 @@
 
   <header class="site-header">
     <div class="container header-inner">
-<a class="brand" href="index.html">
-  <img 
-    src="assets/img/logo.webp" 
-    alt="Logo Chiara M. Villa" 
-    class="brand-logo"
-  >
-
-</a>
+      <a class="brand" href="index.html" aria-label="Torna alla Home">
+        <img
+          src="assets/img/logo.webp"
+          alt="Logo Chiara M. Villa"
+          class="brand-logo"
+        >
+      </a>
 
       <nav class="nav" aria-label="Navigazione principale">
         <a href="chi-sono.html">Chi sono</a>
@@ -51,195 +50,175 @@
 
   <main id="contenuto">
 
+    <!-- HERO -->
     <section class="hero">
       <div class="container">
         <p class="kicker">Servizi</p>
-        <h1>Strategia, identità, comunicazione</h1>
+        <h1>Strategia, identità, comunicazione.</h1>
         <p class="lead" style="max-width:85ch;">
-          Tre aree che lavorano insieme: brand strategy (direzione), brand identity &amp; brandbook (sistema),
-          strategia di comunicazione (messaggi e canali). Ogni progetto è su misura.
+          Tre aree che lavorano insieme: <strong>Brand Strategy</strong> (direzione),
+          <strong>Brand Identity &amp; Brandbook</strong> (sistema),
+          <strong>Strategia di comunicazione</strong> (messaggi e canali).
+          Ogni progetto è su misura, ma sempre guidato da metodo e decisioni chiare.
         </p>
+
+        <div class="hero-actions" style="margin-top:1rem;">
+          <a class="btn btn-primary" href="contatti.html">Richiedi una prima analisi</a>
+          <a class="btn" href="metodo.html">Scopri il metodo</a>
+        </div>
       </div>
     </section>
-    <section class="section alt" id="brand-strategy">
+
+    <!-- OVERVIEW CARDS (rapida scansione) -->
+    <section class="section alt">
       <div class="container">
-        <section class="section">
-  <div class="container">
-    <div class="section-media">
-      
-<section class="section">
-  <div class="container">
-    <div class="section-media">
-
-      <figure class="reveal is-visible">
-        <div class="media">
-          <img
-            src="assets/img/laptop-wireframe.png"
-            alt="Laptop con wireframe e struttura di pagina"
-            loading="lazy"
-          />
-        </div>
-      </figure>
-
-      <div class="content reveal is-visible">
-        <h2>Servizi</h2>
-        <h3>UX / Struttura & Wireframe</h3>
-        <p>
-          Progetto la struttura del sito e i contenuti in modo chiaro e coerente con il posizionamento,
-          prima di passare al visual.
-        </p>
-        <ul class="list-check">
-          <li>Mappa dei contenuti e architettura</li>
-          <li>Wireframe e gerarchie</li>
-          <li>Microcopy essenziale</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-      <div class="content reveal">
-        <h2>Servizi</h2>
-        <h3>Brand Strategy</h3>
-        <p>
-          Analisi, posizionamento e messaggi: definisco la direzione e la traduco in scelte
-          comunicative coerenti.
-        </p>
-        <ul class="list-check">
-          <li>Analisi mercato e competitor</li>
-          <li>Target, insight e proposition</li>
-          <li>Messaging e architettura</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-        
-        <h2>Brand Strategy</h2>
-        <p class="lead" style="max-width:85ch;">
-          Definiamo lo spazio del brand nel mercato: contesto, competitor, target e posizionamento.
-          L’obiettivo è trasformare insight reali in una direzione chiara.
-        </p>
-
-        <div class="grid-3">
-          <div class="card">
-            <h3>Cosa include</h3>
-            <ul class="list-check">
-              <li>Analisi di mercato e trend</li>
-              <li>Analisi competitor</li>
-              <li>Target e bisogni</li>
-              <li>Value proposition e posizionamento</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Output</h3>
-            <p>Documento strategico completo, chiaro e utilizzabile come base per identità e comunicazione.</p>
-          </div>
-
-          <div class="card">
-            <h3>Ideale per</h3>
-            <p>Brand che vogliono distinguersi, riposizionarsi o strutturarsi prima di investire in comunicazione.</p>
-          </div>
+        <h2>Panoramica</h2>
+        <div class="grid-3" role="list" aria-label="Panoramica servizi">
+          <article class="card" role="listitem">
+            <h3><a href="#brand-strategy">Brand Strategy</a></h3>
+            <p>Analisi, posizionamento e messaggi: definire la direzione prima di costruire.</p>
+          </article>
+          <article class="card" role="listitem">
+            <h3><a href="#brandbook">Brand Identity &amp; Brandbook</a></h3>
+            <p>Tradurre la strategia in un sistema visivo e linee guida replicabili.</p>
+          </article>
+          <article class="card" role="listitem">
+            <h3><a href="#comunicazione">Strategia di comunicazione</a></h3>
+            <p>Cosa dire, come e dove: tono di voce, canali, contenuti e priorità.</p>
+          </article>
         </div>
       </div>
     </section>
 
-<section class="section alt">
-  <div class="container">
-    <div class="section-media reverse">
-
-<section class="section alt">
-  <div class="container">
-    <div class="section-media reverse">
-
-      <figure class="reveal is-visible">
-        <div class="media">
-          <img
-            src="assets/img/postit-gradiente-brand.png"
-            alt="Post-it con accento cromatico in gradiente brand"
-            loading="lazy"
-          />
-        </div>
-      </figure>
-
-      <div class="content reveal is-visible">
-        <h3>Brand Identity & Linee guida</h3>
-        <p>
-          Traduco la strategia in un sistema visivo: elementi, regole e coerenza su tutti i touchpoint.
-        </p>
-        <ul class="list-check">
-          <li>Palette, tipografia, componenti</li>
-          <li>Brandbook e utilizzo</li>
-          <li>Applicazioni su social e sito</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-      <div class="content reveal">
-        <h3>Identity & Communication</h3>
-        <p>
-          Dalla visual identity al tone of voice, creo un sistema riconoscibile e applicabile
-          su tutti i touchpoint.
-        </p>
-        <ul class="list-check">
-          <li>Visual identity e linee guida</li>
-          <li>Tone of voice e microcopy</li>
-          <li>Struttura e coerenza su sito e social</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-    
-    <section class="section" id="brandbook">
+    <!-- BRAND STRATEGY (media + contenuto) -->
+    <section class="section" id="brand-strategy">
       <div class="container">
-        <h2>Brand Identity &amp; Brandbook</h2>
-        <p class="lead" style="max-width:85ch;">
-          Dalla strategia alla forma: costruiamo l’identità del brand (valori, personalità, tono) e la traduciamo in un sistema visivo
-          con linee guida pronte da usare.
-        </p>
+        <div class="section-media">
 
-        <div class="grid-3">
-          <div class="card">
-            <h3>Cosa include</h3>
-            <ul class="list-check">
-              <li>Mission, vision, valori</li>
-              <li>Personalità e archetipi (se utili)</li>
-              <li>Palette, tipografia, elementi grafici</li>
-              <li>Regole di utilizzo e coerenza</li>
-            </ul>
+          <figure class="reveal is-visible">
+            <div class="media">
+              <img
+                src="assets/img/laptop-wireframe.png"
+                alt="Laptop con wireframe e struttura di pagina"
+                loading="lazy"
+              />
+            </div>
+          </figure>
+
+          <div class="content reveal is-visible">
+            <h2>Brand Strategy</h2>
+            <p class="lead" style="max-width:75ch;">
+              Definiamo lo spazio del brand nel mercato: contesto, competitor, target e posizionamento.
+              L’obiettivo è trasformare insight reali in una direzione chiara e difendibile.
+            </p>
+
+            <div class="grid-3" role="list" aria-label="Brand Strategy: dettagli">
+              <div class="card" role="listitem">
+                <h3>Cosa include</h3>
+                <ul class="list-check">
+                  <li>Analisi di mercato e trend</li>
+                  <li>Analisi competitor e alternative</li>
+                  <li>Target, bisogni e insight</li>
+                  <li>Value proposition e posizionamento</li>
+                  <li>Messaggi chiave (messaging)</li>
+                </ul>
+              </div>
+
+              <div class="card" role="listitem">
+                <h3>Output</h3>
+                <p>
+                  Documento strategico chiaro e utilizzabile come base per identità e comunicazione
+                  (decisioni + razionale).
+                </p>
+              </div>
+
+              <div class="card" role="listitem">
+                <h3>Ideale per</h3>
+                <p>
+                  Brand che vogliono distinguersi, riposizionarsi o strutturarsi prima di investire in comunicazione.
+                </p>
+              </div>
+            </div>
+
+            <div class="hero-actions" style="margin-top:1.25rem;">
+              <a class="btn btn-primary" href="contatti.html">Parliamone</a>
+              <a class="btn" href="metodo.html">Vedi le fasi</a>
+            </div>
           </div>
 
-          <div class="card">
-            <h3>Output</h3>
-            <p>Brandbook completo (strategico + visual) per mantenere coerenza anche lavorando con team o fornitori.</p>
-          </div>
-
-          <div class="card">
-            <h3>Ideale per</h3>
-            <p>Brand che vogliono un’identità riconoscibile e replicabile, senza dipendere da “interpretazioni”.</p>
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="comunicazione">
+    <!-- BRAND IDENTITY & BRANDBOOK -->
+    <section class="section alt" id="brandbook">
+      <div class="container">
+        <div class="section-media reverse">
+
+          <figure class="reveal is-visible">
+            <div class="media">
+              <img
+                src="assets/img/postit-gradiente-brand.png"
+                alt="Post-it con accento cromatico in gradiente brand"
+                loading="lazy"
+              />
+            </div>
+          </figure>
+
+          <div class="content reveal is-visible">
+            <h2>Brand Identity &amp; Brandbook</h2>
+            <p class="lead" style="max-width:75ch;">
+              Dalla strategia alla forma: costruiamo identità (valori, personalità, tono) e la traduciamo in un sistema visivo
+              con linee guida pronte da usare.
+            </p>
+
+            <div class="grid-3" role="list" aria-label="Brand Identity e Brandbook: dettagli">
+              <div class="card" role="listitem">
+                <h3>Cosa include</h3>
+                <ul class="list-check">
+                  <li>Mission, vision, valori</li>
+                  <li>Personalità e direzione (anche archetipi, se utili)</li>
+                  <li>Palette, tipografia, elementi grafici</li>
+                  <li>Regole di utilizzo e coerenza</li>
+                </ul>
+              </div>
+
+              <div class="card" role="listitem">
+                <h3>Output</h3>
+                <p>
+                  Brandbook completo (strategico + visual) per mantenere coerenza anche lavorando con team o fornitori.
+                </p>
+              </div>
+
+              <div class="card" role="listitem">
+                <h3>Ideale per</h3>
+                <p>
+                  Brand che vogliono un’identità riconoscibile e replicabile, senza dipendere da “interpretazioni”.
+                </p>
+              </div>
+            </div>
+
+            <div class="hero-actions" style="margin-top:1.25rem;">
+              <a class="btn btn-primary" href="contatti.html">Richiedi una prima analisi</a>
+              <a class="btn" href="#comunicazione">Vai alla comunicazione</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STRATEGIA DI COMUNICAZIONE -->
+    <section class="section" id="comunicazione">
       <div class="container">
         <h2>Strategia di comunicazione</h2>
         <p class="lead" style="max-width:85ch;">
           Definiamo cosa dire, a chi, come e dove: messaggi chiave, tono di voce, canali e contenuti,
-          con linee guida operative per comunicare in modo coerente.
+          con linee guida operative per comunicare in modo coerente (senza improvvisare).
         </p>
 
-        <div class="grid-3">
-          <div class="card">
+        <div class="grid-3" role="list" aria-label="Strategia di comunicazione: dettagli">
+          <div class="card" role="listitem">
             <h3>Cosa include</h3>
             <ul class="list-check">
               <li>Messaggio principale e pilastri</li>
@@ -249,32 +228,75 @@
             </ul>
           </div>
 
-          <div class="card">
+          <div class="card" role="listitem">
             <h3>Output</h3>
-            <p>Documento strategico e linee guida per contenuti e comunicazione, adattabili nel tempo.</p>
+            <p>
+              Documento strategico e linee guida operative per contenuti e comunicazione, adattabili nel tempo.
+            </p>
           </div>
 
-          <div class="card">
+          <div class="card" role="listitem">
             <h3>Ideale per</h3>
-            <p>Brand che vogliono comunicare meglio e con più coerenza, senza improvvisare post o messaggi.</p>
+            <p>
+              Brand che vogliono comunicare meglio e con più coerenza, senza “post random” o messaggi contraddittori.
+            </p>
           </div>
         </div>
 
-    <section class="section alt" id="servizi-extra">
-  <div class="container">
-    <h2>Servizi extra</h2>
-    <p class="lead" style="max-width:75ch;">
-      Interventi mirati, attivabili anche singolarmente, per migliorare il tuo sito o partire con basi solide:
-      struttura, chiarezza e performance — senza complicazioni inutili.
-    </p>
+        <div class="hero-actions" style="margin-top:1.25rem;">
+          <a class="btn btn-primary" href="contatti.html">Parliamone</a>
+          <a class="btn" href="metodo.html">Scopri come lavoro</a>
+        </div>
+      </div>
+    </section>
 
-    <!-- CTA finale sezione -->
-    <div class="hero-actions" style="margin-top:2rem;">
-      <a class="btn btn-primary" href="contatti.html">Parliamone</a>
-      <a class="btn" href="metodo.html">Scopri come lavoro</a>
-    </div>
-  </div>
-</section>
+    <!-- SERVIZI EXTRA (pulita + con CTA) -->
+    <section class="section alt" id="servizi-extra">
+      <div class="container">
+        <h2>Servizi extra</h2>
+        <p class="lead" style="max-width:75ch;">
+          Interventi mirati, attivabili anche singolarmente, per migliorare sito e comunicazione:
+          struttura, chiarezza e performance — senza complicazioni inutili.
+        </p>
+
+        <div class="grid-3" role="list" aria-label="Servizi extra">
+          <article class="card" role="listitem">
+            <h3>UX / Struttura &amp; Wireframe</h3>
+            <p>Progetto la struttura del sito e i contenuti in modo chiaro e coerente con il posizionamento, prima del visual.</p>
+            <ul class="list-check">
+              <li>Mappa contenuti e architettura</li>
+              <li>Wireframe e gerarchie</li>
+              <li>Microcopy essenziale</li>
+            </ul>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Audit contenuti</h3>
+            <p>Revisione di messaggi e pagine chiave per aumentare chiarezza, coerenza e conversione.</p>
+            <ul class="list-check">
+              <li>Valutazione gerarchia e copy</li>
+              <li>Punti di frizione e miglioramenti</li>
+              <li>Proposte pratiche, pronte da applicare</li>
+            </ul>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Supporto operativo</h3>
+            <p>Affiancamento per implementare scelte e linee guida con coerenza (sito, social, materiali).</p>
+            <ul class="list-check">
+              <li>Check coerenza touchpoint</li>
+              <li>Template / asset (se previsti)</li>
+              <li>Priorità e piano d’azione</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="hero-actions" style="margin-top:2rem;">
+          <a class="btn btn-primary" href="contatti.html">Parliamone</a>
+          <a class="btn" href="metodo.html">Scopri come lavoro</a>
+        </div>
+      </div>
+    </section>
 
   </main>
 
