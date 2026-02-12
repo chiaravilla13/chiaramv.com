@@ -16,10 +16,10 @@
   <meta property="og:url" content="https://chiaramv.com/metodo.html" />
   <meta property="og:image" content="https://chiaravilla13.github.io/chiaramv.com/assets/img/og-image.webp" />
 
-<!-- Favicon -->
-<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="assets/icons/favicon-96x96.png" type="image/png">
-<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <!-- Favicon -->
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon-96x96.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="js/main.js"></script>
@@ -30,13 +30,13 @@
 
   <header class="site-header">
     <div class="container header-inner">
-<a class="brand" href="index.html">
-  <img 
-    src="assets/img/logo.webp" 
-    alt="Logo Chiara M. Villa" 
-    class="brand-logo"
-  >
-
+      <a class="brand" href="index.html" aria-label="Torna alla Home">
+        <img
+          src="assets/img/logo.webp"
+          alt="Logo Chiara M. Villa"
+          class="brand-logo"
+        >
+      </a>
 
       <nav class="nav" aria-label="Navigazione principale">
         <a href="chi-sono.html">Chi sono</a>
@@ -50,78 +50,99 @@
 
   <main id="contenuto">
 
+    <!-- HERO: promessa + cosa significa “metodo” -->
     <section class="hero">
       <div class="container">
         <p class="kicker">Metodo</p>
-        <h1>Un percorso strategico, non un “restyling”</h1>
+        <h1>Un percorso strategico, non un “restyling”.</h1>
         <p class="lead" style="max-width:90ch;">
-          Il mio metodo è pensato per trasformare analisi e insight in decisioni chiare: posizionamento, identità e comunicazione.
-          Un brand forte nasce quando strategia e creatività lavorano insieme, in modo coerente.
+          Il metodo serve a una cosa: trasformare analisi e insight in decisioni chiare.
+          Prima definiamo direzione e posizionamento, poi costruiamo identità e comunicazione coerenti e replicabili.
         </p>
+
+        <div class="hero-actions" style="margin-top:1rem;">
+          <a class="btn btn-primary" href="contatti.html">Richiedi una prima analisi</a>
+          <a class="btn" href="servizi.html">Vedi i servizi</a>
+        </div>
       </div>
     </section>
-<section id="metodo" class="section alt">
-  <div class="container">
-    <div class="section-media">
-      
-      <!-- CONTENT -->
-      <div class="content reveal">
-        <h2>Metodo / Come lavoro</h2>
-        <p class="lead">
-          Un percorso chiaro, con deliverable concreti e decisioni guidate dai dati.
-        </p>
 
-        <div class="steps">
-          <div class="step">
-            <div class="step-num">1</div>
-            <div>
-              <h3>Analisi</h3>
-              <p>Mercato, competitor, target, insight.</p>
+    <!-- OVERVIEW: come lavoro (chiaro, “premium”, con immagine) -->
+    <section id="metodo" class="section alt">
+      <div class="container">
+        <div class="section-media">
+
+          <!-- CONTENT -->
+          <div class="content reveal">
+            <h2>Come lavoro</h2>
+            <p class="lead" style="max-width:75ch;">
+              Un percorso guidato, con deliverable concreti. Ogni fase riduce ambiguità e aumenta coerenza:
+              meno “a gusto”, più scelte che reggono nel tempo.
+            </p>
+
+            <!-- 3 principi / pilastri (usiamo la tua struttura steps) -->
+            <div class="steps" aria-label="Principi del metodo">
+              <div class="step">
+                <div class="step-num">A</div>
+                <div>
+                  <h3>Analisi prima dell’estetica</h3>
+                  <p>Leggiamo mercato, competitor e target per capire dove ha senso posizionarsi.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-num">B</div>
+                <div>
+                  <h3>Decisioni, non slide</h3>
+                  <p>Trasformiamo insight in scelte operative: messaggi, priorità, architettura e direzione.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-num">C</div>
+                <div>
+                  <h3>Sistema replicabile</h3>
+                  <p>Costruiamo linee guida e strumenti: il brand resta coerente anche mentre cresce.</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="step">
-            <div class="step-num">2</div>
-            <div>
-              <h3>Strategia</h3>
-              <p>Posizionamento, messaggi, architettura di brand.</p>
+
+          <!-- IMAGE -->
+          <figure class="reveal is-visible">
+            <div class="media">
+              <img
+                src="assets/img/notebook-mano-che-scrive.png"
+                alt="Mano che scrive su un notebook su una scrivania luminosa"
+                loading="lazy"
+              />
             </div>
-          </div>
-          <div class="step">
-            <div class="step-num">3</div>
-            <div>
-              <h3>Identità & attivazione</h3>
-              <p>Visual identity, tone of voice, touchpoint.</p>
-            </div>
-          </div>
+            <figcaption class="media-caption">Dal pensiero alla struttura: chiarezza prima di tutto.</figcaption>
+          </figure>
+
         </div>
       </div>
+    </section>
 
-      <!-- IMAGE: Notebook con mano che scrive -->
-     <figure class="reveal is-visible">
-        <div class="media">
-          <img
-            src="assets/img/notebook-mano-che-scrive.png"
-            alt="Mano che scrive su un notebook su una scrivania luminosa"
-            loading="lazy"
-          />
-        </div>
-        <figcaption class="media-caption">Dal pensiero alla struttura: chiarezza prima di tutto.</figcaption>
-      </figure>
-
-    </div>
-  </div>
-</section>
-    <section class="section alt">
+    <!-- LE 5 FASI: più concrete, con outcome -->
+    <section class="section">
       <div class="container">
         <h2>Le 5 fasi</h2>
+        <p class="lead" style="max-width:85ch;">
+          Il percorso può adattarsi al punto in cui ti trovi, ma la logica è sempre la stessa:
+          prima direzione, poi costruzione.
+        </p>
 
-        <div class="steps">
+        <div class="steps" aria-label="Le 5 fasi del metodo">
 
           <div class="step">
             <div class="step-num">1</div>
             <div>
               <h3>Analisi &amp; ricerca</h3>
-              <p>Settore, mercato, competitor e target. Capire il contesto per trovare opportunità reali.</p>
+              <p>Settore, mercato, competitor, target e insight. Capire il contesto per individuare opportunità reali.</p>
+              <ul class="list-check" style="margin-top:.75rem;">
+                <li>Snapshot competitor e alternative</li>
+                <li>Ipotesi di target e bisogni</li>
+                <li>Opportunità e vincoli (cosa evitare)</li>
+              </ul>
             </div>
           </div>
 
@@ -129,7 +150,12 @@
             <div class="step-num">2</div>
             <div>
               <h3>Posizionamento strategico</h3>
-              <p>Value proposition, differenziazione e direzione del brand: cosa rappresenta e perché sceglierlo.</p>
+              <p>Definiamo cosa rappresenta il brand e perché dovrebbe essere scelto: differenziazione, proposta di valore, messaggi.</p>
+              <ul class="list-check" style="margin-top:.75rem;">
+                <li>Value proposition e proof</li>
+                <li>Messaggi chiave + “cosa non dire”</li>
+                <li>Direzione e priorità (scelte guidate)</li>
+              </ul>
             </div>
           </div>
 
@@ -138,6 +164,11 @@
             <div>
               <h3>Identità di brand</h3>
               <p>Mission, valori, personalità e promessa: la base per una comunicazione autentica e coerente.</p>
+              <ul class="list-check" style="margin-top:.75rem;">
+                <li>Personalità e principi</li>
+                <li>Promessa e tono (linea editoriale)</li>
+                <li>Coerenza tra offerta e percezione</li>
+              </ul>
             </div>
           </div>
 
@@ -145,7 +176,12 @@
             <div class="step-num">4</div>
             <div>
               <h3>Brandbook</h3>
-              <p>Sistema visivo e linee guida: palette, tipografia, elementi grafici e regole di utilizzo.</p>
+              <p>Sistema visivo e linee guida: regole chiare per usare il brand bene, sempre.</p>
+              <ul class="list-check" style="margin-top:.75rem;">
+                <li>Palette, tipografia, elementi grafici</li>
+                <li>Regole di utilizzo e esempi</li>
+                <li>Asset e template (se previsti dal servizio)</li>
+              </ul>
             </div>
           </div>
 
@@ -153,28 +189,86 @@
             <div class="step-num">5</div>
             <div>
               <h3>Strategia di comunicazione</h3>
-              <p>Messaggi chiave, tone of voice, canali e content strategy per comunicare con efficacia.</p>
+              <p>Messaggi, tono, canali e contenuti: un sistema coerente per comunicare con efficacia.</p>
+              <ul class="list-check" style="margin-top:.75rem;">
+                <li>Pilastri di contenuto e rubriche</li>
+                <li>Touchpoint e canali prioritari</li>
+                <li>Piano d’azione (cosa fare prima e perché)</li>
+              </ul>
             </div>
           </div>
 
         </div>
 
         <div class="hero-actions" style="margin-top:1.25rem;">
-          <a class="btn btn-primary" href="servizi.html">Vedi i servizi</a>
-          <a class="btn" href="contatti.html">Parliamone</a>
+          <a class="btn btn-primary" href="contatti.html">Parliamone</a>
+          <a class="btn" href="servizi.html">Vedi i servizi</a>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- COSA OTTIENI: più “deliverable mindset” -->
+    <section class="section alt">
       <div class="container">
         <h2>Cosa ottieni</h2>
         <ul class="list-check">
           <li>Decisioni motivate (non “scelte a gusto”)</li>
-          <li>Identità replicabile e coerente</li>
-          <li>Comunicazione chiara e riconoscibile</li>
-          <li>Materiali e linee guida pronti all’uso</li>
+          <li>Posizionamento chiaro e difendibile</li>
+          <li>Identità coerente e replicabile</li>
+          <li>Messaggi e tono di voce riconoscibili</li>
+          <li>Linee guida e materiali pronti all’uso</li>
         </ul>
+      </div>
+    </section>
+
+    <!-- FILTRO: aiuta a qualificare lead e aumenta percezione premium -->
+    <section class="section">
+      <div class="container">
+        <h2>È il percorso giusto?</h2>
+
+        <div class="grid-3" role="list" aria-label="Filtro percorso">
+          <article class="card" role="listitem">
+            <h3>È per te se…</h3>
+            <ul style="margin:0; padding-left:1.1rem;">
+              <li>vuoi chiarezza prima di investire in comunicazione</li>
+              <li>hai bisogno di coerenza tra offerta, identità e messaggi</li>
+              <li>cerchi un sistema, non solo “idee”</li>
+            </ul>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Non è per te se…</h3>
+            <ul style="margin:0; padding-left:1.1rem;">
+              <li>vuoi solo un restyling veloce “perché sì”</li>
+              <li>cerchi soluzioni copia-incolla</li>
+              <li>non vuoi prendere decisioni strategiche</li>
+            </ul>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Primo passo</h3>
+            <p style="margin-top:0;">
+              Mi racconti contesto e obiettivi, e ti dico con chiarezza
+              se questo percorso è adatto e da dove conviene partire.
+            </p>
+            <p><a href="contatti.html">Richiedi una prima analisi →</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA finale -->
+    <section class="section alt">
+      <div class="container">
+        <h2>Se vuoi un brand solido, partiamo dalle fondamenta.</h2>
+        <p class="lead" style="max-width:80ch;">
+          Un brand forte non è solo “bello”: è leggibile, coerente e riconoscibile.
+          Il metodo serve a costruire esattamente questo.
+        </p>
+        <div class="hero-actions" style="margin-top:1rem;">
+          <a class="btn btn-primary" href="contatti.html">Richiedi una prima analisi</a>
+          <a class="btn" href="servizi.html">Scopri i servizi</a>
+        </div>
       </div>
     </section>
 
