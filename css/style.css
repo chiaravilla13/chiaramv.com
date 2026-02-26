@@ -167,20 +167,7 @@ a:hover{ text-decoration: underline; text-underline-offset: 4px; }
   top: .45em;
   opacity: .95;
 }
-
-/* Mobile: card più compatta */
-@media (max-width: 600px){
-  .site-strip{
-    padding: .75rem 0;
-  }
   .site-strip .container{
-    padding: .7rem .9rem;
-    border-radius: 14px;
-  }
-  .site-strip__text{
-    font-size: 0.92rem;
-  }
-   .site-strip .container{
   position: relative;
   overflow: hidden;
 }
@@ -196,6 +183,19 @@ a:hover{ text-decoration: underline; text-underline-offset: 4px; }
   background: var(--grad-brand);
   opacity: .75;
 }
+
+/* Mobile: card più compatta */
+@media (max-width: 600px){
+  .site-strip{
+    padding: .75rem 0;
+  }
+  .site-strip .container{
+    padding: .7rem .9rem;
+    border-radius: 14px;
+  }
+  .site-strip__text{
+    font-size: 0.92rem;
+  }
 }
 
 /* =========================
