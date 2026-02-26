@@ -126,6 +126,24 @@ a:hover{ text-decoration: underline; text-underline-offset: 4px; }
 }
 
 /* =========================
+   Info strip (sotto navbar / sopra hero)
+========================= */
+.site-strip{
+  width: 100%;
+  background: rgba(250,250,250,0.92); /* Soft white, coerente col header */
+  border-bottom: 1px solid rgba(43,43,43,0.06);
+}
+
+.site-strip__text{
+  margin: 0;
+  padding: .55rem 0;                 /* sottile ma leggibile */
+  font-size: var(--small);
+  line-height: 1.35;
+  color: rgba(31,63,139,0.92);       /* blu, ma non “urlato” */
+  letter-spacing: 0.01em;
+}
+
+/* =========================
    Header
 ========================= */
 .site-header{
