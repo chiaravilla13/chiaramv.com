@@ -840,19 +840,19 @@ h3{
 
 /* Icona che ruota (chevron) */
 .card summary::after{
-  content: "›";
-  font-family: "DM Sans", system-ui, sans-serif;
-  font-size: 1.35rem;
-  line-height: 1;
-  color: rgba(31,63,139,0.9);
-  transform: rotate(90deg);
+  content: "";
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  background: url("../assets/icons/chevron-down-base.svg") no-repeat center / 20px 20px;
+  opacity: .75;
+  transform: rotate(0deg);
   transition: transform .22s var(--ease), opacity .22s var(--ease);
-  opacity: .7;
 }
 
 /* Stato aperto */
 .card details[open] summary::after{
-  transform: rotate(-90deg);
+  transform: rotate(180deg);
   opacity: 1;
 }
 
