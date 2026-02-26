@@ -894,3 +894,8 @@ h3{
   height: 22px;
   display: inline-block;
 }
+.step-num img{
+  width: 22px;
+  height: 22px;
+  display: block;
+}
