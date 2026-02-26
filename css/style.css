@@ -810,3 +810,69 @@ h3{
   border: 1px solid rgba(31,63,139,0.14);
   margin-right: .55rem;
 }
+/* =========================
+   Servizi extra — Accordion (details/summary)
+   (aggiungi in fondo al CSS)
+========================= */
+
+.card details{
+  border: 0;
+}
+
+.card summary{
+  list-style: none; /* rimuove marker in alcuni browser */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  padding: 0; /* la card già ha padding */
+}
+
+.card summary::-webkit-details-marker{
+  display: none; /* rimuove triangolino default (Safari/Chrome) */
+}
+
+/* Titolo come click target "pulito" */
+.card summary h3{
+  margin: 0; /* evita spacing extra */
+}
+
+/* Icona che ruota (chevron) */
+.card summary::after{
+  content: "›";
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 1.35rem;
+  line-height: 1;
+  color: rgba(31,63,139,0.9);
+  transform: rotate(90deg);
+  transition: transform .22s var(--ease), opacity .22s var(--ease);
+  opacity: .7;
+}
+
+/* Stato aperto */
+.card details[open] summary::after{
+  transform: rotate(-90deg);
+  opacity: 1;
+}
+
+/* Contenuto interno (spazio sopra) */
+.card details > div{
+  padding-top: .85rem;
+}
+
+/* Micro-effetto "selected" quando aperto */
+.card details[open]{
+  background: transparent;
+}
+
+.card details[open] summary{
+  text-decoration: none;
+}
+
+/* Focus accessibile sul summary */
+.card summary:focus-visible{
+  outline: 3px solid rgba(230,95,164,0.40);
+  outline-offset: 6px;
+  border-radius: 12px;
+}
