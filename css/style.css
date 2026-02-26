@@ -447,6 +447,24 @@ h3{
   border: 1px solid rgba(139,111,182,0.18);
 }
 
+.micro-reassurance{
+  margin: .25rem 0 0;
+  font-size: var(--small);
+  color: rgba(43,43,43,0.68);
+  letter-spacing: 0.01em;
+}
+
+.micro-reassurance::before{
+  content:"";
+  display:inline-block;
+  width: 10px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--grad-brand);
+  margin-right: .5rem;
+  transform: translateY(-2px);
+}
+
 /* =========================
    Sections
 ========================= */
