@@ -468,7 +468,7 @@ h3{
   content: "✓";
   position:absolute;
   left: 0;
-  color: var(--c-pink);
+  color: var(--c-violet); /* ✅ CHANGED: from pink to primary violet */
   font-weight: 800;
 }
 
