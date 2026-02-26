@@ -876,3 +876,21 @@ h3{
   outline-offset: 6px;
   border-radius: 12px;
 }
+/* Metodo — icone steps */
+.step-num img{
+  width: 42px;
+  height: 42px;
+  display: block;
+}
+
+.step-title{
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+
+.step-icon{
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+}
