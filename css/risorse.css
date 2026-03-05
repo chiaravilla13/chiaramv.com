@@ -196,3 +196,15 @@ a[aria-disabled="true"]{
   <img class="rubric-title-icon" src="../../assets/icons/link-accent.svg" alt="" aria-hidden="true" loading="lazy">
   Brand nella cultura
 </h1>
+
+.resources-breadcrumb{
+  margin: 0 0 .75rem;
+  font-size: .95rem;
+  color: rgba(43,43,43,0.62);
+}
+
+.resources-breadcrumb a{
+  color: var(--c-blue);
+  text-decoration: none;
+  font-weight: 650;
+}
