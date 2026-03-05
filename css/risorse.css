@@ -254,3 +254,44 @@
 @media (min-width: 880px){
   .arrow-link::after{ width: 18px; height: 18px; background-size: 18px 18px; }
 }
+
+/* Link con freccia (icone custom) */
+.link-arrow{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--c-blue);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.link-arrow::after{
+  content:"";
+  width: 18px;
+  height: 18px;
+  background: url("../assets/icons/narrow-right-base-primary-blue.svg") no-repeat center / 18px 18px;
+  opacity: .9;
+  transform: translateY(1px);
+}
+
+/* Hover */
+.link-arrow:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.link-arrow:hover::after{
+  opacity: 1;
+}
+
+/* Stato disabilitato */
+.link-arrow.is-disabled{
+  opacity: .55;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+.link-arrow.is-disabled:hover{
+  text-decoration: none;
+}
+.link-arrow.is-disabled::after{
+  opacity: .6;
+}
