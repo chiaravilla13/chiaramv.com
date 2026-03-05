@@ -191,3 +191,8 @@ a[aria-disabled="true"]{
     flex-basis: 36px;
   }
 }
+
+<h1 class="rubric-title">
+  <img class="rubric-title-icon" src="../../assets/icons/link-accent.svg" alt="" aria-hidden="true" loading="lazy">
+  Brand nella cultura
+</h1>
