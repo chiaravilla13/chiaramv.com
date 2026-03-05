@@ -208,3 +208,49 @@
 .page .grid .card{
   padding: 1.25rem;
 }
+
+/* =========================
+   Arrow icon links (global)
+   Usa icone in assets/icons
+========================= */
+
+.arrow-link{
+  display: inline-flex;
+  align-items: baseline;
+  gap: .5rem;
+  text-decoration: none;
+}
+
+.arrow-link:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Icona freccia */
+.arrow-link::after{
+  content:"";
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+  transform: translateY(2px); /* micro-allineamento con testo */
+  opacity: .95;
+}
+
+/* Variante: blu (primary blue) */
+.arrow-link--blue::after{
+  background-image: url("../assets/icons/narrow-right-base-primary-blue.svg");
+}
+
+/* Variante: grigio scuro */
+.arrow-link--grey::after{
+  background-image: url("../assets/icons/narrow-right-base-dark-grey.svg");
+}
+
+/* (Optional) se vuoi un pelo più grande */
+@media (min-width: 880px){
+  .arrow-link::after{ width: 18px; height: 18px; background-size: 18px 18px; }
+}
