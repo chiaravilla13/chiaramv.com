@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // =========================
-  // Header scrolled state (premium blur)
+  // Header scrolled state
   // =========================
   const header = document.querySelector(".site-header");
   if (header) {
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // =========================
-  // Reveal on scroll (ONLY elements that already have .reveal in HTML)
+  // Reveal on scroll
   // =========================
   initReveal();
 });
@@ -67,9 +67,7 @@ function loadGA() {
   document.head.appendChild(s);
 
   window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    window.dataLayer.push(arguments);
-  }
+  function gtag() { window.dataLayer.push(arguments); }
   window.gtag = gtag;
 
   gtag("js", new Date());
@@ -79,17 +77,9 @@ function loadGA() {
 function initReveal() {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const revealEls = document.querySelectorAll(".reveal");
-
   if (!revealEls.length) return;
 
-  // If reduced motion, show everything immediately
-  if (reduceMotion) {
-    revealEls.forEach((el) => el.classList.add("is-visible"));
-    return;
-  }
-
-  // Fallback if IntersectionObserver not supported
-  if (!("IntersectionObserver" in window)) {
+  if (reduceMotion || !("IntersectionObserver" in window)) {
     revealEls.forEach((el) => el.classList.add("is-visible"));
     return;
   }
@@ -99,7 +89,7 @@ function initReveal() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("is-visible");
-          io.unobserve(entry.target); // reveal once
+          io.unobserve(entry.target);
         }
       });
     },
