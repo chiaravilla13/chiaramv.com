@@ -1,12 +1,12 @@
 // js/ga-events.js
 (function () {
   function sendGA(eventName, params) {
-    // GA4 via gtag
+    // GA4 via gtag (caricato solo se consenso accettato)
     if (typeof window.gtag === "function") {
       window.gtag("event", eventName, params);
       return;
     }
-    // Fallback (es. GTM)
+    // fallback (se mai userai GTM)
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({ event: eventName, ...params });
   }
@@ -15,10 +15,9 @@
     const el = e.target.closest("[data-ga-event]");
     if (!el) return;
 
-    const eventName = el.getAttribute("data-ga-event");
+    const eventName = el.getAttribute("data-ga-event") || "cta_click";
     const label = el.getAttribute("data-ga-label") || "unknown";
 
-    // Se è un link, prendiamo href. Se è un button, proviamo data-href o form action.
     const href =
       el.getAttribute("href") ||
       el.getAttribute("data-href") ||
