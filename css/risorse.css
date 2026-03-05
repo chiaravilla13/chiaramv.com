@@ -1,53 +1,10 @@
 /* =========================
    Risorse — CSS add-on (aligned to style.css)
-   Nota: questo file NON ridefinisce :root e NON sovrascrive .hero/.section/.card/.grid-3
-   Usa le variabili e il ritmo di style.css.
+   Obiettivo: riusare tokens, griglie e card base del sito.
+   Questo file aggiunge SOLO varianti/utility per la sezione Risorse.
 ========================= */
 
-/* Wrapper pagina (se lo usi in risorse.html) */
-.resources-page{
-  /* lascia che container gestisca max-width */
-  padding: 0; 
-}
-
-/* Intro / microcopy */
-.resources-eyebrow{
-  font-size: var(--small);
-  letter-spacing: .10em;
-  text-transform: uppercase;
-  color: rgba(43,43,43,0.62);
-  margin: 0 0 .6rem;
-}
-
-.resources-microcopy{
-  margin-top: .5rem;
-  font-size: var(--small);
-  color: rgba(43,43,43,0.68);
-  letter-spacing: 0.01em;
-}
-
-/* Breadcrumb (opzionale) */
-.resources-breadcrumb{
-  font-size: .95rem;
-  color: rgba(43,43,43,0.62);
-  margin-top: .75rem;
-}
-.resources-breadcrumb a{
-  color: rgba(43,43,43,0.62);
-  text-decoration: none;
-}
-.resources-breadcrumb a:hover{
-  color: var(--c-blue);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-/* Grid “rubriche” (riusa .grid-3) — aggiungi solo micro-layout */
-.resources-grid{
-  margin-top: 1.25rem;
-}
-
-/* Card rubrica: variante leggera (riusa .card) */
+/* Card rubrica: leggero overlay gradiente */
 .card.card-rubric{
   position: relative;
   overflow: hidden;
@@ -61,7 +18,7 @@
   pointer-events:none;
 }
 
-/* Badge/label dentro card rubrica (se li usi) */
+/* Badge rubrica */
 .rubric-tag{
   display:inline-flex;
   align-items:center;
@@ -78,15 +35,16 @@
   margin-bottom: .6rem;
 }
 
-/* Lista contenuti (pulita, editoriale) */
+/* Grid rubriche: solo spacing */
+.resources-grid{ margin-top: 1.25rem; }
+
+/* Lista risorse (pulita, editoriale) */
 .resources-list{
   margin: 1rem 0 0;
   padding: 0;
   list-style: none;
 }
-.resources-list li{
-  margin: .6rem 0;
-}
+.resources-list li{ margin: .6rem 0; }
 .resources-list a{
   display: inline-flex;
   align-items: baseline;
@@ -104,9 +62,7 @@
   opacity: .7;
 }
 
-/* “Collection” (se hai blocchi tipo: Ultimi contenuti / Starter pack)
-   Usa la card base ma con sfondo leggermente diverso
-*/
+/* Collection card: background soft */
 .card.resources-collection{
   background: linear-gradient(
     180deg,
@@ -116,7 +72,7 @@
   border: 1px solid rgba(43,43,43,0.06);
 }
 
-/* CTA Box: coerente con il sistema */
+/* CTA block per Risorse (usato in fondo) */
 .resources-cta{
   margin-top: 2rem;
   padding: 1.5rem;
@@ -138,18 +94,8 @@
   background: var(--grad-brand);
   opacity: .9;
 }
-.resources-cta > *{
-  position: relative;
-}
-.resources-cta h2{
-  margin-top: .35rem; /* spazio sotto la linea */
-}
-.resources-cta .muted{
-  margin-top: .35rem;
-}
-.resources-cta .micro-reassurance{
-  margin-top: .35rem;
-}
+.resources-cta > *{ position: relative; }
+.resources-cta h2{ margin-top: .35rem; }
 
 /* Micro-proof coerente */
 .resources-proof{
@@ -158,16 +104,18 @@
   color: rgba(43,43,43,0.70);
 }
 
-/* Nav active (solo Risorse) — senza toccare il resto del sito */
-.nav a.is-active{
-  background: rgba(31,63,139,0.08);
-  color: var(--c-blue);
+/* Breadcrumb (se lo usi) */
+.resources-breadcrumb{
+  font-size: .95rem;
+  color: rgba(43,43,43,0.62);
+  margin-top: .75rem;
+}
+.resources-breadcrumb a{
+  color: rgba(43,43,43,0.62);
   text-decoration: none;
 }
-
-/* Spaziature più “calme” per Risorse (solo se vuoi) */
-.resources-section-tight .lead{
-  margin-bottom: .9rem;
+.resources-breadcrumb a:hover{
+  color: var(--c-blue);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
-
-/* Responsive: niente da fare, riusi già grid-3 -> 1 col e layout base */
