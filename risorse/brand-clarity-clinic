@@ -1,1 +1,146 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brand Clarity Clinic — Risorse</title>
+  <meta name="description" content="Teardown di asset reali: dove si sfoca la promessa, cosa scegliere per renderla leggibile, e come tradurlo in fix e checklist." />
 
+  <!-- Favicons -->
+  <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../../assets/icons/favicon-96x96.png" type="image/png">
+  <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="stylesheet" href="../../assets/css/risorse.css" />
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWNWNVQNZ7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JWNWNVQNZ7');
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigazione principale">
+      <a href="../../index.html">Home</a>
+      <a href="../../metodo.html">Metodo</a>
+      <a href="../../servizi.html">Servizi</a>
+      <a class="is-active" href="../">Risorse</a>
+      <a href="../../contatti.html">Contatti</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="hero hero--rubric">
+      <p class="eyebrow">Rubrica</p>
+      <h1>Brand Clarity Clinic</h1>
+
+      <p class="lead">
+        Parto da un asset reale, trovo dove si sfoca la promessa e cosa va scelto per renderla leggibile — poi lo traduco in fix e checklist.
+      </p>
+
+      <a class="btn btn-primary"
+         href="../../contatti.html"
+         data-ga-event="cta_click"
+         data-ga-label="clinic_audit_top">
+        Richiedi una prima analisi
+      </a>
+      <p class="microcopy">Call breve, zero pressione.</p>
+    </section>
+
+    <section class="section">
+      <h2>Come leggere questa rubrica</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>1 — Dove si inceppa</h3>
+          <p class="muted">Individuo la frizione: cosa confonde, cosa appiattisce, cosa “suona uguale a tutti”.</p>
+        </div>
+        <div class="card">
+          <h3>2 — La scelta</h3>
+          <p class="muted">Rendo esplicita la decisione: cosa tenere, cosa togliere, cosa provare.</p>
+        </div>
+        <div class="card">
+          <h3>3 — Il fix</h3>
+          <p class="muted">Riscrittura / struttura / proof: piccoli interventi che fanno grande differenza.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Asset su cui lavoro spesso</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Homepage & hero</h3>
+          <p class="muted">Promessa, target implicito, prova: dove si decide se restare o uscire.</p>
+        </div>
+        <div class="card">
+          <h3>Pagina servizi</h3>
+          <p class="muted">Struttura dell’offerta, prove, CTA: dove si capisce se è “per me”.</p>
+        </div>
+        <div class="card">
+          <h3>Bio & profilo</h3>
+          <p class="muted">Chiarezza in poche righe: cosa fai, per chi, e perché fidarsi.</p>
+        </div>
+        <div class="card">
+          <h3>Deck / proposta</h3>
+          <p class="muted">Ordine delle informazioni: dal contesto alle scelte, fino alla richiesta.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Risorse consigliate</h2>
+      <p class="muted">Per ora sto costruendo l’archivio. Qui trovi le prime pagine (in arrivo).</p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <p class="eyebrow">Clinic</p>
+          <h3>Homepage: la promessa è troppo ampia?</h3>
+          <p class="muted">Checklist per riconoscere “dicibile da chiunque” e frizioni che costano.</p>
+          <a class="link"
+             href="#"
+             data-ga-event="resource_open"
+             data-ga-label="clinic_homepage_placeholder">
+            (In arrivo) →
+          </a>
+        </article>
+
+        <article class="card">
+          <p class="eyebrow">Clinic</p>
+          <h3>Pagina servizi: cosa manca quando “spiego tutto”</h3>
+          <p class="muted">Quando aggiungere testo non aumenta chiarezza: serve una prova, non un paragrafo.</p>
+          <a class="link"
+             href="#"
+             data-ga-event="resource_open"
+             data-ga-label="clinic_servizi_placeholder">
+            (In arrivo) →
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="cta-box">
+        <h2>Vuoi un parere sul tuo asset?</h2>
+        <p class="muted">
+          Se mi mandi un link e due righe di contesto, ti rispondo con 3 priorità (e un primo fix se ha senso).
+        </p>
+        <a class="btn btn-primary"
+           href="../../contatti.html"
+           data-ga-event="cta_click"
+           data-ga-label="clinic_audit_bottom">
+          Richiedi una prima analisi
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../assets/js/risorse.js"></script>
+</body>
+</html>
