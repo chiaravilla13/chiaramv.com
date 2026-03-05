@@ -35,6 +35,18 @@
   margin-bottom: .6rem;
 }
 
+/* Icona rubrica (SVG) */
+.rubric-title{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rubric-icon{
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+}
+
 /* Grid rubriche: solo spacing */
 .resources-grid{ margin-top: 1.25rem; }
 
@@ -60,6 +72,18 @@
 .resources-list a::after{
   content:"→";
   opacity: .7;
+}
+
+/* Step cards */
+.step-card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.step-icon{
+  width: 32px;
+  height: 32px;
 }
 
 /* Collection card: background soft */
