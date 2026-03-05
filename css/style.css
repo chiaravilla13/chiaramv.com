@@ -866,7 +866,7 @@ a.arrow-link.arrow-link--grey::after{
   background: url("../assets/icons/narrow-right-base-primary-blue.svg") no-repeat center / 18px 18px;
   flex: 0 0 18px;
   transform: translateY(1px);
-  opacity: .95;
+  opacity: .95; 
 }
 
 /* Se vuoi la freccia dark-grey anche su bottoni (opzionale) */
