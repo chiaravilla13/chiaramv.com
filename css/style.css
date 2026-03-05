@@ -816,3 +816,61 @@ h3{
     transform: none !important;
   }
 }
+/* =========================
+   Arrow icons (global)
+   Usa icone in assets/icons:
+   - narrow-right-base-primary-blue.svg
+   - narrow-right-base-dark-grey.svg
+========================= */
+
+/* Link con freccia blu (testo / link) */
+a.arrow-link{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  text-decoration: none;
+}
+
+a.arrow-link:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+a.arrow-link::after{
+  content:"";
+  width: 18px;
+  height: 18px;
+  background: url("../assets/icons/narrow-right-base-primary-blue.svg") no-repeat center / 18px 18px;
+  flex: 0 0 18px;
+  transform: translateY(1px);
+  opacity: .95;
+}
+
+/* Variante dark-grey (per testo “non bottone”) */
+a.arrow-link.arrow-link--grey::after{
+  background-image: url("../assets/icons/narrow-right-base-dark-grey.svg");
+  opacity: .85;
+}
+
+/* Bottone con freccia blu (es. .btn, .btn-primary) */
+.btn.btn-arrow{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.btn.btn-arrow::after{
+  content:"";
+  width: 18px;
+  height: 18px;
+  background: url("../assets/icons/narrow-right-base-primary-blue.svg") no-repeat center / 18px 18px;
+  flex: 0 0 18px;
+  transform: translateY(1px);
+  opacity: .95;
+}
+
+/* Se vuoi la freccia dark-grey anche su bottoni (opzionale) */
+.btn.btn-arrow.btn-arrow--grey::after{
+  background-image: url("../assets/icons/narrow-right-base-dark-grey.svg");
+  opacity: .85;
+}
