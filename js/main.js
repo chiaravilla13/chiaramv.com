@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // show banner only if no consent yet
     if (!consent) banner.style.display = "flex";
-
+ 
     acceptBtn?.addEventListener("click", () => {
       localStorage.setItem(CONSENT_KEY, "accepted");
       banner.style.display = "none";
