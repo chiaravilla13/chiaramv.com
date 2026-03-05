@@ -1,16 +1,12 @@
 // js/main.js
 
 document.addEventListener("DOMContentLoaded", () => {
-  // =========================
   // Footer year
-  // =========================
   document.querySelectorAll("[data-year]").forEach((el) => {
     el.textContent = new Date().getFullYear();
   });
 
-  // =========================
   // Cookie banner + GA consent
-  // =========================
   const CONSENT_KEY = "cookieConsent";
   const banner = document.getElementById("cookie-banner");
   const acceptBtn = document.getElementById("accept-cookies");
@@ -39,9 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadGA();
   }
 
-  // =========================
   // Header scrolled state
-  // =========================
   const header = document.querySelector(".site-header");
   if (header) {
     const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 8);
@@ -49,9 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     onScroll();
   }
 
-  // =========================
   // Reveal on scroll
-  // =========================
   initReveal();
 });
 
@@ -67,7 +59,9 @@ function loadGA() {
   document.head.appendChild(s);
 
   window.dataLayer = window.dataLayer || [];
-  function gtag() { window.dataLayer.push(arguments); }
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
   window.gtag = gtag;
 
   gtag("js", new Date());
