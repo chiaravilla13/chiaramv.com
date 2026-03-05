@@ -15,6 +15,10 @@
   <link rel="stylesheet" href="../css/style.css" />
 <link rel="stylesheet" href="../css/risorse.css" />
 
+<!-- JS -->
+<script defer src="../js/main.js"></script>
+<script defer src="../js/ga-events.js"></script>
+
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWNWNVQNZ7"></script>
   <script>
