@@ -3,149 +3,74 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Decisioni di brand — Risorse</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <title>Decisioni di brand | Risorse</title>
   <meta name="description" content="Trade-off espliciti: scelte che tagliano il rumore e rendono la proposta più leggibile, con esempi applicati agli asset." />
 
-  <!-- Favicons -->
+  <link rel="canonical" href="https://chiaramv.com/risorse/decisioni-di-brand/" />
+
   <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="../../assets/icons/favicon-96x96.png" type="image/png">
   <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="../css/style.css" />
-<link rel="stylesheet" href="../css/risorse.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/risorse.css" />
 
-<!-- JS -->
-<script defer src="../js/main.js"></script>
-<script defer src="../js/ga-events.js"></script>
-
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWNWNVQNZ7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-JWNWNVQNZ7');
-  </script>
+  <script defer src="../../js/main.js"></script>
+  <script defer src="../../js/ga-events.js"></script>
+  <script defer src="../../assets/js/risorse.js"></script>
 </head>
 
 <body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
   <header class="site-header">
-    <nav class="nav" aria-label="Navigazione principale">
-      <a href="../../index.html">Home</a>
-      <a href="../../metodo.html">Metodo</a>
-      <a href="../../servizi.html">Servizi</a>
-      <a class="is-active" href="../">Risorse</a>
-      <a href="../../contatti.html">Contatti</a>
-    </nav>
+    <div class="container header-inner">
+      <a class="brand" href="../../index.html" aria-label="Home">
+        <img src="../../assets/img/logo.webp" alt="Chiara M. Villa" class="brand-logo">
+      </a>
+
+      <nav class="nav" aria-label="Navigazione principale">
+        <a href="../../chi-sono.html">Chi sono</a>
+        <a href="../../servizi.html">Servizi</a>
+        <a href="../../metodo.html">Metodo</a>
+        <a href="../../risultati.html">Risultati</a>
+        <a class="is-active" href="../">Risorse</a>
+        <a class="btn btn-primary" href="../../contatti.html#audit"
+           data-ga-event="cta_click"
+           data-ga-label="decisioni_audit_nav">
+          Richiedi audit asincrono
+        </a>
+      </nav>
+    </div>
   </header>
 
-  <main class="page">
-    <section class="hero hero--rubric">
-      <p class="eyebrow">Rubrica</p>
-      <h1>Decisioni di brand</h1>
+  <main id="contenuto">
 
-      <p class="lead">
-        Ogni brand è una serie di “no” ben messi.<br>
-        Qui chiarisco le scelte che tagliano il rumore e rendono la proposta più leggibile — con esempi applicati agli asset.
-      </p>
+    <section class="hero">
+      <div class="container">
+        <p class="kicker">Rubrica</p>
+        <h1>Decisioni di brand</h1>
 
-      <a class="btn btn-primary"
-         href="../../contatti.html"
-         data-ga-event="cta_click"
-         data-ga-label="decisioni_audit_top">
-        Richiedi una prima analisi
-      </a>
-      <p class="microcopy">Call breve, zero pressione.</p>
-    </section>
-
-    <section class="section">
-      <h2>Come leggere questa rubrica</h2>
-      <div class="grid grid-3">
-        <div class="card">
-          <h3>1 — A vs B</h3>
-          <p class="muted">La scelta, senza compromessi: cosa fai e cosa non fai.</p>
-        </div>
-        <div class="card">
-          <h3>2 — Conseguenze</h3>
-          <p class="muted">Cosa guadagni e cosa perdi (per percezione, messaggio, richieste).</p>
-        </div>
-        <div class="card">
-          <h3>3 — Applicazione</h3>
-          <p class="muted">Come cambia una landing, una pagina servizi, un deck, una CTA.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Decisioni ricorrenti</h2>
-      <div class="grid grid-2">
-        <div class="card">
-          <h3>Per chi è (davvero)</h3>
-          <p class="muted">Quando “per tutti” rende tutto intercambiabile.</p>
-        </div>
-        <div class="card">
-          <h3>Cosa prometti</h3>
-          <p class="muted">Promessa netta vs lista di cose che fai.</p>
-        </div>
-        <div class="card">
-          <h3>Cosa provi</h3>
-          <p class="muted">La prova come parte del messaggio, non come nota a piè pagina.</p>
-        </div>
-        <div class="card">
-          <h3>Cosa chiedi</h3>
-          <p class="muted">CTA che chiede una scelta, non un “fammi sapere”.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Risorse consigliate</h2>
-      <p class="muted">Sto costruendo l’archivio. Qui trovi le prime pagine (in arrivo).</p>
-
-      <div class="grid grid-2">
-        <article class="card">
-          <p class="eyebrow">Decisione</p>
-          <h3>Posizionamento: spoiler, non è il target</h3>
-          <p class="muted">Test rapido + cosa lo compone + come capire se la frase è generica.</p>
-          <a class="link"
-             href="#"
-             data-ga-event="resource_open"
-             data-ga-label="decisioni_posizionamento_placeholder">
-            (In arrivo) →
-          </a>
-        </article>
-
-        <article class="card">
-          <p class="eyebrow">Decisione</p>
-          <h3>Spiegare tutto vs dimostrare</h3>
-          <p class="muted">Quando “dire di più” riduce fiducia e rende il messaggio fragile.</p>
-          <a class="link"
-             href="#"
-             data-ga-event="resource_open"
-             data-ga-label="decisioni_spiegare_dimostrare_placeholder">
-            (In arrivo) →
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="cta-box">
-        <h2>Vuoi una scelta più chiara?</h2>
-        <p class="muted">
-          Se mi mandi un link e due righe di contesto, ti rispondo con 3 priorità (e un primo fix se ha senso).
+        <p class="lead" style="max-width:85ch;">
+          Ogni brand è una serie di “no” ben messi.
+          Qui chiarisco le scelte che tagliano il rumore e rendono la proposta più leggibile — con esempi applicati agli asset.
         </p>
-        <a class="btn btn-primary"
-           href="../../contatti.html"
-           data-ga-event="cta_click"
-           data-ga-label="decisioni_audit_bottom">
-          Richiedi una prima analisi
-        </a>
+
+        <p class="micro-reassurance">Audit asincrono, zero pressione.</p>
+
+        <div class="hero-actions" style="margin-top:1rem;">
+          <a class="btn btn-primary"
+             href="../../contatti.html#audit"
+             data-ga-event="cta_click"
+             data-ga-label="decisioni_audit_top">
+            Richiedi audit asincrono
+          </a>
+        </div>
       </div>
     </section>
-  </main>
 
-  <script src="../../assets/js/risorse.js"></script>
-</body>
-</html>
+    <section class="section alt">
+      <div class="container">
+        <h2>Come leggere
