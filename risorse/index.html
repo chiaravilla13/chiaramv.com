@@ -3,8 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Risorse — Chiara M. Villa</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <title>Risorse | Chiara M. Villa</title>
   <meta name="description" content="Una libreria di criteri, esempi e checklist. Versioni lunghe dei contenuti LinkedIn: qui la teoria diventa scelte." />
+
+  <link rel="canonical" href="https://chiaramv.com/risorse/" />
 
   <!-- Favicons -->
   <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
@@ -12,8 +16,8 @@
   <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
 
   <!-- CSS -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/risorse.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/risorse.css">
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWNWNVQNZ7"></script>
@@ -23,149 +27,193 @@
     gtag('js', new Date());
     gtag('config', 'G-JWNWNVQNZ7');
   </script>
+
+  <!-- JS sito -->
+  <script defer src="../js/main.js"></script>
+  <script defer src="../js/ga-events.js"></script>
 </head>
 
 <body>
-  <!-- Header / Nav (sostituisci i link se nel tuo sito hanno nomi diversi) -->
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
   <header class="site-header">
-    <nav class="nav" aria-label="Navigazione principale">
-      <a href="../index.html">Home</a>
-      <a href="../metodo.html">Metodo</a>
-      <a href="../servizi.html">Servizi</a>
-      <a class="is-active" href="./">Risorse</a>
-      <a href="../contatti.html">Contatti</a>
-    </nav>
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Home">
+        <img src="../assets/img/logo.webp" alt="Chiara M. Villa" class="brand-logo">
+      </a>
+
+      <nav class="nav" aria-label="Navigazione principale">
+        <a href="../chi-sono.html">Chi sono</a>
+        <a href="../servizi.html">Servizi</a>
+        <a href="../metodo.html">Metodo</a>
+        <a class="is-active" href="./">Risorse</a>
+        <a class="btn btn-primary" href="../contatti.html#audit"
+           data-ga-event="cta_click"
+           data-ga-label="core_audit_risorse_nav">
+          Richiedi audit asincrono
+        </a>
+      </nav>
+    </div>
   </header>
 
-  <main class="page">
+  <main id="contenuto">
+
     <!-- HERO -->
-    <section class="hero hero--resources">
-      <h1>Risorse</h1>
+    <section class="hero">
+      <div class="container">
+        <p class="kicker">Risorse</p>
+        <h1>Questa non è una raccolta: è una lente.</h1>
 
-      <p class="lead">
-        Questa non è una raccolta: è una lente.<br>
-        Contenuti lunghi, esempi, checklist. Per decidere, non per riempire.
-      </p>
+        <p class="lead" style="max-width:85ch;">
+          Versioni lunghe dei contenuti LinkedIn: criteri, esempi, checklist.
+          Per decidere, non per riempire.
+        </p>
 
-      <a class="btn btn-primary"
-         href="../contatti.html"
-         data-ga-event="cta_click"
-         data-ga-label="risorse_audit_top">
-        Richiedi una prima analisi
-      </a>
-      <p class="microcopy">Call breve, zero pressione.</p>
+        <p class="micro-reassurance">Audit asincrono, zero pressione.</p>
+
+        <div class="hero-actions" style="margin-top:1rem;">
+          <a class="btn btn-primary"
+             href="../contatti.html#audit"
+             data-ga-event="cta_click"
+             data-ga-label="core_audit_risorse_hero">
+            Richiedi audit asincrono
+          </a>
+        </div>
+
+        <p class="resources-proof">Screening + priorità: non è un restyling “spot”. Serve a definire da dove partire.</p>
+      </div>
     </section>
 
     <!-- RUBRICHE -->
-    <section class="section">
-      <h2>Rubriche</h2>
+    <section class="section alt">
+      <div class="container">
+        <h2>Rubriche</h2>
+        <p class="lead" style="max-width:85ch;">
+          Tre modi diversi di arrivare allo stesso punto: scelte chiare, applicabili, sostenibili.
+        </p>
 
-      <div class="grid grid-3">
-        <article class="collection">
-          <p class="eyebrow">Brand Clarity Clinic</p>
-          <h3>È una lente d’ingrandimento sul messaggio.</h3>
-          <p class="muted">
-            Parto da un asset reale, trovo dove si sfoca la promessa e cosa va scelto per renderla leggibile — poi lo traduco in fix e checklist.
-          </p>
+        <div class="grid-3 resources-grid">
+          <article class="card card-rubric">
+            <span class="rubric-tag">Brand Clinic</span>
+            <h3>Una lente d’ingrandimento sul messaggio.</h3>
+            <p class="muted">
+              Parto da un asset reale, trovo dove si sfoca la promessa e quale scelta la rende leggibile — poi la traduco in fix e checklist.
+            </p>
+            <p><a href="./brand-clarity-clinic/"
+                  data-ga-event="rubric_open"
+                  data-ga-label="clinic_open_risorse">
+              Apri la rubrica →
+            </a></p>
+          </article>
 
-          <a class="btn btn-secondary"
-             href="./brand-clarity-clinic/"
-             data-ga-event="rubric_open"
-             data-ga-label="hub_open_clinic">
-            Apri la rubrica
-          </a>
-        </article>
+          <article class="card card-rubric">
+            <span class="rubric-tag">Decisioni</span>
+            <h3>Ogni brand è una serie di “no” ben messi.</h3>
+            <p class="muted">
+              Chiarisco le scelte che tagliano il rumore e rendono la proposta più leggibile — con esempi applicati agli asset.
+            </p>
+            <p><a href="./decisioni-di-brand/"
+                  data-ga-event="rubric_open"
+                  data-ga-label="decisioni_open_risorse">
+              Apri la rubrica →
+            </a></p>
+          </article>
 
-        <article class="collection">
-          <p class="eyebrow">Decisioni di brand</p>
-          <h3>Ogni brand è una serie di “no” ben messi.</h3>
-          <p class="muted">
-            Qui chiarisco le scelte che tagliano il rumore e rendono la proposta più leggibile — con esempi applicati agli asset.
-          </p>
-
-          <a class="btn btn-secondary"
-             href="./decisioni-di-brand/"
-             data-ga-event="rubric_open"
-             data-ga-label="hub_open_decisioni">
-            Apri la rubrica
-          </a>
-        </article>
-
-        <article class="collection">
-          <p class="eyebrow">Brand nella cultura</p>
-          <h3>La cultura è il contesto: se lo ignori, comunichi nel vuoto.</h3>
-          <p class="muted">
-            Qui prendo un caso, ne estraggo il codice e lo trasformo in scelte pratiche per contenuti e messaggi.
-          </p>
-
-          <a class="btn btn-secondary"
-             href="./brand-nella-cultura/"
-             data-ga-event="rubric_open"
-             data-ga-label="hub_open_cultura">
-            Apri la rubrica
-          </a>
-        </article>
+          <article class="card card-rubric">
+            <span class="rubric-tag">Cultura</span>
+            <h3>Il contesto: se lo ignori, comunichi nel vuoto.</h3>
+            <p class="muted">
+              Prendo un caso, ne estraggo il codice e lo trasformo in scelte pratiche per contenuti e messaggi.
+            </p>
+            <p><a href="./brand-nella-cultura/"
+                  data-ga-event="rubric_open"
+                  data-ga-label="cultura_open_risorse">
+              Apri la rubrica →
+            </a></p>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- PER INIZIARE -->
     <section class="section">
-      <h2>Per iniziare</h2>
-      <p class="muted">Tre contenuti “porta d’ingresso”. Li aggiorno man mano che pubblico le versioni lunghe.</p>
+      <div class="container">
+        <h2>Per iniziare</h2>
+        <p class="muted">Tre “porte d’ingresso”. Le aggiorno man mano che pubblico le versioni lunghe.</p>
 
-      <div class="grid grid-2">
-        <article class="card">
-          <p class="eyebrow">Decisioni di brand</p>
-          <h3>Posizionamento: spoiler, non è il target</h3>
-          <p class="muted">Test rapido + cosa lo compone + come capire se la frase è generica.</p>
+        <div class="grid-3" style="margin-top:1rem;">
+          <article class="card resources-collection">
+            <span class="rubric-tag">Decisioni</span>
+            <h3>Direzione: spoiler, non è il target</h3>
+            <p class="muted">Test rapido + cosa la compone + come capire se la frase è dicibile da chiunque.</p>
+            <ul class="resources-list">
+              <li><a href="./decisioni-di-brand/"
+                     data-ga-event="resource_open"
+                     data-ga-label="decisioni_open_risorse_start_1">Vai alla rubrica</a></li>
+            </ul>
+          </article>
 
-          <!-- Finché non crei la pagina figlia, rimanda alla rubrica -->
-          <a class="link"
-             href="./decisioni-di-brand/"
-             data-ga-event="resource_open"
-             data-ga-label="hub_start_decisioni_posizionamento">
-            Vai alla rubrica →
-          </a>
-        </article>
+          <article class="card resources-collection">
+            <span class="rubric-tag">Brand Clinic</span>
+            <h3>Homepage: la promessa è troppo ampia?</h3>
+            <p class="muted">Checklist per riconoscere frizioni che costano e messaggi che non orientano.</p>
+            <ul class="resources-list">
+              <li><a href="./brand-clarity-clinic/"
+                     data-ga-event="resource_open"
+                     data-ga-label="clinic_open_risorse_start_1">Vai alla rubrica</a></li>
+            </ul>
+          </article>
 
-        <article class="card">
-          <p class="eyebrow">Brand Clarity Clinic</p>
-          <h3>Homepage: la promessa è troppo ampia?</h3>
-          <p class="muted">Checklist per riconoscere “dicibile da chiunque” e frizioni che costano.</p>
-
-          <a class="link"
-             href="./brand-clarity-clinic/"
-             data-ga-event="resource_open"
-             data-ga-label="hub_start_clinic_homepage">
-            Vai alla rubrica →
-          </a>
-        </article>
+          <article class="card resources-collection">
+            <span class="rubric-tag">Cultura</span>
+            <h3>Minimalismo: tagliare ≠ dire meno</h3>
+            <p class="muted">Come le scelte (non il gusto) rendono un messaggio più leggibile.</p>
+            <ul class="resources-list">
+              <li><a href="./brand-nella-cultura/"
+                     data-ga-event="resource_open"
+                     data-ga-label="cultura_open_risorse_start_1">Vai alla rubrica</a></li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- CTA FINALE -->
-    <section class="section">
-      <div class="cta-box">
-        <h2>Vuoi applicarlo al tuo caso?</h2>
-        <p class="muted">
-          Se mi mandi un link e due righe di contesto, ti rispondo con 3 priorità (e un primo fix se ha senso).
-        </p>
+    <section class="section alt">
+      <div class="container">
+        <div class="resources-cta">
+          <h2>Vuoi applicarlo al tuo caso?</h2>
+          <p class="muted" style="max-width:80ch;">
+            Audit asincrono (screening): mi mandi 1 link + 3 righe di contesto.
+            Ti restituisco una diagnosi scritta con priorità e criterio. Se non c’è fit o non è il momento, te lo dico.
+          </p>
 
-        <a class="btn btn-primary"
-           href="../contatti.html"
-           data-ga-event="cta_click"
-           data-ga-label="risorse_audit_bottom">
-          Richiedi una prima analisi
-        </a>
+          <div class="hero-actions" style="margin-top:1rem;">
+            <a class="btn btn-primary"
+               href="../contatti.html#audit"
+               data-ga-event="cta_click"
+               data-ga-label="core_audit_risorse_bottom">
+              Richiedi audit asincrono
+            </a>
+          </div>
+
+          <p class="resources-proof">Lavoro per criteri e scelte; non faccio restyling “a sensazione”.</p>
+        </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <p class="muted">© Chiara M. Villa</p>
+    <div class="container footer-inner">
+      <p class="muted">© <span data-year></span> Chiara M. Villa</p>
+      <nav class="footer-links" aria-label="Link utili">
+        <a href="./">Risorse</a>
+        <a href="../servizi.html">Servizi</a>
+        <a href="../metodo.html">Metodo</a>
+        <a href="../contatti.html">Contatti</a>
+      </nav>
+    </div>
   </footer>
-
-  <!-- JS (tracking click GA4) -->
-  <script src="../assets/js/risorse.js"></script>
 </body>
 </html>
