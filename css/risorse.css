@@ -1,1 +1,198 @@
+/* =========================
+   Risorse — CSS add-on
+   Palette:
+   Blue:   #1F3F8B
+   Violet: #8B6FB6
+   Pink:   #E65FA4
+   Soft White: #FAFAFA
+   Light Grey: #F4F4F6
+   Text:   #2B2B2B
+========================= */
 
+:root{
+  --blue:#1F3F8B;
+  --violet:#8B6FB6;
+  --pink:#E65FA4;
+  --bg:#FAFAFA;
+  --muted:#F4F4F6;
+  --text:#2B2B2B;
+
+  --border: rgba(43,43,43,.10);
+  --shadow: 0 10px 28px rgba(31,63,139,.10);
+  --radius: 16px;
+}
+
+/* Base page spacing (non invade il tuo layout se già presente) */
+.page{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 20px;
+}
+
+.section{ margin-top: 56px; }
+
+.lead{
+  max-width: 62ch;
+  line-height: 1.55;
+}
+
+/* Eyebrow / microcopy */
+.eyebrow{
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(43,43,43,.70);
+  margin: 0 0 10px;
+}
+
+.microcopy{
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgba(43,43,43,.70);
+}
+
+.muted{ color: rgba(43,43,43,.75); }
+
+/* HERO */
+.hero{
+  padding: 14px 0 10px;
+}
+.hero h1{
+  margin: 0 0 10px;
+}
+.hero--resources .lead,
+.hero--rubric .lead{
+  margin: 0 0 18px;
+}
+
+/* Grid */
+.grid{
+  display: grid;
+  gap: 18px;
+}
+.grid-2{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-3{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+@media (max-width: 900px){
+  .grid-2, .grid-3{ grid-template-columns: 1fr; }
+}
+
+/* Cards / Collections */
+.card,
+.collection{
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 18px;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.collection{
+  background: linear-gradient(180deg, rgba(31,63,139,.05), rgba(230,95,164,.03));
+}
+
+.card:hover,
+.collection:hover{
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: rgba(31,63,139,.22);
+}
+
+.card h3,
+.collection h3{ margin: 0 0 8px; }
+
+.card p,
+.collection p{ margin: 0; }
+
+/* Bullets */
+.bullets{
+  margin: 12px 0 0;
+  padding-left: 18px;
+}
+.bullets li{
+  margin: 6px 0;
+  color: rgba(43,43,43,.80);
+}
+
+/* CTA Box (final section) */
+.cta-box{
+  border-radius: calc(var(--radius) + 2px);
+  padding: 22px;
+  border: 1px solid rgba(31,63,139,.18);
+  background:
+    radial-gradient(1200px 400px at 0% 0%, rgba(31,63,139,.10), transparent 60%),
+    radial-gradient(900px 300px at 100% 0%, rgba(139,111,182,.10), transparent 55%),
+    radial-gradient(900px 300px at 0% 100%, rgba(230,95,164,.08), transparent 55%),
+    #fff;
+}
+
+.cta-box h2{ margin: 0 0 10px; }
+.cta-box p{ margin: 0 0 14px; }
+
+/* Link style */
+.link{
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  margin-top: 12px;
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 600;
+}
+.link:hover{ text-decoration: underline; }
+
+/* Breadcrumb (opzionale se lo usi) */
+.breadcrumb{
+  font-size: 14px;
+  color: rgba(43,43,43,.70);
+  margin-top: 10px;
+}
+.breadcrumb a{
+  color: rgba(43,43,43,.70);
+  text-decoration: none;
+}
+.breadcrumb a:hover{ color: var(--blue); }
+
+/* Buttons
+   Se nel tuo style.css esistono già .btn/.btn-primary/.btn-secondary,
+   puoi eliminare questa sezione per evitare conflitti.
+*/
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid transparent;
+  transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease, border-color .18s ease;
+  user-select: none;
+}
+
+.btn-primary{
+  background: var(--blue);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(31,63,139,.18);
+}
+.btn-primary:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(31,63,139,.22);
+}
+
+.btn-secondary{
+  background: rgba(31,63,139,.08);
+  color: var(--blue);
+  border-color: rgba(31,63,139,.16);
+}
+.btn-secondary:hover{
+  background: rgba(31,63,139,.12);
+  transform: translateY(-1px);
+}
+
+/* Active nav (se vuoi evidenziare Risorse senza toccare troppo il tuo CSS) */
+.nav a.is-active{
+  color: var(--blue);
+  font-weight: 800;
+}
