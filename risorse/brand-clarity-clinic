@@ -12,8 +12,8 @@
   <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../../assets/css/style.css" />
-  <link rel="stylesheet" href="../../assets/css/risorse.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/risorse.css" />
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWNWNVQNZ7"></script>
