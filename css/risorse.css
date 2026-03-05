@@ -10,6 +10,45 @@
   text-decoration: none;
 }
 
+/* =========================
+   Breadcrumb (back to Risorse) + left arrow icon
+   Usa HTML:
+   <p class="resources-breadcrumb">
+     <a class="breadcrumb-link" href="../">
+       <img class="breadcrumb-icon" src="../../assets/icons/narrow-left-primary-blue.svg" alt="" aria-hidden="true">
+       Torna a Risorse
+     </a>
+   </p>
+========================= */
+.resources-breadcrumb{
+  margin: 0 0 .9rem;
+  font-size: .95rem;
+  color: rgba(43,43,43,0.62);
+}
+
+.breadcrumb-link{
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  line-height: 1; /* evita sfalsamenti */
+  color: var(--c-blue);
+  text-decoration: none;
+  font-weight: 650;
+}
+
+.breadcrumb-link:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.breadcrumb-icon{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  flex: 0 0 20px;
+  transform: translateY(1px); /* micro allineamento ottico */
+}
+
 /* Griglia rubriche (riusa .grid-3) */
 .resources-grid{
   margin-top: 1.25rem;
@@ -154,11 +193,6 @@
   display: block;
 }
 
-/* Nei box “Come leggere questa rubrica” vogliamo card coerenti e respirate */
-.resources-mini-cards{
-  margin-top: 1rem;
-}
-
 /* Disabilitazione link “in arrivo” (accessibile) */
 a[aria-disabled="true"]{
   pointer-events: none;
@@ -168,6 +202,7 @@ a[aria-disabled="true"]{
 
 /* =========================
    Rubric title (H1 + icon)
+   Obiettivo: icona sulla stessa riga, a fine titolo
 ========================= */
 .rubric-title{
   display: inline-flex;
@@ -180,7 +215,8 @@ a[aria-disabled="true"]{
   width: 42px;   /* aumenta qui se vuoi ancora più grande */
   height: 42px;
   flex: 0 0 42px;
-  display: block;
+  display: inline-block;
+  transform: translateY(2px);
 }
 
 /* Mobile: un filo più compatte */
@@ -190,21 +226,4 @@ a[aria-disabled="true"]{
     height: 36px;
     flex-basis: 36px;
   }
-}
-
-<h1 class="rubric-title">
-  <img class="rubric-title-icon" src="../../assets/icons/link-accent.svg" alt="" aria-hidden="true" loading="lazy">
-  Brand nella cultura
-</h1>
-
-.resources-breadcrumb{
-  margin: 0 0 .75rem;
-  font-size: .95rem;
-  color: rgba(43,43,43,0.62);
-}
-
-.resources-breadcrumb a{
-  color: var(--c-blue);
-  text-decoration: none;
-  font-weight: 650;
 }
