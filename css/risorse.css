@@ -153,43 +153,6 @@
 }
 .breadcrumb a:hover{ color: var(--blue); }
 
-/* Buttons
-   Se nel tuo style.css esistono già .btn/.btn-primary/.btn-secondary,
-   puoi eliminare questa sezione per evitare conflitti.
-*/
-.btn{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 12px 16px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
-  border: 1px solid transparent;
-  transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease, border-color .18s ease;
-  user-select: none;
-}
-
-.btn-primary{
-  background: var(--blue);
-  color: #fff;
-  box-shadow: 0 10px 20px rgba(31,63,139,.18);
-}
-.btn-primary:hover{
-  transform: translateY(-1px);
-  box-shadow: 0 14px 28px rgba(31,63,139,.22);
-}
-
-.btn-secondary{
-  background: rgba(31,63,139,.08);
-  color: var(--blue);
-  border-color: rgba(31,63,139,.16);
-}
-.btn-secondary:hover{
-  background: rgba(31,63,139,.12);
-  transform: translateY(-1px);
-}
 
 /* Active nav (se vuoi evidenziare Risorse senza toccare troppo il tuo CSS) */
 .nav a.is-active{
