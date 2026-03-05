@@ -1,10 +1,21 @@
 /* =========================
    Risorse — CSS add-on (aligned to style.css)
-   Obiettivo: riusare tokens, griglie e card base del sito.
-   Questo file aggiunge SOLO varianti/utility per la sezione Risorse.
+   Usa variabili e ritmo di style.css.
 ========================= */
 
-/* Card rubrica: leggero overlay gradiente */
+/* Link attivo in navbar */
+.nav a.is-active{
+  background: rgba(31,63,139,0.08);
+  color: var(--c-blue);
+  text-decoration: none;
+}
+
+/* Griglia rubriche (riusa .grid-3) */
+.resources-grid{
+  margin-top: 1.25rem;
+}
+
+/* Card rubrica: variante leggera */
 .card.card-rubric{
   position: relative;
   overflow: hidden;
@@ -18,7 +29,7 @@
   pointer-events:none;
 }
 
-/* Badge rubrica */
+/* Tag rubriche */
 .rubric-tag{
   display:inline-flex;
   align-items:center;
@@ -35,58 +46,54 @@
   margin-bottom: .6rem;
 }
 
-/* Icona rubrica (SVG) */
-.rubric-title{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.rubric-icon{
-  width: 30px;
-  height: 30px;
-  flex: 0 0 auto;
-}
-
-/* Grid rubriche: solo spacing */
-.resources-grid{ margin-top: 1.25rem; }
-
-/* Lista risorse (pulita, editoriale) */
+/* Liste risorse (pulite) */
 .resources-list{
   margin: 1rem 0 0;
   padding: 0;
   list-style: none;
 }
-.resources-list li{ margin: .6rem 0; }
-.resources-list a{
+.resources-list li{
+  margin: .6rem 0;
+}
+
+/* Link “con freccia” (icone, non testo) */
+.link-arrow{
   display: inline-flex;
-  align-items: baseline;
-  gap: .5rem;
+  align-items: center;
+  gap: .55rem;
   color: var(--c-blue);
   font-weight: 650;
   text-decoration: none;
 }
-.resources-list a:hover{
+.link-arrow:hover{
   text-decoration: underline;
   text-underline-offset: 4px;
 }
-.resources-list a::after{
-  content:"→";
-  opacity: .7;
+.link-arrow::after{
+  content:"";
+  width: 18px;
+  height: 18px;
+  background: url("../assets/icons/narrow-right-base-primary-blue.svg") no-repeat center / 18px 18px;
+  opacity: .95;
+  transform: translateY(1px);
 }
 
-/* Step cards */
-.step-card{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* Variante “freccia dark grey” per testo non-link (se ti serve) */
+.arrow-inline{
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+}
+.arrow-inline::after{
+  content:"";
+  width: 18px;
+  height: 18px;
+  background: url("../assets/icons/narrow-right-base-dark-grey.svg") no-repeat center / 18px 18px;
+  opacity: .9;
+  transform: translateY(1px);
 }
 
-.step-icon{
-  width: 32px;
-  height: 32px;
-}
-
-/* Collection card: background soft */
+/* “Collection” */
 .card.resources-collection{
   background: linear-gradient(
     180deg,
@@ -96,9 +103,9 @@
   border: 1px solid rgba(43,43,43,0.06);
 }
 
-/* CTA block per Risorse (usato in fondo) */
+/* CTA box risorse */
 .resources-cta{
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1.5rem;
   background: var(--c-white);
   border-radius: var(--radius);
@@ -121,177 +128,40 @@
 .resources-cta > *{ position: relative; }
 .resources-cta h2{ margin-top: .35rem; }
 
-/* Micro-proof coerente */
 .resources-proof{
   margin-top: 1rem;
   font-size: var(--small);
   color: rgba(43,43,43,0.70);
 }
 
-/* Breadcrumb (se lo usi) */
-.resources-breadcrumb{
-  font-size: .95rem;
-  color: rgba(43,43,43,0.62);
-  margin-top: .75rem;
-}
-.resources-breadcrumb a{
-  color: rgba(43,43,43,0.62);
-  text-decoration: none;
-}
-.resources-breadcrumb a:hover{
-  color: var(--c-blue);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
 /* =========================
-   RUBRICHE — FIX layout + icone step
-   (metti in fondo a risorse.css)
+   FIX: numeri / icone rubriche (grandi, senza sfondo)
+   Usa: <div class="step-num step-num--icon"><img ...></div>
 ========================= */
-
-/* 1) La pagina rubrica deve comportarsi come un container */
-.page{
-  width: min(var(--max), calc(100% - 2rem));
-  margin: 0 auto;
-  padding: 0;
-}
-
-/* 2) Griglie “rubrica” (se usi .grid / .grid-2 / .grid-3 nelle rubriche) */
-.page .grid{
-  display: grid;
-  gap: 1rem;
-}
-
-.page .grid-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.page .grid-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-/* Mobile */
-@media (max-width: 900px){
-  .page .grid-2,
-  .page .grid-3{
-    grid-template-columns: 1fr;
-  }
-}
-
-/* 3) STEP ICONS dentro le card rubrica:
-   - niente sfondo
-   - dimensione più grande
-   - niente box 42x42
-*/
-.page .grid .step-num{
-  width: auto;
-  height: auto;
+.step-num.step-num--icon{
+  width: 48px;
+  height: 48px;
   border-radius: 0;
   background: transparent;
-  border: none;
   box-shadow: none;
+  display: grid;
+  place-items: center;
   padding: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: .6rem;
 }
-
-/* ingrandisci le icone */
-.page .grid .step-num img{
-  width: 52px;
-  height: 52px;
+.step-num.step-num--icon img{
+  width: 46px;
+  height: 46px;
   display: block;
 }
 
-/* 4) (opzionale ma utile) card rubrica: respiro più uniforme */
-.page .grid .card{
-  padding: 1.25rem;
+/* Nei box “Come leggere questa rubrica” vogliamo card coerenti e respirate */
+.resources-mini-cards{
+  margin-top: 1rem;
 }
 
-/* =========================
-   Arrow icon links (global)
-   Usa icone in assets/icons
-========================= */
-
-.arrow-link{
-  display: inline-flex;
-  align-items: baseline;
-  gap: .5rem;
-  text-decoration: none;
-}
-
-.arrow-link:hover{
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-/* Icona freccia */
-.arrow-link::after{
-  content:"";
-  width: 16px;
-  height: 16px;
-  flex: 0 0 16px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 16px 16px;
-  transform: translateY(2px); /* micro-allineamento con testo */
-  opacity: .95;
-}
-
-/* Variante: blu (primary blue) */
-.arrow-link--blue::after{
-  background-image: url("../assets/icons/narrow-right-base-primary-blue.svg");
-}
-
-/* Variante: grigio scuro */
-.arrow-link--grey::after{
-  background-image: url("../assets/icons/narrow-right-base-dark-grey.svg");
-}
-
-/* (Optional) se vuoi un pelo più grande */
-@media (min-width: 880px){
-  .arrow-link::after{ width: 18px; height: 18px; background-size: 18px 18px; }
-}
-
-/* Link con freccia (icone custom) */
-.link-arrow{
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  color: var(--c-blue);
-  font-weight: 650;
-  text-decoration: none;
-}
-
-.link-arrow::after{
-  content:"";
-  width: 18px;
-  height: 18px;
-  background: url("../assets/icons/narrow-right-base-primary-blue.svg") no-repeat center / 18px 18px;
-  opacity: .9;
-  transform: translateY(1px);
-}
-
-/* Hover */
-.link-arrow:hover{
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-.link-arrow:hover::after{
-  opacity: 1;
-}
-
-/* Stato disabilitato */
-.link-arrow.is-disabled{
+/* Disabilitazione link “in arrivo” (accessibile) */
+a[aria-disabled="true"]{
+  pointer-events: none;
   opacity: .55;
-  cursor: not-allowed;
   text-decoration: none;
-}
-.link-arrow.is-disabled:hover{
-  text-decoration: none;
-}
-.link-arrow.is-disabled::after{
-  opacity: .6;
 }
