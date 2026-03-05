@@ -143,3 +143,68 @@
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
+/* =========================
+   RUBRICHE — FIX layout + icone step
+   (metti in fondo a risorse.css)
+========================= */
+
+/* 1) La pagina rubrica deve comportarsi come un container */
+.page{
+  width: min(var(--max), calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* 2) Griglie “rubrica” (se usi .grid / .grid-2 / .grid-3 nelle rubriche) */
+.page .grid{
+  display: grid;
+  gap: 1rem;
+}
+
+.page .grid-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.page .grid-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Mobile */
+@media (max-width: 900px){
+  .page .grid-2,
+  .page .grid-3{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 3) STEP ICONS dentro le card rubrica:
+   - niente sfondo
+   - dimensione più grande
+   - niente box 42x42
+*/
+.page .grid .step-num{
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: .6rem;
+}
+
+/* ingrandisci le icone */
+.page .grid .step-num img{
+  width: 52px;
+  height: 52px;
+  display: block;
+}
+
+/* 4) (opzionale ma utile) card rubrica: respiro più uniforme */
+.page .grid .card{
+  padding: 1.25rem;
+}
