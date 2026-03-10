@@ -227,3 +227,23 @@ a[aria-disabled="true"]{
     flex-basis: 36px;
   }
 }
+
+/* underline che si allarga verso destra (tipo PDF) */
+.article-title.taper-underline{
+  position: relative;
+  display: inline-block;
+  padding-bottom: 14px; /* distanza tra titolo e linea */
+}
+
+.article-title.taper-underline::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width: 220px;          /* lunghezza linea */
+  height: 6px;           /* altezza max (a destra) */
+  background: linear-gradient(90deg, #1F3F8B 0%, #8B6FB6 55%, #E65FA4 100%);
+  border-radius: 2px;
+  /* trapezio: sottile a sx, più spesso a dx */
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 60%);
+}
