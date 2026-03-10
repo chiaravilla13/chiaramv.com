@@ -45,6 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Reveal on scroll
   initReveal();
+
+  // Servizi extra: una card aperta alla volta su desktop
+    initExtraServicesAccordion();
 });
 
 function loadGA() {
@@ -91,4 +94,29 @@ function initReveal() {
   );
 
   revealEls.forEach((el) => io.observe(el));
+}
+function initExtraServicesAccordion() {
+  const container = document.querySelector("#servizi-extra");
+  if (!container) return;
+
+  const detailsEls = container.querySelectorAll("details");
+  if (!detailsEls.length) return;
+
+  const desktopMQ = window.matchMedia("(min-width: 960px)");
+
+  detailsEls.forEach((detailsEl) => {
+    detailsEl.addEventListener("toggle", () => {
+      // Su mobile non forziamo la chiusura delle altre card
+      if (!desktopMQ.matches) return;
+
+      // Quando una card viene aperta, chiude tutte le altre
+      if (detailsEl.open) {
+        detailsEls.forEach((otherEl) => {
+          if (otherEl !== detailsEl) {
+            otherEl.open = false;
+          }
+        });
+      }
+    });
+  });
 }
