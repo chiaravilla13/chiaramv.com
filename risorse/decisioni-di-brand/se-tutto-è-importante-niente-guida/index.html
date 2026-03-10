@@ -16,106 +16,6 @@
   <link rel="stylesheet" href="../../../css/style.css" />
   <link rel="stylesheet" href="../../../css/risorse.css" />
 
-  <style>
-    /* Articolo (replica PDF) — leggero, usa variabili del tuo sistema */
-    .article-wrap{ padding: 3rem 0 2.5rem; }
-    .article{
-      max-width: 920px;
-      margin: 0 auto;
-    }
-    .article-header{ margin-bottom: 1.75rem; }
-    .article-icon{
-      width: 54px; height: 54px; display:block;
-      margin: 0 0 1rem 0;
-    }
-    .article-h1{
-      font-size: clamp(2.2rem, 4vw, 3.2rem);
-      line-height: 1.05;
-      margin: 0 0 1rem;
-      letter-spacing: -0.02em;
-      color: var(--c-blue);
-    }
-    .article-rule{
-      height: 6px;
-      border-radius: 999px;
-      background: var(--grad-brand);
-      margin: .6rem 0 1.4rem;
-      opacity: .95;
-    }
-    .article-lead{
-      font-size: 1.18rem;
-      line-height: 1.55;
-      max-width: 80ch;
-      margin: 0 0 1rem;
-      color: rgba(43,43,43,0.86);
-    }
-    .article-p{
-      max-width: 90ch;
-      margin: 0 0 1rem;
-      color: rgba(43,43,43,0.86);
-    }
-    .article-section{ margin: 2rem 0 0; }
-    .article-h2{
-      font-size: 1.6rem;
-      margin: 0 0 .65rem;
-      color: var(--c-violet);
-      letter-spacing: -0.01em;
-    }
-    .article-h3{
-      font-size: 1.15rem;
-      margin: 1.1rem 0 .4rem;
-      color: var(--c-blue);
-    }
-    .article-ul{
-      margin: .4rem 0 1rem;
-      padding-left: 1.2rem;
-      max-width: 88ch;
-      color: rgba(43,43,43,0.86);
-    }
-    .article-ul li{ margin: .35rem 0; }
-    .article-quote{
-      border-left: 4px solid rgba(31,63,139,0.22);
-      padding: .95rem 1.05rem;
-      margin: 1.2rem 0 1.1rem;
-      background: linear-gradient(180deg, rgba(31,63,139,0.04), rgba(230,95,164,0.02));
-      border-radius: 14px;
-      max-width: 92ch;
-    }
-    .article-quote strong{ color: var(--c-blue); }
-    .article-note{
-      margin-top: 1.2rem;
-      padding: 1rem 1.05rem;
-      border-radius: 14px;
-      border: 1px solid rgba(43,43,43,0.08);
-      background: rgba(31,63,139,0.03);
-      max-width: 92ch;
-    }
-    .article-note-title{
-      font-weight: 800;
-      color: var(--c-blue);
-      margin: 0 0 .25rem;
-    }
-    .article-cta{
-      margin-top: 2.2rem;
-      padding: 1.25rem 1.25rem;
-      border-radius: var(--radius);
-      border: 1px solid rgba(31,63,139,0.16);
-      background: var(--c-white);
-      box-shadow: var(--shadow-2);
-      position: relative;
-      overflow: hidden;
-      max-width: 920px;
-    }
-    .article-cta::before{
-      content:"";
-      position:absolute; left: 14px; right: 14px; top: 14px;
-      height: 3px; border-radius: 999px;
-      background: var(--grad-brand);
-      opacity: .9;
-    }
-    .article-cta > *{ position: relative; }
-  </style>
-
   <script defer src="../../../js/main.js"></script>
   <script defer src="../../../js/ga-events.js"></script>
   <script defer src="../../../assets/js/risorse.js"></script>
@@ -155,9 +55,9 @@
             <img class="article-icon" src="../../../assets/icons/compass-accent.svg" alt="" aria-hidden="true" loading="lazy">
 
             <div class="article-titleblock">
-  <h1 class="article-h1">Se tutto è importante, niente guida.</h1>
-  <div class="article-rule" aria-hidden="true"></div>
-</div>
+              <h1 class="article-h1">Se tutto è importante, niente guida.</h1>
+              <div class="article-rule" aria-hidden="true"></div>
+            </div>
 
             <p class="article-lead">
               Quando un brand prova a dire tutto sullo stesso piano, ottiene l’effetto opposto: <strong>confusione</strong>.
@@ -173,27 +73,27 @@
             <p class="article-p">Ogni informazione in più è un <strong>costo cognitivo</strong>. E quel costo lo paga il pubblico.</p>
           </header>
 
-          <section class="section alt">
-  <div class="container" style="max-width:90ch;">
-    <h2>Il problema</h2>
+          <!-- ✅ Il problema (articolo, non section alt) -->
+          <section class="article-section">
+            <h2 class="article-h2">Il problema</h2>
 
-    <p class="muted">
-      Quando un brand prova a dire tutto, la gente <strong>capisce meno</strong>, non di più.
-    </p>
+            <p class="article-p">
+              Quando un brand prova a dire tutto, la gente <strong>capisce meno</strong>, non di più.
+            </p>
 
-    <p class="muted" style="margin-bottom:.25rem;">Succede perché:</p>
-    <ul class="muted" style="padding-left:1.1rem; margin-top:.25rem;">
-      <li><strong>manca una priorità</strong> (quindi manca una bussola)</li>
-      <li>i messaggi <strong>non hanno un ordine</strong> (quindi si equivalgono)</li>
-      <li>il pubblico <strong>non sa cosa tenere</strong> e cosa scartare</li>
-    </ul>
+            <p class="article-p" style="margin-bottom:.25rem;">Succede perché:</p>
+            <ul class="article-ul" style="margin-top:.25rem;">
+              <li><strong>manca una priorità</strong> (quindi manca una bussola)</li>
+              <li>i messaggi <strong>non hanno un ordine</strong> (quindi si equivalgono)</li>
+              <li>il pubblico <strong>non sa cosa tenere</strong> e cosa scartare</li>
+            </ul>
 
-    <p class="muted" style="margin-top:.75rem;">
-      <strong>Tradotto:</strong> se tutto pesa uguale, <strong>niente spinge una decisione</strong>.
-    </p>
-  </div>
-</section>
+            <p class="article-p">
+              <strong>Tradotto:</strong> se tutto pesa uguale, <strong>niente spinge una decisione</strong>.
+            </p>
+          </section>
 
+          <!-- resto identico al tuo -->
           <section class="article-section">
             <h2 class="article-h2">Perché è un problema anche di marketing</h2>
 
