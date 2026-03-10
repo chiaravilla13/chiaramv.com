@@ -271,3 +271,26 @@ a[aria-disabled="true"]{
   /* “cuneo”: più sottile a sinistra, più spesso a destra */
   clip-path: polygon(0 42%, 100% 0, 100% 100%, 0 58%);
 }
+
+/* ===== Article title rule: una sola linea, lunga quanto il titolo ===== */
+.article-titleblock{
+  display: inline-block;     /* la larghezza segue il titolo */
+  max-width: 100%;           /* evita overflow su mobile */
+}
+
+/* elimina qualunque sottolineatura/effetto del titolo */
+.article-titleblock .article-h1{
+  text-decoration: none !important;
+  background: none !important;
+}
+.article-titleblock .article-h1::before,
+.article-titleblock .article-h1::after{
+  content: none !important;
+}
+
+/* la barra diventa lunga quanto il blocco titolo */
+.article-titleblock .article-rule{
+  width: 100%;
+  margin-top: .6rem;
+  margin-bottom: 1.4rem;
+}
