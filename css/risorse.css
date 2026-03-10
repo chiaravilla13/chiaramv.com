@@ -247,3 +247,27 @@ a[aria-disabled="true"]{
   /* trapezio: sottile a sx, più spesso a dx */
   clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 60%);
 }
+/* Linea “a cuneo” sotto il titolo (stretta → larga) */
+.taper-underline{
+  position: relative;
+  display: inline-block;
+  padding-bottom: 14px; /* distanza tra testo e linea */
+}
+
+.taper-underline::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width: 240px;   /* lunghezza linea */
+  height: 6px;    /* spessore max a destra */
+  background: linear-gradient(90deg,
+    rgba(31,63,139,1) 0%,
+    rgba(139,111,182,1) 55%,
+    rgba(230,95,164,1) 100%
+  );
+  border-radius: 2px;
+
+  /* “cuneo”: più sottile a sinistra, più spesso a destra */
+  clip-path: polygon(0 42%, 100% 0, 100% 100%, 0 58%);
+}
