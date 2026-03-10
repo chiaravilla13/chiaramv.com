@@ -254,6 +254,50 @@ a:hover{ text-decoration: underline; text-underline-offset: 4px; }
 }
 
 /* =========================
+   Navbar mobile più compatta
+========================= */
+@media (max-width: 880px){
+  .site-header{
+    background: rgba(250,250,250,0.92);
+  }
+
+  .header-inner{
+    gap: .65rem;
+    padding: .55rem 0;
+  }
+
+  .brand-logo{
+    height: 44px;
+  }
+
+  .nav{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: .2rem;
+    justify-content: flex-start;
+    padding-bottom: .1rem;
+  }
+
+  .nav::-webkit-scrollbar{
+    display: none;
+  }
+
+  .nav a{
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: .92rem;
+    padding: .38rem .55rem;
+  }
+
+  .nav-cta{
+    display: none;
+  }
+}
+
+/* =========================
    Buttons
 ========================= */
 .btn{
