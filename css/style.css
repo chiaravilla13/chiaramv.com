@@ -597,6 +597,22 @@ h3{
   height: 22px;
   display: block;
 }
+
+/* Variante: numeri grandi, leggibili e senza sfondo */
+.step-num.step-num--icon{
+  width: 48px;
+  height: 48px;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+.step-num.step-num--icon img{
+  width: 46px;
+  height: 46px;
+  display: block;
+}
 .step-title{
   display: flex;
   align-items: center;
