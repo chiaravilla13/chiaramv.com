@@ -311,6 +311,7 @@ a[aria-disabled="true"]{
   /* “cuneo”: più sottile a sinistra, più spesso a destra */
   clip-path: polygon(0 42%, 100% 0, 100% 100%, 0 58%);
 }
+
 <style>
     /* Articolo (replica PDF) — leggero, usa variabili del tuo sistema */
     .article-wrap{ padding: 3rem 0 2.5rem; }
