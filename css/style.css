@@ -550,7 +550,7 @@ h3{
   margin: .5rem 0 0;
   font-size: var(--p);
 }
-.card a{
+.card a:not(.btn){
   color: var(--c-blue);
   font-weight: 650;
 }
