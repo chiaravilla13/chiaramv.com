@@ -294,3 +294,18 @@ a[aria-disabled="true"]{
   margin-top: .6rem;
   margin-bottom: 1.4rem;
 }
+/* ===== Una sola linea sotto al titolo (la rule), lunga quanto il titolo ===== */
+.article-titleblock{
+  display: inline-block;  /* larghezza = contenuto (titolo) */
+  max-width: 100%;
+}
+
+/* assicura che non resti alcuna underline residua */
+.article-titleblock .article-h1{
+  text-decoration: none;
+}
+
+/* la barra segue la larghezza del titleblock */
+.article-titleblock .article-rule{
+  width: 100%;
+}
