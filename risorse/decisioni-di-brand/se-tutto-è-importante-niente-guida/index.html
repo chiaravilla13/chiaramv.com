@@ -7,7 +7,6 @@
 
   <title>Se tutto è importante, niente guida | Decisioni di brand | Chiara M. Villa</title>
   <meta name="description" content="Quando un brand prova a dire tutto sullo stesso piano, ottiene confusione. La soluzione non è ridurre: è dare una gerarchia." />
-
   <link rel="canonical" href="https://chiaramv.com/risorse/decisioni-di-brand/se-tutto-e-importante-niente-guida/" />
 
   <link rel="icon" href="../../../assets/icons/favicon.svg" type="image/svg+xml">
@@ -16,6 +15,106 @@
 
   <link rel="stylesheet" href="../../../css/style.css" />
   <link rel="stylesheet" href="../../../css/risorse.css" />
+
+  <style>
+    /* Articolo (replica PDF) — leggero, usa variabili del tuo sistema */
+    .article-wrap{ padding: 3rem 0 2.5rem; }
+    .article{
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    .article-header{ margin-bottom: 1.75rem; }
+    .article-icon{
+      width: 54px; height: 54px; display:block;
+      margin: 0 0 1rem 0;
+    }
+    .article-h1{
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      line-height: 1.05;
+      margin: 0 0 1rem;
+      letter-spacing: -0.02em;
+      color: var(--c-blue);
+    }
+    .article-rule{
+      height: 6px;
+      border-radius: 999px;
+      background: var(--grad-brand);
+      margin: .6rem 0 1.4rem;
+      opacity: .95;
+    }
+    .article-lead{
+      font-size: 1.18rem;
+      line-height: 1.55;
+      max-width: 80ch;
+      margin: 0 0 1rem;
+      color: rgba(43,43,43,0.86);
+    }
+    .article-p{
+      max-width: 90ch;
+      margin: 0 0 1rem;
+      color: rgba(43,43,43,0.86);
+    }
+    .article-section{ margin: 2rem 0 0; }
+    .article-h2{
+      font-size: 1.6rem;
+      margin: 0 0 .65rem;
+      color: var(--c-violet);
+      letter-spacing: -0.01em;
+    }
+    .article-h3{
+      font-size: 1.15rem;
+      margin: 1.1rem 0 .4rem;
+      color: var(--c-blue);
+    }
+    .article-ul{
+      margin: .4rem 0 1rem;
+      padding-left: 1.2rem;
+      max-width: 88ch;
+      color: rgba(43,43,43,0.86);
+    }
+    .article-ul li{ margin: .35rem 0; }
+    .article-quote{
+      border-left: 4px solid rgba(31,63,139,0.22);
+      padding: .95rem 1.05rem;
+      margin: 1.2rem 0 1.1rem;
+      background: linear-gradient(180deg, rgba(31,63,139,0.04), rgba(230,95,164,0.02));
+      border-radius: 14px;
+      max-width: 92ch;
+    }
+    .article-quote strong{ color: var(--c-blue); }
+    .article-note{
+      margin-top: 1.2rem;
+      padding: 1rem 1.05rem;
+      border-radius: 14px;
+      border: 1px solid rgba(43,43,43,0.08);
+      background: rgba(31,63,139,0.03);
+      max-width: 92ch;
+    }
+    .article-note-title{
+      font-weight: 800;
+      color: var(--c-blue);
+      margin: 0 0 .25rem;
+    }
+    .article-cta{
+      margin-top: 2.2rem;
+      padding: 1.25rem 1.25rem;
+      border-radius: var(--radius);
+      border: 1px solid rgba(31,63,139,0.16);
+      background: var(--c-white);
+      box-shadow: var(--shadow-2);
+      position: relative;
+      overflow: hidden;
+      max-width: 920px;
+    }
+    .article-cta::before{
+      content:"";
+      position:absolute; left: 14px; right: 14px; top: 14px;
+      height: 3px; border-radius: 999px;
+      background: var(--grad-brand);
+      opacity: .9;
+    }
+    .article-cta > *{ position: relative; }
+  </style>
 
   <script defer src="../../../js/main.js"></script>
   <script defer src="../../../js/ga-events.js"></script>
@@ -37,326 +136,184 @@
         <a href="../../../metodo.html">Metodo</a>
         <a href="../../../risultati.html">Risultati</a>
         <a class="is-active" href="../../">Risorse</a>
-        <a class="btn btn-primary" href="../../../contatti.html#audit"
-           data-ga-event="cta_click"
-           data-ga-label="decisioni_audit_nav">
-          Richiedi audit asincrono
-        </a>
       </nav>
     </div>
   </header>
 
   <main id="contenuto">
-
-    <!-- HERO -->
-    <section class="hero">
+    <section class="article-wrap">
       <div class="container">
-        <p class="kicker">Decisioni di brand</p>
-
         <p class="resources-breadcrumb">
           <a class="breadcrumb-link" href="../">
             <img class="breadcrumb-icon" src="../../../assets/icons/narrow-left-primary-blue.svg" alt="" aria-hidden="true" loading="lazy">
             Torna alla rubrica
           </a>
-          <span class="muted" aria-hidden="true" style="margin:0 .5rem;">·</span>
-          <a class="breadcrumb-link" href="../../">
-            <img class="breadcrumb-icon" src="../../../assets/icons/narrow-left-primary-blue.svg" alt="" aria-hidden="true" loading="lazy" style="opacity:0;width:0;height:0;">
-            Risorse
-          </a>
         </p>
 
-        <h1 class="rubric-title">
-          Se tutto è importante, niente guida
-          <img class="rubric-title-icon" src="../../../assets/icons/compass-accent.svg" alt="" aria-hidden="true" loading="lazy">
-        </h1>
+        <article class="article">
+          <header class="article-header">
+            <img class="article-icon" src="../../../assets/icons/compass-accent.svg" alt="" aria-hidden="true" loading="lazy">
 
-        <p class="lead" style="max-width:85ch;">
-          Quando un brand prova a dire tutto sullo stesso piano, ottiene l’effetto opposto: <strong>confusione</strong>.
-          La soluzione non è ridurre. È <strong>dare una gerarchia</strong>.
-        </p>
+            <h1 class="article-h1">Se tutto è importante, niente guida.</h1>
+            <div class="article-rule" aria-hidden="true"></div>
 
-        <p class="muted" style="max-width:85ch;">
-          Questa è una decisione tipica da brand: vuoi essere <strong>“tutto”</strong> per risultare rassicurante
-          oppure vuoi <strong>guidare</strong> per risultare chiaro?
-        </p>
+            <p class="article-lead">
+              Quando un brand prova a dire tutto sullo stesso piano, ottiene l’effetto opposto: <strong>confusione</strong>.
+              La soluzione non è ridurre. È <strong>dare una gerarchia</strong>.
+            </p>
 
-        <p class="micro-reassurance">
-          In marketing, la chiarezza non è estetica: è <strong>frizione in meno</strong>.
-        </p>
+            <p class="article-p">
+              Questa è una decisione tipica da brand: vuoi essere <strong>“tutto”</strong> per risultare rassicurante
+              oppure vuoi <strong>guidare</strong> per risultare chiaro?
+            </p>
 
-        <p class="muted" style="max-width:85ch; margin-top:.5rem;">
-          Ogni informazione in più è un <strong>costo cognitivo</strong>. E quel costo lo paga il pubblico.
-        </p>
+            <p class="article-p"><strong>In marketing, la chiarezza non è estetica:</strong> è frizione in meno.</p>
+            <p class="article-p">Ogni informazione in più è un <strong>costo cognitivo</strong>. E quel costo lo paga il pubblico.</p>
+          </header>
 
-        <div class="hero-actions" style="margin-top:1rem;">
-          <a class="btn btn-primary"
-             href="../../../contatti.html#audit"
-             data-ga-event="cta_click"
-             data-ga-label="decisioni_audit_top_tuttoimportante">
-            Richiedi audit asincrono
-          </a>
-        </div>
+          <section class="section alt">
+  <div class="container" style="max-width:90ch;">
+    <h2>Il problema</h2>
+
+    <p class="muted">
+      Quando un brand prova a dire tutto, la gente <strong>capisce meno</strong>, non di più.
+    </p>
+
+    <p class="muted" style="margin-bottom:.25rem;">Succede perché:</p>
+    <ul class="muted" style="padding-left:1.1rem; margin-top:.25rem;">
+      <li><strong>manca una priorità</strong> (quindi manca una bussola)</li>
+      <li>i messaggi <strong>non hanno un ordine</strong> (quindi si equivalgono)</li>
+      <li>il pubblico <strong>non sa cosa tenere</strong> e cosa scartare</li>
+    </ul>
+
+    <p class="muted" style="margin-top:.75rem;">
+      <strong>Tradotto:</strong> se tutto pesa uguale, <strong>niente spinge una decisione</strong>.
+    </p>
+  </div>
+</section>
+
+          <section class="article-section">
+            <h2 class="article-h2">Perché è un problema anche di marketing</h2>
+
+            <p class="article-p">
+              In marketing non vince chi “dice di più”. Vince chi rende più facile:
+            </p>
+
+            <ul class="article-ul">
+              <li>capire in 3 secondi “di cosa si tratta”</li>
+              <li>riconoscere “se fa per me”</li>
+              <li>capire qual è il passo successivo</li>
+            </ul>
+
+            <p class="article-p">
+              Quando invece dici tutto insieme, alzi la soglia di attenzione richiesta, perdi salienza (nessuna cosa spicca),
+              e trasformi la comunicazione in un elenco (e l’elenco non posiziona).
+            </p>
+
+            <div class="article-note">
+              <p class="article-note-title">Nota: processing fluency</p>
+              <p class="article-p" style="margin:0;">
+                È la sensazione soggettiva di facilità con cui il cervello riesce a elaborare uno stimolo (parole, immagini, struttura).
+                Quando qualcosa è più “fluido”, tende a sembrarci <strong>più affidabile</strong>.
+              </p>
+            </div>
+          </section>
+
+          <section class="article-section">
+            <h2 class="article-h2">La chiarezza non è ridurre. È mettere in ordine.</h2>
+
+            <p class="article-p">Mettere in ordine significa:</p>
+            <ul class="article-ul">
+              <li>decidere la cosa che guida (messaggio principale)</li>
+              <li>decidere le cose che supportano (prove, dettagli, contesto)</li>
+              <li>decidere cosa viene dopo (approfondimenti, FAQ, contenuti)</li>
+            </ul>
+
+            <p class="article-p"><strong>È una scelta di architettura, non di stile.</strong></p>
+          </section>
+
+          <section class="article-section">
+            <h2 class="article-h2">La domanda guida (esercizio)</h2>
+
+            <p class="article-p">Tra queste 3, qual è quella per cui vuoi che ti ricordino?</p>
+            <ul class="article-ul">
+              <li>qualità</li>
+              <li>velocità</li>
+              <li>premium</li>
+            </ul>
+
+            <p class="article-p">
+              Nota: non significa che le altre due siano false. Significa che non possono guidare tutte e tre allo stesso tempo.
+            </p>
+          </section>
+
+          <section class="article-section">
+            <h2 class="article-h2">La regola</h2>
+
+            <div class="article-quote">
+              Scegli una priorità: <strong>1 cosa principale + 2 cose di supporto.</strong>
+            </div>
+
+            <p class="article-p">Esempi:</p>
+            <ul class="article-ul">
+              <li>Se la priorità è <strong>qualità</strong> → supporti: metodo + casi/prove</li>
+              <li>Se la priorità è <strong>velocità</strong> → supporti: processo + tempi/garanzie</li>
+              <li>Se la priorità è <strong>premium</strong> → supporti: selezione (per chi/non per chi) + cura dei touchpoint</li>
+            </ul>
+          </section>
+
+          <section class="article-section">
+            <h2 class="article-h2">Segnali che stai dicendo “tutto”</h2>
+            <p class="article-p">Puoi usarli come mini-audit:</p>
+
+            <ul class="article-ul">
+              <li>“Siamo per tutti” (o target troppo largo)</li>
+              <li>5–7 promesse nello stesso blocco (bio, hero, about)</li>
+              <li>stesso peso a tutto (tutto in grassetto, tutto è claim)</li>
+              <li>CTA multiple con obiettivi diversi (scarica / prenota / scrivi / compra)</li>
+              <li>tono pieno di “anche” (anche questo, anche quello, anche per…)</li>
+            </ul>
+          </section>
+
+          <section class="article-section">
+            <h2 class="article-h2">Cosa fare (micro-procedura in 10 minuti)</h2>
+
+            <ul class="article-ul">
+              <li>Scrivi la tua priorità in una riga</li>
+              <li>Scrivi 2 supporti = prove (non aggettivi)</li>
+              <li>Riscrivi hero/bio/intro in questo ordine: 1 frase guida → 2 prove → 1 next step</li>
+              <li>Sposta tutto il resto “dopo”: servizi, FAQ, dettagli, esempi lunghi</li>
+            </ul>
+
+            <h3 class="article-h3">Esempio “prima/dopo” (generico)</h3>
+
+            <p class="article-p"><strong>Prima:</strong><br>
+              “Strategia, branding, social, siti, contenuti: aiutiamo aziende e professionisti a comunicare meglio con soluzioni su misura.”
+            </p>
+
+            <p class="article-p"><strong>Dopo (priorità: chiarezza/posizionamento):</strong><br>
+              “Ti aiuto a rendere chiaro cosa vendi e perché scegliere te: definisco una direzione (messaggi + priorità) e la rendo replicabile su sito, LinkedIn e materiali.”
+            </p>
+          </section>
+
+          <section class="article-section">
+            <h2 class="article-h2">Takeaway</h2>
+            <div class="article-quote">
+              <strong>Se tutto è importante, niente guida.</strong><br>
+              E se niente guida, il pubblico rimanda la scelta.
+            </div>
+
+            <p class="resources-breadcrumb" style="margin-top:1.25rem;">
+              <a class="breadcrumb-link" href="../">
+                <img class="breadcrumb-icon" src="../../../assets/icons/narrow-left-primary-blue.svg" alt="" aria-hidden="true" loading="lazy">
+                Torna a Decisioni di brand
+              </a>
+            </p>
+          </section>
+
+        </article>
       </div>
     </section>
-
-    <!-- IL PROBLEMA -->
-    <section class="section alt">
-      <div class="container">
-        <h2>Il problema</h2>
-
-        <article class="card" aria-label="Problema">
-          <p class="muted" style="margin-top:0;max-width:90ch;">
-            Quando un brand prova a dire tutto, la gente <strong>capisce meno</strong>, non di più.
-          </p>
-
-          <p class="muted" style="max-width:90ch; margin-bottom:.35rem;">
-            Succede perché:
-          </p>
-
-          <ul class="list-check muted" style="margin-top:0;max-width:90ch;">
-            <li><strong>Manca una priorità</strong> (quindi manca una bussola)</li>
-            <li>I messaggi <strong>non hanno un ordine</strong> (quindi si equivalgono)</li>
-            <li>Il pubblico <strong>non sa cosa tenere</strong> e cosa scartare</li>
-          </ul>
-
-          <p class="muted" style="max-width:90ch; margin-bottom:0;">
-            <strong>Tradotto:</strong> se tutto pesa uguale, <strong>niente spinge una decisione</strong>.
-          </p>
-        </article>
-
-        <div class="grid-3" role="list" aria-label="Perché succede" style="margin-top:1rem;">
-          <article class="card" role="listitem">
-            <h3>Manca una bussola</h3>
-            <p class="muted">Senza priorità, ogni informazione compete allo stesso livello.</p>
-          </article>
-
-          <article class="card" role="listitem">
-            <h3>Gerarchia assente</h3>
-            <p class="muted">Se tutto vale uguale, niente guida: il messaggio diventa “piatto”.</p>
-          </article>
-
-          <article class="card" role="listitem">
-            <h3>Frizione alta</h3>
-            <p class="muted">Più fatica per capire = più probabilità di mollare prima.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PERCHÉ È UN PROBLEMA DI MARKETING -->
-    <section class="section">
-      <div class="container">
-        <h2>Perché è un problema anche di marketing</h2>
-
-        <article class="card" aria-label="Perché è un problema di marketing">
-          <p class="muted" style="margin-top:0;max-width:90ch;">
-            In marketing non vince chi <strong>“dice di più”</strong>.
-            Vince chi rende più facile:
-          </p>
-
-          <ul class="list-check muted" style="margin-top:0;max-width:90ch;">
-            <li>capire in 3 secondi <strong>“di cosa si tratta”</strong></li>
-            <li>riconoscere <strong>“se fa per me”</strong></li>
-            <li>capire <strong>qual è il passo successivo</strong></li>
-          </ul>
-
-          <p class="muted" style="max-width:90ch; margin-bottom:.35rem;">
-            Quando invece dici tutto insieme:
-          </p>
-
-          <ul class="list-check muted" style="margin-top:0;max-width:90ch;">
-            <li>alzi la <strong>soglia di attenzione</strong> richiesta</li>
-            <li>perdi <strong>salienza</strong> (nessuna cosa spicca)</li>
-            <li>trasformi la comunicazione in un <strong>elenco</strong> (e l’elenco non posiziona)</li>
-          </ul>
-        </article>
-
-        <article class="card resources-collection" style="margin-top:1rem;" aria-label="Nota processing fluency">
-          <span class="rubric-tag">Nota</span>
-          <h3 style="margin-bottom:.25rem;">Processing fluency</h3>
-          <p class="muted" style="margin-top:0;max-width:90ch;">
-            È la sensazione soggettiva di facilità con cui il cervello elabora uno stimolo (parole, immagini, struttura).
-            Se un messaggio è <strong>fluido</strong> (chiaro, ordinato, leggibile), tende a sembrare <strong>più affidabile</strong>.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- CHIAREZZA = ORDINE -->
-    <section class="section alt">
-      <div class="container">
-        <h2>La chiarezza non è ridurre. È mettere in ordine.</h2>
-
-        <article class="card" aria-label="Mettere in ordine">
-          <p class="muted" style="margin-top:0;max-width:90ch;">
-            Mettere in ordine significa:
-          </p>
-
-          <ol class="muted" style="margin-top:.5rem; max-width:90ch; padding-left:1.2rem;">
-            <li><strong>decidere la cosa che guida</strong> (messaggio principale)</li>
-            <li>decidere le cose che <strong>supportano</strong> (prove, dettagli, contesto)</li>
-            <li>decidere cosa viene <strong>dopo</strong> (approfondimenti, pagine secondarie, FAQ, contenuti)</li>
-          </ol>
-
-          <p class="muted" style="max-width:90ch; margin-bottom:0;">
-            È una scelta di <strong>architettura</strong>, non di stile.
-          </p>
-        </article>
-
-        <article class="card resources-collection" style="margin-top:1rem;" aria-label="Esercizio: domanda guida">
-          <span class="rubric-tag">Esercizio</span>
-          <h3>La domanda guida</h3>
-          <p class="muted" style="max-width:90ch;">
-            Tra queste 3, qual è quella per cui vuoi che ti ricordino?
-          </p>
-          <ul class="muted" style="margin-top:.5rem;max-width:90ch;">
-            <li><strong>Qualità</strong></li>
-            <li><strong>Velocità</strong></li>
-            <li><strong>Affidabilità</strong></li>
-          </ul>
-          <p class="muted" style="max-width:90ch; margin-bottom:0;">
-            Nota: non significa che le altre due siano false. Significa che <strong>non possono guidare tutte e tre</strong> allo stesso tempo.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- REGOLA -->
-    <section class="section">
-      <div class="container">
-        <h2>La regola (decisione pratica)</h2>
-
-        <article class="card resources-collection" aria-label="Regola 1 + 2">
-          <span class="rubric-tag">Regola</span>
-          <h3 style="margin-bottom:.25rem;"><strong>1 messaggio guida</strong> + 2 supporti</h3>
-          <p class="muted" style="margin-top:0;max-width:90ch;">
-            Se la priorità è <strong>qualità</strong> → supporti: metodo + casi/prove.<br>
-            Se la priorità è <strong>velocità</strong> → supporti: processo + tempi/garanzie.<br>
-            Se la priorità è <strong>affidabilità</strong> → supporti: selezione (per chi/non per chi) + cura dei touchpoint.
-          </p>
-        </article>
-
-        <h3 style="margin-top:1.25rem;">Segnali che stai dicendo “tutto”</h3>
-        <p class="muted" style="max-width:90ch;">Puoi usarli come mini-audit:</p>
-
-        <div class="grid-3" role="list" aria-label="Segnali mini-audit">
-          <article class="card resources-collection" role="listitem">
-            <span class="rubric-tag">Segnale</span>
-            <h3>Target troppo largo</h3>
-            <p class="muted">“Siamo per tutti”.</p>
-          </article>
-
-          <article class="card resources-collection" role="listitem">
-            <span class="rubric-tag">Segnale</span>
-            <h3>Troppe promesse insieme</h3>
-            <p class="muted">5–7 promesse nello stesso blocco (bio, hero, about).</p>
-          </article>
-
-          <article class="card resources-collection" role="listitem">
-            <span class="rubric-tag">Segnale</span>
-            <h3>Stesso peso a tutto</h3>
-            <p class="muted">Tutto in grassetto, tutto è claim: <strong>niente guida davvero</strong>.</p>
-          </article>
-
-          <article class="card resources-collection" role="listitem">
-            <span class="rubric-tag">Segnale</span>
-            <h3>CTA multiple</h3>
-            <p class="muted">CTA con obiettivi diversi (scarica / prenota / scrivi / compra).</p>
-          </article>
-
-          <article class="card resources-collection" role="listitem">
-            <span class="rubric-tag">Segnale</span>
-            <h3>Troppi “anche”</h3>
-            <p class="muted">Tono pieno di “anche”: anche questo, anche quello, anche per…</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- COSA FARE -->
-    <section class="section alt">
-      <div class="container">
-        <h2>Cosa fare (micro-procedura in 10 minuti)</h2>
-
-        <div class="grid-3" role="list" aria-label="Micro-procedura">
-          <article class="card resources-collection" role="listitem">
-            <span class="rubric-tag">1</span>
-            <h3>Scrivi la priorità</h3>
-            <p class="muted">Mettila in una riga.</p>
-          </article>
-
-          <article class="card resources-collection" role="listitem">
-            <span class="rubric-tag">2</span>
-            <h3>Scrivi 2 supporti</h3>
-            <p class="muted">Devono essere <strong>prove</strong> (non aggettivi).</p>
-          </article>
-
-          <article class="card resources-collection" role="listitem">
-            <span class="rubric-tag">3</span>
-            <h3>Riscrivi in ordine</h3>
-            <p class="muted"><strong>1 frase guida</strong> → 2 prove → 1 next step.</p>
-          </article>
-
-          <article class="card resources-collection" role="listitem">
-            <span class="rubric-tag">4</span>
-            <h3>Sposta il resto “dopo”</h3>
-            <p class="muted">Servizi, FAQ, dettagli, esempi lunghi: non devono stare sullo stesso piano.</p>
-          </article>
-        </div>
-
-        <article class="card" style="margin-top:1rem;" aria-label="Esempio prima/dopo">
-          <h3 style="margin-bottom:.25rem;">Esempio “prima/dopo” (generico, adattabile)</h3>
-
-          <p class="muted" style="margin: .75rem 0 .25rem; font-weight:600;">Prima</p>
-          <p class="muted" style="margin-top:0;max-width:90ch;">
-            “Strategia, branding, social, siti, contenuti: aiutiamo aziende e professionisti a comunicare meglio con soluzioni su misura.”
-          </p>
-
-          <p class="muted" style="margin: .75rem 0 .25rem; font-weight:600;">Dopo (priorità: chiarezza/posizionamento)</p>
-          <p class="muted" style="margin-top:0;max-width:90ch;">
-            Ti aiuto a rendere chiaro cosa vendi e perché scegliere te:
-            definisco una direzione (messaggi + priorità) e la rendo replicabile su sito, LinkedIn e materiali.
-          </p>
-        </article>
-
-        <article class="card resources-collection" style="margin-top:1rem;" aria-label="Takeaway">
-          <span class="rubric-tag">Takeaway</span>
-          <p class="muted" style="margin-top:.35rem;max-width:90ch;">
-            <strong>Se tutto è importante, niente guida.</strong> E se niente guida, il pubblico <strong>rimanda la scelta</strong>.
-          </p>
-        </article>
-
-        <p class="resources-breadcrumb" style="margin-top:1.25rem;">
-          <a class="breadcrumb-link" href="../">
-            <img class="breadcrumb-icon" src="../../../assets/icons/narrow-left-primary-blue.svg" alt="" aria-hidden="true" loading="lazy">
-            Torna a Decisioni di brand
-          </a>
-        </p>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section">
-      <div class="container">
-        <div class="resources-cta">
-          <h2>Vuoi applicarlo al tuo caso?</h2>
-          <p class="muted" style="max-width:80ch;">
-            Audit asincrono (screening): mi mandi 1 link + 3 righe di contesto.
-            Ti restituisco una diagnosi scritta con priorità e criterio. Se non c’è fit o non è il momento, te lo dico.
-          </p>
-          <div class="hero-actions" style="margin-top:1rem;">
-            <a class="btn btn-primary"
-               href="../../../contatti.html#audit"
-               data-ga-event="cta_click"
-               data-ga-label="decisioni_audit_bottom_tuttoimportante">
-              Richiedi audit asincrono
-            </a>
-          </div>
-          <p class="resources-proof">Gerarchia → meno frizione, più chiarezza.</p>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <footer class="site-footer">
