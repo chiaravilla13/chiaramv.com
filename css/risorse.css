@@ -413,3 +413,101 @@ a[aria-disabled="true"]{
   cursor:default;
   pointer-events:none;
 }
+
+/* =========================================================
+   RISORSE INDEX — pagina generale rubriche
+========================================================= */
+
+.resources-hero{
+  padding-top: clamp(3rem, 6vw, 5rem);
+}
+
+.resources-hero-title{
+  margin: 0;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  color: var(--c-blue);
+  text-wrap: balance;
+}
+
+.resources-hero-lead{
+  max-width: 68ch;
+  margin-top: 1.4rem;
+}
+
+.resources-stats{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem .85rem;
+  margin-top: 1.5rem;
+}
+
+.resources-stats p{
+  margin: 0;
+  padding: .45rem .75rem;
+  border-radius: 999px;
+  background: rgba(31,63,139,0.06);
+  border: 1px solid rgba(31,63,139,0.12);
+  color: var(--c-blue);
+  font-size: .92rem;
+}
+
+.resources-section-head{
+  max-width: 70ch;
+}
+
+.resources-section-head .muted{
+  margin-bottom: 0;
+}
+
+.rubric-meta{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 1rem 0 0;
+}
+
+.rubric-meta span{
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 .7rem;
+  border-radius: 999px;
+  background: rgba(43,43,43,0.04);
+  border: 1px solid rgba(43,43,43,0.06);
+  font-size: .84rem;
+  color: rgba(43,43,43,0.76);
+}
+
+.rubric-featured{
+  margin-top: 1rem;
+  color: var(--c-text);
+}
+
+.resources-featured-grid{
+  margin-top: 1.25rem;
+}
+
+.resources-note-block{
+  border-top: 1px solid rgba(43,43,43,0.08);
+  padding-top: 2rem;
+}
+
+.resources-note-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem 1.25rem;
+  margin-top: 1rem;
+}
+
+.resources-note-grid p{
+  margin: 0;
+}
+
+@media (max-width: 900px){
+  .resources-note-grid{
+    grid-template-columns: 1fr;
+  }
+}
