@@ -654,3 +654,36 @@ a[aria-disabled="true"]{
     grid-template-columns: 1fr;
   }
 }
+/* =========================================================
+   PATCH — variabili e rifiniture articoli
+========================================================= */
+
+:root{
+  --font-head: "DM Sans", system-ui, sans-serif;
+  --c-dark: var(--c-text);
+}
+
+.article-page{
+  min-width: 0;
+}
+
+.article-toc a.is-current{
+  color: var(--c-blue);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.article-before-after{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 820px){
+  .article-before-after{
+    grid-template-columns: 1fr;
+  }
+
+  .related-grid{
+    grid-template-columns: 1fr;
+  }
+}
