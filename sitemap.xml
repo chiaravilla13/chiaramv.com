@@ -1,13 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url><loc>https://chiaramv.com/</loc><lastmod>2026-03-05</lastmod></url>
-  <url><loc>https://chiaramv.com/chi-sono.html</loc><lastmod>2026-03-05</lastmod></url>
-  <url><loc>https://chiaramv.com/servizi.html</loc><lastmod>2026-03-05</lastmod></url>
-  <url><loc>https://chiaramv.com/metodo.html</loc><lastmod>2026-03-05</lastmod></url>
-  <url><loc>https://chiaramv.com/risultati.html</loc><lastmod>2026-03-05</lastmod></url>
-  <url><loc>https://chiaramv.com/risorse/</loc><lastmod>2026-03-05</lastmod></url>
+  <url>
+    <loc>https://chiaramv.com/</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
 
-  <url><loc>https://chiaramv.com/contatti.html</loc><lastmod>2026-03-05</lastmod></url>
+  <url>
+    <loc>https://chiaramv.com/chi-sono.html</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/servizi.html</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/metodo.html</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/risultati.html</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/contatti.html</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/risorse/</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/risorse/brand-clarity-clinic/</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/risorse/brand-clarity-clinic/premium-non-e-quello-che-dici/</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/risorse/brand-clarity-clinic/ai-fa-scrivere-meglio/</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/risorse/brand-clarity-clinic/brief-fantasma/</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/risorse/decisioni-di-brand/</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/risorse/decisioni-di-brand/se-tutto-e-importante-niente-guida/</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/risorse/decisioni-di-brand/una-decisione-di-brand-e-sempre-un-trade-off/</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/risorse/decisioni-di-brand/un-valore-senza-rinuncia/</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/risorse/brand-nella-cultura/</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/risorse/brand-nella-cultura/nostalgia-packaging/</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://chiaramv.com/risorse/brand-nella-cultura/storytelling-emozionare/</loc>
+    <lastmod>2026-03-11</lastmod>
+  </url>
 
 </urlset>
