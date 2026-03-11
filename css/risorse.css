@@ -407,3 +407,9 @@ a[aria-disabled="true"]{
       margin: 0 0 .25rem;
     }
   </style>
+
+.link-arrow.is-disabled{
+  opacity:.6;
+  cursor:default;
+  pointer-events:none;
+}
