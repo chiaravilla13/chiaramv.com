@@ -511,3 +511,146 @@ a[aria-disabled="true"]{
     grid-template-columns: 1fr;
   }
 }
+/* =========================================================
+   RUBRICA — Brand Clarity Clinic / pagine rubrica
+========================================================= */
+
+.rubric-hero{
+  padding-top: clamp(2.8rem, 5vw, 4.5rem);
+}
+
+.rubric-lead{
+  max-width: 74ch;
+  margin-top: 1.25rem;
+}
+
+.rubric-principle{
+  max-width: 74ch;
+  margin: 1rem 0 0;
+  font-size: 1rem;
+  color: rgba(43,43,43,0.82);
+}
+
+.rubric-meta-line{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem .75rem;
+  margin-top: 1.4rem;
+}
+
+.rubric-meta-line span{
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 .78rem;
+  border-radius: 999px;
+  background: rgba(31,63,139,0.06);
+  border: 1px solid rgba(31,63,139,0.12);
+  color: var(--c-blue);
+  font-size: .9rem;
+}
+
+.step-compact{
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: .95rem;
+  align-items: start;
+}
+
+.step-compact h3{
+  margin: 0 0 .25rem;
+}
+
+.step-compact p{
+  margin: 0;
+}
+
+.rubric-articles-list{
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.rubric-article-card{
+  padding: 1.35rem;
+}
+
+.rubric-article-top{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem .75rem;
+  align-items: center;
+  margin-bottom: .75rem;
+}
+
+.rubric-article-kicker{
+  margin: 0;
+  font-size: .88rem;
+  color: rgba(43,43,43,0.68);
+  letter-spacing: .01em;
+}
+
+.rubric-article-card h3{
+  margin: 0 0 .55rem;
+  max-width: 24ch;
+}
+
+.rubric-points{
+  margin: 1rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.rubric-points li + li{
+  margin-top: .35rem;
+}
+
+.rubric-article-link{
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.rubric-note-panel{
+  border-top: 1px solid rgba(43,43,43,0.08);
+  padding-top: 2rem;
+}
+
+.rubric-note-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem 1.25rem;
+  margin-top: 1rem;
+}
+
+.rubric-note-grid p{
+  margin: 0;
+}
+
+.rubric-bottom-nav{
+  padding-top: .25rem;
+}
+
+.rubric-back-link{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--c-blue);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.rubric-back-link:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.rubric-back-link img{
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+}
+
+@media (max-width: 900px){
+  .rubric-note-grid{
+    grid-template-columns: 1fr;
+  }
+}
