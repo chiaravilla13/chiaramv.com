@@ -607,3 +607,41 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* =========================
+   TYPOGRAPHY LOCK — articoli e rubriche
+========================= */
+
+.article-page,
+.article-page p,
+.article-page li,
+.article-page ul,
+.article-page ol,
+.article-page .article-lead,
+.article-page .article-meta,
+.article-page .article-note,
+.article-page .article-checklist,
+.article-page .article-takeaway,
+.article-page .article-before-after,
+.article-page .article-quote,
+.rubric-principle,
+.rubric-meta-line,
+.rubric-article-card p,
+.rubric-article-card li,
+.resources-section-head p,
+.resources-note-grid p{
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.article-title,
+.article-h1,
+.article-h2,
+.article-h3,
+.article-page h1,
+.article-page h2,
+.article-page h3,
+.rubric-title,
+.rubric-article-card h3,
+.resources-section-head h2{
+  font-family: "DM Sans", system-ui, sans-serif;
+}
