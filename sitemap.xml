@@ -1,32 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- MAIN -->
+  <!-- MAIN IT -->
   <url><loc>https://chiaramv.com/</loc></url>
-  <url><loc>https://chiaramv.com/come-lavoro</loc></url>
-  <url><loc>https://chiaramv.com/contatti</loc></url>
+  <url><loc>https://chiaramv.com/chi-sono.html</loc></url>
+  <url><loc>https://chiaramv.com/servizi.html</loc></url>
+  <url><loc>https://chiaramv.com/metodo.html</loc></url>
+  <url><loc>https://chiaramv.com/risultati.html</loc></url>
+  <url><loc>https://chiaramv.com/contatti/</loc></url>
 
-  <!-- RISORSE -->
+  <!-- RISORSE IT -->
   <url><loc>https://chiaramv.com/risorse/</loc></url>
   <url><loc>https://chiaramv.com/risorse/brand-clarity-clinic/</loc></url>
   <url><loc>https://chiaramv.com/risorse/decisioni-di-brand/</loc></url>
   <url><loc>https://chiaramv.com/risorse/brand-nella-cultura/</loc></url>
 
-  <!-- ARTICOLI -->
-  <url><loc>https://chiaramv.com/risorse/brand-clarity-clinic/ai-fa-scrivere-meglio/</loc></url>
+  <!-- ARTICOLI IT - BRAND CLARITY CLINIC -->
   <url><loc>https://chiaramv.com/risorse/brand-clarity-clinic/premium-non-e-quello-che-dici/</loc></url>
+  <url><loc>https://chiaramv.com/risorse/brand-clarity-clinic/ai-fa-scrivere-meglio/</loc></url>
   <url><loc>https://chiaramv.com/risorse/brand-clarity-clinic/brief-fantasma/</loc></url>
+  <url><loc>https://chiaramv.com/risorse/brand-clarity-clinic/cta-che-chiede-troppo/</loc></url>
+  <url><loc>https://chiaramv.com/risorse/brand-clarity-clinic/feedback-a-gusto/</loc></url>
 
+  <!-- ARTICOLI IT - DECISIONI DI BRAND -->
   <url><loc>https://chiaramv.com/risorse/decisioni-di-brand/se-tutto-e-importante-niente-guida/</loc></url>
-  <url><loc>https://chiaramv.com/risorse/decisioni-di-brand/una-decisione-e-sempre-un-trade-off/</loc></url>
+  <url><loc>https://chiaramv.com/risorse/decisioni-di-brand/una-decisione-di-brand-e-sempre-un-trade-off/</loc></url>
   <url><loc>https://chiaramv.com/risorse/decisioni-di-brand/un-valore-senza-rinuncia/</loc></url>
+  <url><loc>https://chiaramv.com/risorse/decisioni-di-brand/novita-o-memoria/</loc></url>
+  <url><loc>https://chiaramv.com/risorse/decisioni-di-brand/persona-o-studio/</loc></url>
 
-  <url><loc>https://chiaramv.com/risorse/brand-nella-cultura/storytelling-non-significa-emozionare/</loc></url>
-  <url><loc>https://chiaramv.com/risorse/brand-nella-cultura/nostalgia-marketing/</loc></url>
+  <!-- ARTICOLI IT - BRAND NELLA CULTURA -->
+  <url><loc>https://chiaramv.com/risorse/brand-nella-cultura/nostalgia-packaging/</loc></url>
+  <url><loc>https://chiaramv.com/risorse/brand-nella-cultura/storytelling-emozionare/</loc></url>
+  <url><loc>https://chiaramv.com/risorse/brand-nella-cultura/unbranding/</loc></url>
 
-  <!-- ENGLISH -->
+  <!-- MAIN EN -->
   <url><loc>https://chiaramv.com/en/</loc></url>
-  <url><loc>https://chiaramv.com/en/how-i-work</loc></url>
-  <url><loc>https://chiaramv.com/en/contact</loc></url>
+  <url><loc>https://chiaramv.com/en/about/</loc></url>
+  <url><loc>https://chiaramv.com/en/services/</loc></url>
+  <url><loc>https://chiaramv.com/en/method/</loc></url>
+  <url><loc>https://chiaramv.com/en/results/</loc></url>
+  <url><loc>https://chiaramv.com/en/contact/</loc></url>
+
+  <!-- RESOURCES EN -->
+  <url><loc>https://chiaramv.com/en/resources/</loc></url>
+  <url><loc>https://chiaramv.com/en/resources/brand-clarity-clinic/</loc></url>
+  <url><loc>https://chiaramv.com/en/resources/brand-decisions/</loc></url>
+  <url><loc>https://chiaramv.com/en/resources/brand-in-culture/</loc></url>
+
+  <!-- ARTICLES EN - BRAND CLARITY CLINIC -->
+  <url><loc>https://chiaramv.com/en/resources/brand-clarity-clinic/premium-is-not-what-you-say/</loc></url>
+  <url><loc>https://chiaramv.com/en/resources/brand-clarity-clinic/ai-writes-better/</loc></url>
+  <url><loc>https://chiaramv.com/en/resources/brand-clarity-clinic/ghost-brief/</loc></url>
+  <url><loc>https://chiaramv.com/en/resources/brand-clarity-clinic/cta-asks-too-much/</loc></url>
+  <url><loc>https://chiaramv.com/en/resources/brand-clarity-clinic/taste-based-feedback/</loc></url>
+
+  <!-- ARTICLES EN - BRAND DECISIONS -->
+  <url><loc>https://chiaramv.com/en/resources/brand-decisions/if-everything-matters-nothing-leads/</loc></url>
+  <url><loc>https://chiaramv.com/en/resources/brand-decisions/a-brand-decision-is-always-a-trade-off/</loc></url>
+  <url><loc>https://chiaramv.com/en/resources/brand-decisions/a-value-without-sacrifice/</loc></url>
+  <url><loc>https://chiaramv.com/en/resources/brand-decisions/novelty-or-memory/</loc></url>
+  <url><loc>https://chiaramv.com/en/resources/brand-decisions/person-or-studio/</loc></url>
+
+  <!-- ARTICLES EN - BRAND IN CULTURE -->
+  <url><loc>https://chiaramv.com/en/resources/brand-in-culture/nostalgia-packaging/</loc></url>
+  <url><loc>https://chiaramv.com/en/resources/brand-in-culture/storytelling-emotion/</loc></url>
+  <url><loc>https://chiaramv.com/en/resources/brand-in-culture/unbranding/</loc></url>
 
 </urlset>
