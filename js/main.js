@@ -80,6 +80,7 @@ rejectBtn?.addEventListener("click", () => {
 });
 
 function loadGA() {
+  window["ga-disable-G-JWNWNVQNZ7"] = false;
   if (window.__gaLoaded) return;
   window.__gaLoaded = true;
 
