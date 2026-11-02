@@ -24,10 +24,39 @@ document.addEventListener("DOMContentLoaded", () => {
       loadGA();
     });
 
-    rejectBtn?.addEventListener("click", () => {
-      localStorage.setItem(CONSENT_KEY, "rejected");
-      banner.style.display = "none";
+rejectBtn?.addEventListener("click", () => {
+  localStorage.setItem(CONSENT_KEY, "rejected");
+
+  // Disabilita Analytics nella pagina corrente.
+  window["ga-disable-G-JWNWNVQNZ7"] = true;
+
+  // Rimuove i cookie GA accessibili sul dominio del sito.
+  const cookieNames = document.cookie
+    .split(";")
+    .map(cookie => cookie.trim().split("=")[0])
+    .filter(name => name === "_ga" || name.startsWith("_ga_"));
+
+  const host = window.location.hostname;
+  const domains = new Set([host, "chiaramv.com"]);
+
+  cookieNames.forEach(name => {
+    const expired = `${name}=; Max-Age=0; Path=/;`;
+
+    document.cookie = expired;
+
+    domains.forEach(domain => {
+      document.cookie = `${expired} Domain=${domain};`;
+      document.cookie = `${expired} Domain=.${domain};`;
     });
+  });
+
+  banner.style.display = "none";
+
+  // Ricarica senza avviare nuovamente Analytics.
+  if (window.__gaLoaded) {
+    window.location.reload();
+  }
+});
   }
 
   // If already accepted, load GA immediately
