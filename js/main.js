@@ -126,7 +126,9 @@ function initReveal() {
   revealEls.forEach((el) => io.observe(el));
 }
 function initExtraServicesAccordion() {
-  const container = document.querySelector("#servizi-extra");
+ const container = document.querySelector(
+  "#servizi-extra, #extra-services"
+);
   if (!container) return;
 
   const detailsEls = container.querySelectorAll("details");
