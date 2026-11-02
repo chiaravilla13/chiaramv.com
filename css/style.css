@@ -294,7 +294,6 @@ a:hover{ text-decoration: underline; text-underline-offset: 4px; }
 
 .nav .nav-cta{
   display: none;
-}
   }
 }
 
@@ -934,4 +933,23 @@ a.arrow-link.arrow-link--grey::after{
 .btn.btn-arrow.btn-arrow--grey::after{
   background-image: url("../assets/icons/narrow-right-base-dark-grey.svg");
   opacity: .85;
+}
+
+
+.cookie-settings{
+  display: inline-block;
+  margin: .75rem 0 1rem;
+  padding: .35rem 0;
+  border: 0;
+  background: transparent;
+  color: var(--c-blue);
+  font: inherit;
+  font-size: .9rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cookie-settings:focus-visible{
+  outline: 2px solid var(--c-blue);
+  outline-offset: 4px;
 }
