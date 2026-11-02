@@ -302,9 +302,9 @@ a:hover{ text-decoration: underline; text-underline-offset: 4px; }
    Buttons
 ========================= */
 .btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   gap: .5rem;
   padding: .78rem 1rem;
   border-radius: 14px;
@@ -313,7 +313,9 @@ a:hover{ text-decoration: underline; text-underline-offset: 4px; }
   box-shadow: var(--shadow-2);
   text-decoration: none;
   font-weight: 600;
-  transition: transform .18s var(--ease), box-shadow .18s var(--ease), filter .18s var(--ease);
+  transition: transform .18s var(--ease),
+              box-shadow .18s var(--ease),
+              filter .18s var(--ease);
 }
 .btn:hover{
   text-decoration:none;
@@ -804,10 +806,8 @@ h3{
    Reveal
 ========================= */
 .reveal{
-  opacity: 0;
-  transform: translateY(14px);
-  transition: opacity .6s var(--ease), transform .6s var(--ease);
-  will-change: opacity, transform;
+  opacity: 1;
+  transform: none;
 }
 .reveal.is-visible{
   opacity: 1;
