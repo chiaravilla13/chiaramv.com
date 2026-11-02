@@ -292,8 +292,9 @@ a:hover{ text-decoration: underline; text-underline-offset: 4px; }
     padding: .38rem .55rem;
   }
 
-  .nav-cta{
-    display: none;
+.nav .nav-cta{
+  display: none;
+}
   }
 }
 
