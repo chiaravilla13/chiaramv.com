@@ -120,3 +120,32 @@ function initExtraServicesAccordion() {
     });
   });
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const banner = document.getElementById("cookie-banner");
+  const footer = document.querySelector(".site-footer");
+  if (!banner || !footer) return;
+
+  const isEnglish = document.documentElement.lang
+    .toLowerCase()
+    .startsWith("en");
+
+  const container = document.createElement("div");
+  container.className = "container";
+
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "cookie-settings";
+  button.textContent = isEnglish
+    ? "Cookie preferences"
+    : "Preferenze cookie";
+
+  button.addEventListener("click", () => {
+    banner.style.display = "flex";
+    document.getElementById("accept-cookies")?.focus();
+  });
+
+  container.appendChild(button);
+  footer.appendChild(container);
+});
