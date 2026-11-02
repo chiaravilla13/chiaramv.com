@@ -13,7 +13,13 @@
     const text = articleBody.innerText.replace(/\s+/g, ' ').trim();
     const words = text ? text.split(' ').length : 0;
     const minutes = Math.max(1, Math.round(words / 180));
-    readingTarget.textContent = `${minutes} min di lettura`;
+    const isEnglish = document.documentElement.lang
+  .toLowerCase()
+  .startsWith('en');
+
+readingTarget.textContent = isEnglish
+  ? `${minutes} min read`
+  : `${minutes} min di lettura`;
   }
 
   const tocLinks = document.querySelectorAll('[data-article-toc] a[href^="#"]');
